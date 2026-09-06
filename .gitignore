@@ -1,7 +1,11 @@
+# Large data files
+all_transactions.json
+found_addresses_*.json
+tx_fetch_state.json
+tx_report*.json
+classified_report.json
+final_report.json
+
+# Python cache
 __pycache__/
 *.pyc
-*.pyo
-*.egg-info/
-.env
-.venv
-venv/

@@ -1,0 +1,136 @@
+======================================================================
+           BITCOIN WALLET ANALYSIS REPORT
+======================================================================
+
+Mnemonic: resemble praise oxygen rhythm rate rose mutual upon
+          beach april behave cliff
+Derivation Path: m/44'/0'/0'/0/* (BTC BIP44 External Chain)
+
+----------------------------------------------------------------------
+WALLET SUMMARY
+----------------------------------------------------------------------
+Total addresses discovered:         4083
+Addresses with activity:            4083
+Unspent addresses:                     0
+Fully spent addresses:              4083
+
+First incoming:  2024-10-04 19:26:15 UTC
+Last incoming:   2025-05-13 16:53:15 UTC
+First outgoing:  2024-10-05 22:32:59 UTC
+Last outgoing:   2025-05-13 18:55:28 UTC
+
+----------------------------------------------------------------------
+FINANCIAL SUMMARY
+----------------------------------------------------------------------
+Total incoming:           3.90816232 BTC  (6604 tx)
+Total outgoing:           7.39541203 BTC  (137 tx)
+Total fees paid:          0.09581859 BTC
+                    ----------------------------
+NET FLOW:                -3.58306830 BTC
+
+----------------------------------------------------------------------
+TOP 20 VENDOR DESTINATIONS (Where funds were sent)
+----------------------------------------------------------------------
+  1. bc1qzyc8d4585dpun2ycteu9r0zmpvdketkqvp7rc8
+     Total: 0.19490345 BTC  |  1 transaction(s)
+     Sample tx: f3312208aa2409266cacb609d4ef606d17130b5e7b4739e6cec3df7fd78b0b28
+
+  2. bc1q5e89j7wu8ts7mk0dvrq7dpkgtv757x8794lach
+     Total: 0.18054436 BTC  |  1 transaction(s)
+     Sample tx: eae32070add0eed7b0135c5c6ff96c70fcfc65df187c53300edde34b1ff91fd8
+
+  3. bc1q7gjq6lstjn5dsxxh87wl36xwn2wsvm4xp9z0ku
+     Total: 0.16103586 BTC  |  1 transaction(s)
+     Sample tx: d5f4bb585864f728def4eda5714068e838c16f770eac7a3661f7cdf87d13c094
+
+  4. bc1qrwf6zcgnpc7vjpkyj9agam238k9qqg07xq3xh4
+     Total: 0.15300517 BTC  |  1 transaction(s)
+     Sample tx: 43e3b0430caea92e03ee58a4ed31f4ffa64647bf34ff8d9104171e927d238ec7
+
+  5. bc1qc9s9w5v59hhf977ch559mzvev79a5spdpf29hl
+     Total: 0.12983976 BTC  |  1 transaction(s)
+     Sample tx: 19fb4beee36acbc82a7fc1d874b6414edfebec743e8a863e443c9fb8815a03c4
+
+  6. bc1q44kvhhalp3yfvpny7l7jd8yrz8aghkywdgxqmu
+     Total: 0.11568080 BTC  |  1 transaction(s)
+     Sample tx: e03448a166bedafca82c93116942987a72e9ced15ac447a9bf4488b9dc8cbedb
+
+  7. bc1qhdqlstp0kyvkn9n5w5j0emunj24ydkxrcnu5wg
+     Total: 0.11556767 BTC  |  1 transaction(s)
+     Sample tx: d09e2913531517773a47465654c3dc392383e70a7d95e673dc38dea81f49d2bb
+
+  8. bc1qeck0ra06550vp2m6ntx0vade6ucn2ma2eemqtv
+     Total: 0.11404625 BTC  |  1 transaction(s)
+     Sample tx: f05329e13e6521132a51fc0a623c71cd6f77a93a32bc5ed81edeb1d028f57d8c
+
+  9. bc1q220uuealwzusv3k2f525d7a90rud3em2pvy8ry
+     Total: 0.11047572 BTC  |  1 transaction(s)
+     Sample tx: 3562b2e60b752c2e68e4d0b1a8a66a456786b636fbee9edefdf4160fb9a92659
+
+ 10. bc1qlyu73uuhfmkwup7y9j6ckfhj0xj7necryyzqfs
+     Total: 0.09781666 BTC  |  1 transaction(s)
+     Sample tx: d0e39281227b4c3aa80fd31bdfee012842ab1f1cd2ab1b6d105a69dff95489ae
+
+ 11. bc1qj0cvhhcm7nu82z86u97fky2ajv7wekuama8z87
+     Total: 0.09012951 BTC  |  1 transaction(s)
+     Sample tx: 5bb981c0eaef4b444546564f0a28581513dc5bd9f310a5f85e20026fc011fdfc
+
+ 12. bc1qmc6g7x0td9sla69haekdczy4m66jgxr3syr974
+     Total: 0.08946350 BTC  |  1 transaction(s)
+     Sample tx: b3e9855aaaa8b6c26e8301f7ea41204682bca0dd09e596e8ac15074348578592
+
+ 13. bc1qm5eme059n7dczpzzqj37tu0lr4fhyf4rlxf949
+     Total: 0.08544371 BTC  |  1 transaction(s)
+     Sample tx: 9aca0d9e8959765967e1cb92cb94f4c18767d56affe11f5b48a7d8021dd4759b
+
+ 14. bc1q7afw4snpl85mrpq2p93phth9wyevpu027cz5y8
+     Total: 0.08411515 BTC  |  1 transaction(s)
+     Sample tx: b7272bec2ffba9ebc7fb325ed58c396dc942961cc2d2a9939be8693b51e786f7
+
+ 15. bc1qzdhpz3wtshlx6q5uhrttlx4epsxj27277vnqfa
+     Total: 0.08385446 BTC  |  1 transaction(s)
+     Sample tx: 3608dce568118af4a06f41786797ccaebe37a3de608b846be9864c7ff5154d01
+
+ 16. bc1qwgs0jp5z0e6t9g3em7knhvjhf8ng90rkycy887
+     Total: 0.08339087 BTC  |  1 transaction(s)
+     Sample tx: 763d14b00e4531e0e584ed1f25be832c6f91edec41dae1bddd6c4a9d43fa3667
+
+ 17. bc1qk4fhq78wc58g6wtkk4wg6tg0dvszya8grdjdkk
+     Total: 0.07892018 BTC  |  1 transaction(s)
+     Sample tx: 131be65076f80386bec4160210f7709dc775c268c3b4239bfdc34ba5838ac4a2
+
+ 18. bc1q89lwjmnf4rkcs75angdh6kft87cdgmpty76mw4
+     Total: 0.07831558 BTC  |  1 transaction(s)
+     Sample tx: 0cb8db1d39fb37cc6e207898532d5d2baee634c47bcef8e1c4f4f5ddd4be660e
+
+ 19. bc1qkmpg3svey779zzx8k4udvf83j5gh3tp0pdgkhk
+     Total: 0.07625104 BTC  |  1 transaction(s)
+     Sample tx: 28ce277663e3683f80500a6f4b02059896b7afeb2d72473bf996ca45928119aa
+
+ 20. bc1q4hpte946zxmhrsxz7jx8eue49z4nzmrs47uuqd
+     Total: 0.07600095 BTC  |  1 transaction(s)
+     Sample tx: 938dc6cbfade9883261a2d947a756588f620d8a45da3cf99fe5030f8b4135ffc
+
+----------------------------------------------------------------------
+KEY FINDINGS
+----------------------------------------------------------------------
+1. This wallet received funds on 4,083 addresses across the BIP44
+   external chain.
+
+2. All 137 outgoing transactions are VENDOR WITHDRAWALS - funds
+   were sent to external addresses with NO change returned.
+   There are NO self-withdrawals (transfers between your own
+   addresses) in this wallet's history.
+
+3. The outgoing pattern suggests periodic consolidation sweeps:
+   multiple small UTXOs were combined and sent to single
+   destinations, typical of exchange withdrawals or service sweeps.
+
+4. Net flow is NEGATIVE: approximately 3.58 BTC more was sent out
+   than was received (after fees).
+
+5. 2.1% of incoming transactions were later swept out.
+
+======================================================================
+Report generated: 2026-09-06T13:02:11.156043
+======================================================================
