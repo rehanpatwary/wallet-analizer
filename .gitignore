@@ -1,11 +1,5 @@
-# Large data files
-all_transactions.json
-found_addresses_*.json
-tx_fetch_state.json
-tx_report*.json
-classified_report.json
-final_report.json
-
-# Python cache
+*.log
+*.pid
+*.checkpoint.json
 __pycache__/
-*.pyc
+.DS_Store
