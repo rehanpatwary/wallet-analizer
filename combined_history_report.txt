@@ -1,0 +1,26 @@
+========================================================================
+        COMBINED WALLET HISTORY - BTC + LTC (mnemonic resemble...cliff)
+========================================================================
+Generated: 2026-09-10T07:23:50.925219+00:00
+
+BITCOIN (BIP44, complete)
+------------------------------------------------------------------------
+  Active addresses:   4083
+  First transaction:  2024-10-04 19:26:15 UTC
+  Last transaction:   2025-05-13 16:53:15 UTC
+  Total incoming:     3.90816232 BTC  (6604 txs)
+  Total outgoing:     7.39541203 BTC  (137 txs)
+  Fees paid:          0.09581859 BTC
+  NET FLOW:           -3.58306830 BTC
+
+LITECOIN (BIP44/49/84, complete via litecoinspace.org)
+------------------------------------------------------------------------
+  Active addresses:   4857
+  Total transactions: 14869
+  Total incoming:     6853.86737339 LTC  (14665 txs)
+  Vendor withdrawals: 6853.14289201 LTC  (204 txs)
+  Self withdrawals:   0.00000000 LTC  (0 txs)
+  Fees paid:          0.72448138 LTC
+  NET FLOW:           0.00000000 LTC
+
+========================================================================

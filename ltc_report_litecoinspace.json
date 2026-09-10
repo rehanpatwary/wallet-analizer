@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-09-10T13:19:24.277827",
+  "source": "litecoinspace.org",
+  "mnemonic_fingerprint": "resemble...cliff",
+  "address_count": 4857,
+  "transaction_count": 14869,
+  "incoming_count": 14665,
+  "outgoing_self_count": 0,
+  "outgoing_vendor_count": 204,
+  "total_incoming_ltc": 6853.86737339,
+  "vendor_total_ltc": 6853.14289201,
+  "self_total_ltc": 0.0,
+  "fees_ltc": 0.72448138,
+  "net_flow_ltc": 0.0
+}

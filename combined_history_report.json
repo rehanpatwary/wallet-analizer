@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-10T07:23:50.925219+00:00",
+  "mnemonic_fingerprint": "resemble...cliff",
+  "bitcoin": {
+    "derivation": "m/44'/0'/0'/0/* (BTC BIP44 external)",
+    "addresses_with_activity": 4083,
+    "first_transaction": "2024-10-04 19:26:15 UTC",
+    "last_transaction": "2025-05-13 16:53:15 UTC",
+    "total_incoming_btc": 3.90816232,
+    "total_outgoing_btc": 7.39541203,
+    "total_fees_btc": 0.09581859,
+    "net_flow_btc": -3.5830683,
+    "incoming_tx_count": 6604,
+    "outgoing_tx_count": 137
+  },
+  "litecoin": {
+    "source": "litecoinspace.org",
+    "addresses_with_activity": 4857,
+    "total_incoming_ltc": 6853.86737339,
+    "vendor_outgoing_ltc": 6853.14289201,
+    "self_withdrawal_ltc": 0.0,
+    "fees_ltc": 0.72448138,
+    "net_flow_ltc": 0.0,
+    "transaction_count": 14869,
+    "incoming_count": 14665,
+    "self_withdrawal_count": 0,
+    "vendor_withdrawal_count": 204
+  }
+}

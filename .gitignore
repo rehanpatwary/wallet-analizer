@@ -1,5 +1,10 @@
 *.log
 *.pid
 *.checkpoint.json
+# raw tx dumps exceed GitHub 100MB limit; commit the .gz instead
+all_ltc_transactions.json
+all_btc_transactions.json
+all_transactions.json
+classified_report.json
 __pycache__/
 .DS_Store

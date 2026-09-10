@@ -1,0 +1,20 @@
+======================================================================
+         LTC WALLET ANALYSIS REPORT (litecoinspace.org)
+======================================================================
+
+Generated:      2026-09-10T13:19:24.277827
+Source:         litecoinspace.org
+
+Total addresses:        4857
+Total transactions:     14869
+Incoming txs:           14665
+Self withdrawals:       0
+Vendor withdrawals:     204
+
+Total incoming LTC:     6853.86737339 LTC
+Vendor outgoing LTC:    6853.14289201 LTC
+Self outgoing LTC:      0.00000000 LTC
+Fees LTC:               0.72448138 LTC
+Net flow LTC:           0.00000000 LTC
+
+======================================================================
