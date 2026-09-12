@@ -1,0 +1,333 @@
+{
+  "coin": "btc",
+  "source": "electrum:electrum.emzy.de:50002,bitcoin.lu.ke:50001,bitcoin.lu.ke:50002,electrum.arkade.sh:50001,blackie.c3-soft.com:57006",
+  "server_tip_height": 966713,
+  "generated": "2026-09-13T01:44:08.723590",
+  "types": {
+    "bip44_legacy": {
+      "status": "USED",
+      "accounts": {
+        "0/external": {
+          "status": "funded (prior verified scan, 4083 addresses imported)",
+          "found": 4083,
+          "lookups": 0
+        },
+        "0/change": {
+          "status": "empty (gap-5000 verified, scanned to idx 5024)",
+          "found": 0,
+          "lookups": 5024
+        },
+        "1/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "1/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        }
+      },
+      "found": 4083,
+      "lookups": 7328
+    },
+    "bip49_segwit": {
+      "status": "NOT USED",
+      "accounts": {
+        "0/external": {
+          "status": "NOT USED (first 500 empty, 628 checked)",
+          "found": 0,
+          "lookups": 640
+        },
+        "0/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "1/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "1/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        }
+      },
+      "found": 0,
+      "lookups": 3072
+    },
+    "bip84_native_segwit": {
+      "status": "NOT USED",
+      "accounts": {
+        "0/external": {
+          "status": "NOT USED (first 500 empty, 628 checked)",
+          "found": 0,
+          "lookups": 640
+        },
+        "0/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "1/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "1/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "2/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "3/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "4/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "5/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "6/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "7/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "8/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/external": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        },
+        "9/change": {
+          "status": "empty (gap-100 checked to idx 128)",
+          "found": 0,
+          "lookups": 128
+        }
+      },
+      "found": 0,
+      "lookups": 3072
+    }
+  },
+  "total_found_new": 0,
+  "total_lookups": 13472,
+  "grand_total_found": 4083,
+  "server_end_tip_height": 966713
+}
