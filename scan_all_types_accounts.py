@@ -48,9 +48,10 @@ WORKERS = 10
 
 CONFIG = {
     'btc': {
-        # mempool.space unreachable from this network (2026-09-13); local
-        # 10.10.20.3:3006 node also down -> blockstream.info Esplora API
-        'base': 'https://blockstream.info/api',
+        # blockstream.info caps at 700 req/h/IP (rate-limited); mempool.space
+        # unreachable; local 10.10.20.3:3006 down -> mempool.emzy.de mirror
+        # (tip verified in sync: block 966706, 2026-09-12 18:33 UTC)
+        'base': 'https://mempool.emzy.de/api',
         'coin_arg': 'btc',
         'prior_file': 'found_addresses_btc_bip44_external.json',
         'prior_funded': {('bip44_legacy', 0, 0): 'found'},
