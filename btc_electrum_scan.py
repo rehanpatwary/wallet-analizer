@@ -357,6 +357,7 @@ def main():
                         'status': f'ERROR: {e}', 'found': -1, 'lookups': 0}
                     type_had_error = True
                     print(f"  [ERROR] {path_type} acct{account} {label}: {e}", flush=True)
+                    save_report(report, scanner, n_prior)
                     continue
 
                 type_rec['accounts'][f"{account}/{label}"] = {
@@ -369,6 +370,7 @@ def main():
                     print(f"  [FUNDED] {path_type} acct{account} {label}: {len(found)} addresses", flush=True)
                     with open(os.path.join(OUT_DIR, f'new_found_btc_{path_type}_acct{account}_{"ext" if change == 0 else "chg"}.json'), 'w') as fh:
                         json.dump(found, fh)
+                save_report(report, scanner, n_prior)
 
         if type_had_error:
             type_rec['status'] = 'UNVERIFIED (some chains errored)'
@@ -376,15 +378,22 @@ def main():
             type_rec['status'] = 'USED' if type_active or type_rec['found'] else 'NOT USED'
         print(f"[TYPE-VERDICT] btc {path_type}: {type_rec['status']}", flush=True)
 
-    report['grand_total_found'] = report['total_found_new'] + (
-        n_prior if True else 0)
-    report['server_end_tip_height'] = scanner.tip_height()
+    report['grand_total_found'] = report['total_found_new'] + n_prior
+    try:
+        report['server_end_tip_height'] = scanner.tip_height()
+    except Exception as e:
+        report['server_end_tip_height'] = f'unavailable: {e}'
+    save_report(report, scanner, n_prior)
+    print(f"[BTC SCAN] Complete. new_found={report['total_found_new']} "
+          f"lookups={report['total_lookups']} errors={scanner.errors}", flush=True)
+
+
+def save_report(report, scanner, n_prior):
     out_file = os.path.join(OUT_DIR, 'scan_all_types_btc.json')
+    report['grand_total_found'] = report['total_found_new'] + n_prior
     with open(out_file, 'w') as fh:
         json.dump(report, fh, indent=2)
     print(f"[SAVE] {out_file}", flush=True)
-    print(f"[BTC SCAN] Complete. new_found={report['total_found_new']} "
-          f"lookups={report['total_lookups']} errors={scanner.errors}", flush=True)
 
 
 if __name__ == '__main__':
