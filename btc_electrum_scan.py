@@ -226,6 +226,24 @@ def scan_chain(scanner, path_type, account, change, gap_limit, start_idx=0):
                 raise RuntimeError(f"chain {path_type}/acct{account}/{label}: too many errors")
             continue
         consecutive_errors = 0
+        failed = [(e, i) for i, (e, n) in enumerate(zip(entries, counts)) if n is None]
+        # retry per-item failures up to 3 rounds before aborting the chain
+        for _round in range(3):
+            if not failed:
+                break
+            retry_entries = [e for e, _ in failed]
+            retry_counts = scanner.check_batch(retry_entries)
+            new_failed = []
+            for (e, _i), n in zip(failed, retry_counts):
+                if n is None:
+                    new_failed.append((e, _i))
+                else:
+                    counts[_i] = n
+            failed = new_failed
+        if failed:
+            raise RuntimeError(
+                f"per-item error at {path_type}/acct{account}/{label} idx "
+                f"{failed[0][0]['index']} ({len(failed)} items) after retries")
         for e, n in zip(entries, counts):
             if n is None:
                 raise RuntimeError(f"per-item error at {path_type}/acct{account}/{label} idx {e['index']}")
