@@ -34,7 +34,7 @@ GAP_ACTIVE = 5000
 DETECT_LIMIT = 500
 GAP_TAIL = 100
 GAP_DEEP = 100
-BATCH = 64
+BATCH = 32
 
 # (host, port, use_tls) -- probed reachable 2026-09-13
 SERVERS = [
@@ -54,6 +54,7 @@ class ElectrumConn:
         self.sock = None
         self.f = None
         self._id = 0
+        self.banned_until = 0
         self.lock = threading.Lock()
         self.connect()
 
@@ -157,11 +158,15 @@ class Scanner:
 
     def get_conn(self):
         with self.conn_lock:
-            for _ in range(len(self.conns)):
-                c = self.conns[self.conn_idx % len(self.conns)]
+            now = time.time()
+            # rotate through healthy connections
+            healthy = [c for c in self.conns
+                       if c.sock is not None and c.banned_until <= now]
+            if healthy:
+                c = healthy[self.conn_idx % len(healthy)]
                 self.conn_idx += 1
-                if c.sock is not None:
-                    return c
+                return c
+            # try a fresh server we haven't connected to yet
             tried = set((c.host, c.port) for c in self.conns)
             for h, p, t in SERVERS:
                 if (h, p) in tried:
@@ -173,10 +178,15 @@ class Scanner:
                 except Exception as e:
                     print(f"  [CONN-FAIL] {h}:{p} {e}", flush=True)
                     tried.add((h, p))
+            # all known servers tried: reconnect the least recently banned one
             if self.conns:
-                c = self.conns[0]
-                c.connect()
-                return c
+                c = min(self.conns, key=lambda x: x.banned_until)
+                try:
+                    c.connect()
+                    c.banned_until = 0
+                    return c
+                except Exception:
+                    c.banned_until = now + 300
             raise RuntimeError("no electrum servers available")
 
     def check_batch(self, entries):
@@ -191,18 +201,16 @@ class Scanner:
                 out = []
                 for r in res:
                     out.append(None if r is None else len(r))
-                if all(v == 0 for v in out) and self.lookups % 5000 < BATCH:
-                    # sync heartbeat
-                    pass
                 return out
             except Exception as e:
                 last_err = e
                 self.errors += 1
                 try:
-                    c.close(); c.connect()
+                    c.banned_until = time.time() + 300  # cooldown failed server
+                    c.close()
                 except Exception:
                     pass
-                time.sleep(1.5)
+                time.sleep(3)
         raise RuntimeError(f"batch failed after retries: {last_err}")
 
     def tip_height(self):
@@ -274,14 +282,37 @@ def main():
     n_prior = len(prior)
     print(f"  [PRIOR-FUNDED] bip44_legacy acct0 external: {n_prior} addresses", flush=True)
 
+    # resume: reuse previously verified chains, rescan only ERROR/missing ones
+    old_report = {}
+    old_path = os.path.join(OUT_DIR, 'scan_all_types_btc.json')
+    if os.path.exists(old_path):
+        with open(old_path) as fh:
+            old_report = json.load(fh).get('types', {})
+        print("  [RESUME] existing report found; only ERROR/missing chains rescan", flush=True)
+
     for path_type in TYPES:
         type_rec = {'status': None, 'accounts': {}, 'found': 0, 'lookups': 0}
         report['types'][path_type] = type_rec
         type_active = False
+        type_had_error = False
+        old_chains = old_report.get(path_type, {}).get('accounts', {})
 
         for account in ACCOUNTS:
             for change in (0, 1):
                 label = 'external' if change == 0 else 'change'
+                key = f"{account}/{label}"
+
+                old_status = old_chains.get(key, {}).get('status')
+                if old_status and not old_status.startswith('ERROR'):
+                    old_found = old_chains[key].get('found', 0)
+                    old_lookups = old_chains[key].get('lookups', 0)
+                    type_rec['accounts'][key] = {'status': old_status,
+                                                 'found': old_found, 'lookups': 0}
+                    type_rec['found'] += max(old_found, 0)
+                    if old_found and old_found > 0:
+                        type_active = True
+                    print(f"  [RESUMED] {path_type} {key}: {old_status}", flush=True)
+                    continue
 
                 if path_type == 'bip44_legacy' and account == 0 and change == 0:
                     type_rec['accounts'][f"{account}/{label}"] = {
@@ -324,6 +355,7 @@ def main():
                 except RuntimeError as e:
                     type_rec['accounts'][f"{account}/{label}"] = {
                         'status': f'ERROR: {e}', 'found': -1, 'lookups': 0}
+                    type_had_error = True
                     print(f"  [ERROR] {path_type} acct{account} {label}: {e}", flush=True)
                     continue
 
@@ -338,7 +370,10 @@ def main():
                     with open(os.path.join(OUT_DIR, f'new_found_btc_{path_type}_acct{account}_{"ext" if change == 0 else "chg"}.json'), 'w') as fh:
                         json.dump(found, fh)
 
-        type_rec['status'] = 'USED' if type_active or type_rec['found'] else 'NOT USED'
+        if type_had_error:
+            type_rec['status'] = 'UNVERIFIED (some chains errored)'
+        else:
+            type_rec['status'] = 'USED' if type_active or type_rec['found'] else 'NOT USED'
         print(f"[TYPE-VERDICT] btc {path_type}: {type_rec['status']}", flush=True)
 
     report['grand_total_found'] = report['total_found_new'] + (
