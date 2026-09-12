@@ -182,14 +182,15 @@ def _convert_bits(data: bytes, from_bits: int, to_bits: int, pad: bool = True) -
 
 
 def derive_addresses(mnemonic: str, coin: str, path_type: str,
-                     start: int = 0, count: int = 20, change: int = 0) -> List[Dict]:
+                     start: int = 0, count: int = 20, change: int = 0,
+                     account: int = 0) -> List[Dict]:
     seed = mnemonic_to_seed(mnemonic)
     master = seed_to_master_key(seed)
     path = DERIVATION_PATHS[coin][path_type]
     path_indices = [
         HARDENED + path[0],
         HARDENED + path[1],
-        HARDENED + 0,
+        HARDENED + account,
         change,
     ]
     account_key = master.derive_path(path_indices)
@@ -209,7 +210,7 @@ def derive_addresses(mnemonic: str, coin: str, path_type: str,
         results.append({
             'index': i,
             'address': address,
-            'path': f"m/{path[0]}'/{path[1]}'/0'/{chain_label}/{i}",
+            'path': f"m/{path[0]}'/{path[1]}'/{account}'/{chain_label}/{i}",
             'type': path_type,
             'pubkey': pubkey.hex(),
         })
