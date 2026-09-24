@@ -1,2735 +1,2750 @@
 {
- "btc": {
-  "coin": "BTC",
-  "destinations": [
-   {
-    "address": "bc1q5e89j7wu8ts7mk0dvrq7dpkgtv757x8794lach",
-    "amount": 0.18054436,
-    "usd": 12354.29,
-    "tx_count": 1,
-    "first_seen": 1729297023,
-    "last_seen": 1729297023
-   },
-   {
-    "address": "bc1qzyc8d4585dpun2ycteu9r0zmpvdketkqvp7rc8",
-    "amount": 0.19490345,
-    "usd": 11818.17,
-    "tx_count": 1,
-    "first_seen": 1728587544,
-    "last_seen": 1728587544
-   },
-   {
-    "address": "bc1q7gjq6lstjn5dsxxh87wl36xwn2wsvm4xp9z0ku",
-    "amount": 0.16103586,
-    "usd": 10740.82,
-    "tx_count": 1,
-    "first_seen": 1729971746,
-    "last_seen": 1729971746
-   },
-   {
-    "address": "bc1qc9s9w5v59hhf977ch559mzvev79a5spdpf29hl",
-    "amount": 0.12983976,
-    "usd": 10731.07,
-    "tx_count": 1,
-    "first_seen": 1743369474,
-    "last_seen": 1743369474
-   },
-   {
-    "address": "bc1qrwf6zcgnpc7vjpkyj9agam238k9qqg07xq3xh4",
-    "amount": 0.15300517,
-    "usd": 10316.53,
-    "tx_count": 1,
-    "first_seen": 1729677229,
-    "last_seen": 1729677229
-   },
-   {
-    "address": "bc1q44kvhhalp3yfvpny7l7jd8yrz8aghkywdgxqmu",
-    "amount": 0.1156808,
-    "usd": 9841.78,
-    "tx_count": 1,
-    "first_seen": 1745149903,
-    "last_seen": 1745149903
-   },
-   {
-    "address": "bc1qj0cvhhcm7nu82z86u97fky2ajv7wekuama8z87",
-    "amount": 0.09012951,
-    "usd": 8640.1,
-    "tx_count": 1,
-    "first_seen": 1732772220,
-    "last_seen": 1732772220
-   },
-   {
-    "address": "bc1qlyu73uuhfmkwup7y9j6ckfhj0xj7necryyzqfs",
-    "amount": 0.09781666,
-    "usd": 8250.83,
-    "tx_count": 1,
-    "first_seen": 1740866325,
-    "last_seen": 1740866325
-   },
-   {
-    "address": "bc1qmc6g7x0td9sla69haekdczy4m66jgxr3syr974",
-    "amount": 0.0894635,
-    "usd": 8093.23,
-    "tx_count": 1,
-    "first_seen": 1732010497,
-    "last_seen": 1732010497
-   },
-   {
-    "address": "bc1q3kkt7zvdp2uszkx3xx95m7qhmagtq03sjz6ytd",
-    "amount": 0.07579002,
-    "usd": 7888.03,
-    "tx_count": 1,
-    "first_seen": 1737231516,
-    "last_seen": 1737231516
-   },
-   {
-    "address": "bc1qk4fhq78wc58g6wtkk4wg6tg0dvszya8grdjdkk",
-    "amount": 0.07892018,
-    "usd": 7751.58,
-    "tx_count": 1,
-    "first_seen": 1736079384,
-    "last_seen": 1736079384
-   },
-   {
-    "address": "bc1qaal4lwh4jq0l3ectkukldvz0ee54rnwssdfg46",
-    "amount": 0.07424944,
-    "usd": 7645.61,
-    "tx_count": 1,
-    "first_seen": 1746919332,
-    "last_seen": 1746919332
-   },
-   {
-    "address": "bc1qkmpg3svey779zzx8k4udvf83j5gh3tp0pdgkhk",
-    "amount": 0.07625104,
-    "usd": 7625.43,
-    "tx_count": 1,
-    "first_seen": 1734088278,
-    "last_seen": 1734088278
-   },
-   {
-    "address": "bc1q220uuealwzusv3k2f525d7a90rud3em2pvy8ry",
-    "amount": 0.11047572,
-    "usd": 7300.68,
-    "tx_count": 1,
-    "first_seen": 1728957587,
-    "last_seen": 1728957587
-   },
-   {
-    "address": "bc1qp2dsrjs02jchzxqlk9whxq4mm20ttv5j4dr4qy",
-    "amount": 0.07420285,
-    "usd": 7219.34,
-    "tx_count": 1,
-    "first_seen": 1734876905,
-    "last_seen": 1734876905
-   },
-   {
-    "address": "bc1qhdqlstp0kyvkn9n5w5j0emunj24ydkxrcnu5wg",
-    "amount": 0.11556767,
-    "usd": 7175.13,
-    "tx_count": 1,
-    "first_seen": 1728167579,
-    "last_seen": 1728167579
-   },
-   {
-    "address": "bc1qeck0ra06550vp2m6ntx0vade6ucn2ma2eemqtv",
-    "amount": 0.11404625,
-    "usd": 7089.17,
-    "tx_count": 1,
-    "first_seen": 1728447559,
-    "last_seen": 1728447559
-   },
-   {
-    "address": "bc1qmfu960z2vqu9myjeed59nhl0qc4qld85glsw5j",
-    "amount": 0.07333878,
-    "usd": 7024.39,
-    "tx_count": 1,
-    "first_seen": 1739908483,
-    "last_seen": 1739908483
-   },
-   {
-    "address": "bc1q2ymln5pl5hheqy4x9lmvdsnye2h6um9neuxvvv",
-    "amount": 0.07473661,
-    "usd": 7023.78,
-    "tx_count": 1,
-    "first_seen": 1745612048,
-    "last_seen": 1745612048
-   },
-   {
-    "address": "bc1qpd6jcuer84vu8ldna35z8vcerz48trems5f2m2",
-    "amount": 0.07219165,
-    "usd": 6974.3,
-    "tx_count": 1,
-    "first_seen": 1739561716,
-    "last_seen": 1739561716
-   },
-   {
-    "address": "bc1qpm7da6davdu8ht23xr4add8gn2sns9p38s7za6",
-    "amount": 0.07296854,
-    "usd": 6898.16,
-    "tx_count": 1,
-    "first_seen": 1736887172,
-    "last_seen": 1736887172
-   },
-   {
-    "address": "bc1qyg4463hz9hu0dt8htrgthqxnxmeqfmu4elnp2s",
-    "amount": 0.0707556,
-    "usd": 6893.78,
-    "tx_count": 1,
-    "first_seen": 1739268699,
-    "last_seen": 1739268699
-   },
-   {
-    "address": "bc1qr25wfjju99ptmm5s9lmw972yw7tv759706prvz",
-    "amount": 0.0713443,
-    "usd": 6878.16,
-    "tx_count": 1,
-    "first_seen": 1733059320,
-    "last_seen": 1733059320
-   },
-   {
-    "address": "bc1q89lwjmnf4rkcs75angdh6kft87cdgmpty76mw4",
-    "amount": 0.07831558,
-    "usd": 6853.88,
-    "tx_count": 1,
-    "first_seen": 1745357587,
-    "last_seen": 1745357587
-   },
-   {
-    "address": "bc1qjd573ad0a7zs685pj9q6qaume7x7eu2k9l9sl4",
-    "amount": 0.07315915,
-    "usd": 6487.78,
-    "tx_count": 1,
-    "first_seen": 1740590314,
-    "last_seen": 1740590314
-   },
-   {
-    "address": "bc1qm4l9r8866dgpjlrhfqy5260xkwgudlynpneg4r",
-    "amount": 0.06385925,
-    "usd": 6476.61,
-    "tx_count": 1,
-    "first_seen": 1734288870,
-    "last_seen": 1734288870
-   },
-   {
-    "address": "bc1qjtmzpxpae26u9ah7mpycuawn7vteyxl4pejxaq",
-    "amount": 0.06765415,
-    "usd": 6378.88,
-    "tx_count": 1,
-    "first_seen": 1732193670,
-    "last_seen": 1732193670
-   },
-   {
-    "address": "bc1qqeec2t9gl6pkr0cjetr6zh0n396ct0j98tyltx",
-    "amount": 0.06389652,
-    "usd": 6353.21,
-    "tx_count": 1,
-    "first_seen": 1735216030,
-    "last_seen": 1735216030
-   },
-   {
-    "address": "bc1qzhd95ank3yng946yzc0vprda8xgtg6ksmwxwul",
-    "amount": 0.05810384,
-    "usd": 6167.36,
-    "tx_count": 1,
-    "first_seen": 1737577812,
-    "last_seen": 1737577812
-   },
-   {
-    "address": "bc1q4hpte946zxmhrsxz7jx8eue49z4nzmrs47uuqd",
-    "amount": 0.07600095,
-    "usd": 6164.88,
-    "tx_count": 1,
-    "first_seen": 1741987561,
-    "last_seen": 1741987561
-   },
-   {
-    "address": "bc1qm5eme059n7dczpzzqj37tu0lr4fhyf4rlxf949",
-    "amount": 0.08544371,
-    "usd": 5938.0,
-    "tx_count": 1,
-    "first_seen": 1730514870,
-    "last_seen": 1730514870
-   },
-   {
-    "address": "bc1qgqtvdktwm96hjckszs4scxrmh54r4qp8tna024",
-    "amount": 0.06079956,
-    "usd": 5890.69,
-    "tx_count": 1,
-    "first_seen": 1746307802,
-    "last_seen": 1746307802
-   },
-   {
-    "address": "bc1qwq863uzekycznkcl6rlywt89sadfu35sx0hs92",
-    "amount": 0.07101195,
-    "usd": 5873.76,
-    "tx_count": 1,
-    "first_seen": 1742417445,
-    "last_seen": 1742417445
-   },
-   {
-    "address": "bc1qwdmrg7tqxga6huvw6ru632fzvqapk8qhdkvm76",
-    "amount": 0.06828233,
-    "usd": 5822.91,
-    "tx_count": 1,
-    "first_seen": 1744579296,
-    "last_seen": 1744579296
-   },
-   {
-    "address": "1NfQVes1hEPmSBvLYzZnU9u8wofuQ9AAtk",
-    "amount": 0.058,
-    "usd": 5494.11,
-    "tx_count": 1,
-    "first_seen": 1736594164,
-    "last_seen": 1736594164
-   },
-   {
-    "address": "bc1q7afw4snpl85mrpq2p93phth9wyevpu027cz5y8",
-    "amount": 0.08411515,
-    "usd": 5316.6,
-    "tx_count": 1,
-    "first_seen": 1728811025,
-    "last_seen": 1728811025
-   },
-   {
-    "address": "bc1qzdhpz3wtshlx6q5uhrttlx4epsxj27277vnqfa",
-    "amount": 0.08385446,
-    "usd": 5300.12,
-    "tx_count": 1,
-    "first_seen": 1728788210,
-    "last_seen": 1728788210
-   },
-   {
-    "address": "bc1qd6qv4rklsaxetac0h9qa7w3jcmqqtpvjajknxn",
-    "amount": 0.05386884,
-    "usd": 5273.76,
-    "tx_count": 1,
-    "first_seen": 1732530577,
-    "last_seen": 1732530577
-   },
-   {
-    "address": "bc1qkjmhxqspfjtxu9q8njch5u9jkt3zkx9l0gcz73",
-    "amount": 0.06255275,
-    "usd": 5268.4,
-    "tx_count": 1,
-    "first_seen": 1742596686,
-    "last_seen": 1742596686
-   },
-   {
-    "address": "bc1q9jk00fjhf8vc07rjex6j273ydzjt0h8pus7f98",
-    "amount": 0.05675488,
-    "usd": 5266.4,
-    "tx_count": 1,
-    "first_seen": 1735684495,
-    "last_seen": 1735684495
-   },
-   {
-    "address": "bc1qn3puvpu5ax3ydwnvh2k7qf2wdgwlxzqjptfsa3",
-    "amount": 0.06666427,
-    "usd": 5239.54,
-    "tx_count": 1,
-    "first_seen": 1741734960,
-    "last_seen": 1741734960
-   },
-   {
-    "address": "bc1qwgs0jp5z0e6t9g3em7knhvjhf8ng90rkycy887",
-    "amount": 0.08339087,
-    "usd": 5238.61,
-    "tx_count": 1,
-    "first_seen": 1728277174,
-    "last_seen": 1728277174
-   },
-   {
-    "address": "bc1qql73rwl04hqqjy8w87plyvzpvunw4t7ex47jj6",
-    "amount": 0.05729699,
-    "usd": 5191.45,
-    "tx_count": 1,
-    "first_seen": 1741291903,
-    "last_seen": 1741291903
-   },
-   {
-    "address": "bc1q0j7kynwqfexql6zwujv7wnzfgrhdvdxuexlzsw",
-    "amount": 0.05133682,
-    "usd": 5120.38,
-    "tx_count": 1,
-    "first_seen": 1733546372,
-    "last_seen": 1733546372
-   },
-   {
-    "address": "bc1q8wlnqguwgp6klc0xdf09yv5hma4fjjnvqyrp5n",
-    "amount": 0.05235035,
-    "usd": 5039.14,
-    "tx_count": 1,
-    "first_seen": 1740426572,
-    "last_seen": 1740426572
-   },
-   {
-    "address": "bc1q9y4r3np8eu5ljzg8sq5nkyunm05pegr6e0ln7n",
-    "amount": 0.05077081,
-    "usd": 5020.83,
-    "tx_count": 1,
-    "first_seen": 1732355484,
-    "last_seen": 1732355484
-   },
-   {
-    "address": "bc1qnyafnxy9gr2nrery9t655eqt6tjpdvcu5ew0ex",
-    "amount": 0.04949497,
-    "usd": 5004.42,
-    "tx_count": 1,
-    "first_seen": 1733736429,
-    "last_seen": 1733736429
-   },
-   {
-    "address": "12Wb77wD8zS7W4f6oGG7WyjMayxxh7Lqw4",
-    "amount": 0.055,
-    "usd": 4973.53,
-    "tx_count": 3,
-    "first_seen": 1744328754,
-    "last_seen": 1746561884
-   },
-   {
-    "address": "bc1q5746j8nslqzmpp3f0njfcn5lm0q63yrqslzhwt",
-    "amount": 0.05251885,
-    "usd": 4952.48,
-    "tx_count": 1,
-    "first_seen": 1735424241,
-    "last_seen": 1735424241
-   },
-   {
-    "address": "bc1qu8h0x8u30u6smfm232kvynd23l7jkegfxcea32",
-    "amount": 0.05594884,
-    "usd": 4856.46,
-    "tx_count": 1,
-    "first_seen": 1741466257,
-    "last_seen": 1741466257
-   },
-   {
-    "address": "bc1qtjyyme0uzx0ndvpvlssvk340llmr96u37vmnlg",
-    "amount": 0.04925556,
-    "usd": 4855.97,
-    "tx_count": 1,
-    "first_seen": 1733357794,
-    "last_seen": 1733357794
-   },
-   {
-    "address": "bc1qjhhn4g7frsrz9y9737rmxderv0sx9xm033v3z2",
-    "amount": 0.05673615,
-    "usd": 4831.56,
-    "tx_count": 1,
-    "first_seen": 1743559435,
-    "last_seen": 1743559435
-   },
-   {
-    "address": "bc1q45xyljxtw9x5lsag645cg8gygqtq8vnmgxghlp",
-    "amount": 0.06289924,
-    "usd": 4822.95,
-    "tx_count": 1,
-    "first_seen": 1731202880,
-    "last_seen": 1731202880
-   },
-   {
-    "address": "bc1qxn0hjcqsnx9k87hzs9y048vtwwr4t5fl0lwsck",
-    "amount": 0.05825952,
-    "usd": 4813.12,
-    "tx_count": 1,
-    "first_seen": 1744328754,
-    "last_seen": 1744328754
-   },
-   {
-    "address": "bc1qla7ypxpv233rru9m4klrdxy8fasx23uxu4wn93",
-    "amount": 0.05033239,
-    "usd": 4782.14,
-    "tx_count": 1,
-    "first_seen": 1745933898,
-    "last_seen": 1745933898
-   },
-   {
-    "address": "bc1qypzjs35kcuxjun4nw3ay8k3rw2kwnqgr02cf2d",
-    "amount": 0.06577008,
-    "usd": 4758.12,
-    "tx_count": 1,
-    "first_seen": 1730348175,
-    "last_seen": 1730348175
-   },
-   {
-    "address": "bc1qt5ruxd5s04q86k8qwsewvcncg2e9av59dp7g2z",
-    "amount": 0.0497769,
-    "usd": 4687.59,
-    "tx_count": 1,
-    "first_seen": 1746128533,
-    "last_seen": 1746128533
-   },
-   {
-    "address": "bc1q9gjmyteulqp3dsc04pmsmf5uu939alx0vq7nkn",
-    "amount": 0.07044208,
-    "usd": 4655.09,
-    "tx_count": 1,
-    "first_seen": 1729031976,
-    "last_seen": 1729031976
-   },
-   {
-    "address": "bc1qq97l4lsglfqeq0hhucyklwrrh4lk3y7lu8v0pw",
-    "amount": 0.0488924,
-    "usd": 4624.82,
-    "tx_count": 1,
-    "first_seen": 1735860138,
-    "last_seen": 1735860138
-   },
-   {
-    "address": "bc1qzyqg9zjfgjyk7fc2xce4sglvrrut83dlxktvx6",
-    "amount": 0.04523167,
-    "usd": 4624.29,
-    "tx_count": 1,
-    "first_seen": 1736285938,
-    "last_seen": 1736285938
-   },
-   {
-    "address": "bc1qx9xatztsvcjlrt0jn58wsrfpzuuz6wekrcqtgx",
-    "amount": 0.04370416,
-    "usd": 4532.41,
-    "tx_count": 1,
-    "first_seen": 1737668508,
-    "last_seen": 1737668508
-   },
-   {
-    "address": "bc1qkgeyparrcmquut4y6lwd3qyz0k7s03vjddmqzd",
-    "amount": 0.04777571,
-    "usd": 4503.82,
-    "tx_count": 1,
-    "first_seen": 1741027087,
-    "last_seen": 1741027087
-   },
-   {
-    "address": "bc1qm8p3fx3wuxxdvkqsjzda67hstaa4dsrgyeeqqw",
-    "amount": 0.04291389,
-    "usd": 4395.65,
-    "tx_count": 1,
-    "first_seen": 1738446974,
-    "last_seen": 1738446974
-   },
-   {
-    "address": "bc1qhu8529t626n46qpaxzygggw47q2pqnttteh3l8",
-    "amount": 0.06444233,
-    "usd": 4383.48,
-    "tx_count": 1,
-    "first_seen": 1730159931,
-    "last_seen": 1730159931
-   },
-   {
-    "address": "bc1qy3q0tse5spug7peygu9p5a48y90ep27wvgycfp",
-    "amount": 0.04346696,
-    "usd": 4355.56,
-    "tx_count": 1,
-    "first_seen": 1734613515,
-    "last_seen": 1734613515
-   },
-   {
-    "address": "bc1qkeyve4hjjnlhpf6wh5rgxk62e7el848lg27tzt",
-    "amount": 0.04527781,
-    "usd": 4340.17,
-    "tx_count": 1,
-    "first_seen": 1746401601,
-    "last_seen": 1746401601
-   },
-   {
-    "address": "bc1qms8xfkhqtkrmehkj77dgffgcxrpvrdmdc7uf7n",
-    "amount": 0.04528433,
-    "usd": 4331.17,
-    "tx_count": 1,
-    "first_seen": 1732884874,
-    "last_seen": 1732884874
-   },
-   {
-    "address": "bc1qul0ya7cjsgyjqgzkfn6ksugyfdw56hep3zmuvr",
-    "amount": 0.04094141,
-    "usd": 4293.55,
-    "tx_count": 1,
-    "first_seen": 1737814208,
-    "last_seen": 1737814208
-   },
-   {
-    "address": "bc1q4plgucfksf27vh7xw6vcz2t722zap2aqvpr49r",
-    "amount": 0.06287302,
-    "usd": 4265.94,
-    "tx_count": 1,
-    "first_seen": 1730840435,
-    "last_seen": 1730840435
-   },
-   {
-    "address": "bc1qe2qeu7pfykw3je8vk65hwx89a6520n484cl3m7",
-    "amount": 0.04182277,
-    "usd": 4203.08,
-    "tx_count": 1,
-    "first_seen": 1737028191,
-    "last_seen": 1737028191
-   },
-   {
-    "address": "bc1q6urjw8w784wppquvdruqr30hz2wkx36qlnuz0g",
-    "amount": 0.0472139,
-    "usd": 4185.42,
-    "tx_count": 1,
-    "first_seen": 1731443310,
-    "last_seen": 1731443310
-   },
-   {
-    "address": "bc1qsn3r6g307mw7cv66zfq82p0n5vkmjl2macdl7j",
-    "amount": 0.05425842,
-    "usd": 4100.42,
-    "tx_count": 1,
-    "first_seen": 1730984615,
-    "last_seen": 1730984615
-   },
-   {
-    "address": "bc1q7fhwpgvlp8yvng6rj6kesdvgdlvhed5jau2yxv",
-    "amount": 0.0599484,
-    "usd": 4099.15,
-    "tx_count": 1,
-    "first_seen": 1729428479,
-    "last_seen": 1729428479
-   },
-   {
-    "address": "bc1qg2qawsg5g9y787hzhcg6rws22hhjh95a4seg3f",
-    "amount": 0.05806479,
-    "usd": 4062.34,
-    "tx_count": 1,
-    "first_seen": 1730241264,
-    "last_seen": 1730241264
-   },
-   {
-    "address": "bc1qvf4w0fvv8jt90ec7x2ypfht6wy4wqpv8d9gsx3",
-    "amount": 0.04818178,
-    "usd": 3978.59,
-    "tx_count": 1,
-    "first_seen": 1742223200,
-    "last_seen": 1742223200
-   },
-   {
-    "address": "bc1qd5dhs5zwxysc2hp8ke5wa0v7ef6jd2ep8xh26c",
-    "amount": 0.04288448,
-    "usd": 3884.82,
-    "tx_count": 1,
-    "first_seen": 1731806160,
-    "last_seen": 1731806160
-   },
-   {
-    "address": "bc1q9kg9nul8uk0ahxgrzx06u7yd3us5l2mjh44xem",
-    "amount": 0.03913161,
-    "usd": 3846.83,
-    "tx_count": 1,
-    "first_seen": 1740144914,
-    "last_seen": 1740144914
-   },
-   {
-    "address": "bc1qa6cs8nzye54n7pg5vuvxd505h86p6aaspfz5nz",
-    "amount": 0.03793215,
-    "usd": 3843.87,
-    "tx_count": 1,
-    "first_seen": 1738187941,
-    "last_seen": 1738187941
-   },
-   {
-    "address": "bc1qr9rvw4q3ty20889829hyewrl3mukquwysyt5nc",
-    "amount": 0.05638845,
-    "usd": 3802.05,
-    "tx_count": 1,
-    "first_seen": 1729694394,
-    "last_seen": 1729694394
-   },
-   {
-    "address": "bc1qvum28rjyx3tss9n7nzdypwlcthe6hj7jfx5vaw",
-    "amount": 0.05984064,
-    "usd": 3759.18,
-    "tx_count": 1,
-    "first_seen": 1728331044,
-    "last_seen": 1728331044
-   },
-   {
-    "address": "bc1qr34mky7nfcct8033lg655e2t46azg6awrn4w7g",
-    "amount": 0.03919596,
-    "usd": 3756.56,
-    "tx_count": 1,
-    "first_seen": 1733238405,
-    "last_seen": 1733238405
-   },
-   {
-    "address": "bc1qk59l9jp8ur8pl72g46mrtthtmcgx6wc0qkmatj",
-    "amount": 0.03472589,
-    "usd": 3636.6,
-    "tx_count": 1,
-    "first_seen": 1738293203,
-    "last_seen": 1738293203
-   },
-   {
-    "address": "bc1qh593rnlmq90fllhlt97j8cgaszrmrgypyqljg9",
-    "amount": 0.03825503,
-    "usd": 3623.75,
-    "tx_count": 1,
-    "first_seen": 1736594164,
-    "last_seen": 1736594164
-   },
-   {
-    "address": "bc1qkeqxmq8jewnannawetwey0pkugp2hgen2hs70g",
-    "amount": 0.04147354,
-    "usd": 3621.7,
-    "tx_count": 1,
-    "first_seen": 1731650031,
-    "last_seen": 1731650031
-   },
-   {
-    "address": "bc1q2vezlux6wt6exzaykjlgnfsdn4ud8s5nyu8kn8",
-    "amount": 0.03743131,
-    "usd": 3615.6,
-    "tx_count": 1,
-    "first_seen": 1733932391,
-    "last_seen": 1733932391
-   },
-   {
-    "address": "bc1qyrua28uaq38p6lza2ry8tcz0wh2eclxgpx5369",
-    "amount": 0.03399658,
-    "usd": 3608.18,
-    "tx_count": 1,
-    "first_seen": 1734481684,
-    "last_seen": 1734481684
-   },
-   {
-    "address": "bc1qhn6l7a66z6vq4e4g2xz8gzjsp76c48wvjpmpjj",
-    "amount": 0.05370693,
-    "usd": 3580.57,
-    "tx_count": 1,
-    "first_seen": 1729742050,
-    "last_seen": 1729742050
-   },
-   {
-    "address": "bc1q6x7f9yqrdrxxwlj7cyrwaqcdx76m0ryw5eya4e",
-    "amount": 0.05689385,
-    "usd": 3558.14,
-    "tx_count": 1,
-    "first_seen": 1728714842,
-    "last_seen": 1728714842
-   },
-   {
-    "address": "bc1qpr47qkdylsvh40j49luw3zus22wpqegquauvhl",
-    "amount": 0.04212051,
-    "usd": 3533.48,
-    "tx_count": 1,
-    "first_seen": 1743878298,
-    "last_seen": 1743878298
-   },
-   {
-    "address": "bc1qg85d2z2l72ll7m467d32l4wpc84vtafxcnjcrs",
-    "amount": 0.04442942,
-    "usd": 3484.6,
-    "tx_count": 1,
-    "first_seen": 1744059765,
-    "last_seen": 1744059765
-   },
-   {
-    "address": "bc1qxfxfyrqysgyetjcp3pu64c7kx5chnucghl5hr2",
-    "amount": 0.0324709,
-    "usd": 3332.16,
-    "tx_count": 1,
-    "first_seen": 1737968758,
-    "last_seen": 1737968758
-   },
-   {
-    "address": "bc1qwyf76jejgnssfk8fp8slkdw96920y2aaz9gpls",
-    "amount": 0.03276412,
-    "usd": 3187.18,
-    "tx_count": 1,
-    "first_seen": 1733829159,
-    "last_seen": 1733829159
-   },
-   {
-    "address": "bc1qzwykffx8llpnsmyq66qecymlju2x7z8ym5t6pr",
-    "amount": 0.03504196,
-    "usd": 3166.92,
-    "tx_count": 1,
-    "first_seen": 1731553190,
-    "last_seen": 1731553190
-   },
-   {
-    "address": "bc1qdscs79demsmas3xawqnhuzhzvywu872ltm40wr",
-    "amount": 0.03614,
-    "usd": 3111.02,
-    "tx_count": 1,
-    "first_seen": 1742849786,
-    "last_seen": 1742849786
-   },
-   {
-    "address": "bc1qyef3n5jtnp2agygzvfxfzq5svmrr5zs70tmvpn",
-    "amount": 0.03200213,
-    "usd": 3110.13,
-    "tx_count": 1,
-    "first_seen": 1733145689,
-    "last_seen": 1733145689
-   },
-   {
-    "address": "bc1qw66klnkwn53je6xty50xgphqg9cpkxpr0f2dht",
-    "amount": 0.03158153,
-    "usd": 3085.53,
-    "tx_count": 1,
-    "first_seen": 1738610462,
-    "last_seen": 1738610462
-   },
-   {
-    "address": "bc1qyf4jg6wzsze9g5zwn6f0pkvjqqj5l68cdm9duq",
-    "amount": 0.04043424,
-    "usd": 3067.26,
-    "tx_count": 1,
-    "first_seen": 1731071912,
-    "last_seen": 1731071912
-   },
-   {
-    "address": "bc1qhxg34g6smtfmkxmcth22n88g2qge7apry64xq2",
-    "amount": 0.03541415,
-    "usd": 3053.45,
-    "tx_count": 1,
-    "first_seen": 1741122411,
-    "last_seen": 1741122411
-   },
-   {
-    "address": "bc1q0235359afem969d7w7vwtyqtptkwxsdcfvpyh4",
-    "amount": 0.0444447,
-    "usd": 2981.92,
-    "tx_count": 1,
-    "first_seen": 1730059069,
-    "last_seen": 1730059069
-   },
-   {
-    "address": "bc1qlakhq6rdn88mk32vc0vtv4gp6dgv6n3hxz9f4x",
-    "amount": 0.03123985,
-    "usd": 2973.61,
-    "tx_count": 1,
-    "first_seen": 1734978181,
-    "last_seen": 1734978181
-   },
-   {
-    "address": "bc1q0vccvxk2jnygsxsyrwuccqccm0lckc2dpyl05a",
-    "amount": 0.03030984,
-    "usd": 2963.19,
-    "tx_count": 1,
-    "first_seen": 1738754121,
-    "last_seen": 1738754121
-   },
-   {
-    "address": "bc1qmfx07y9t4d3pvujdz6jjwxjzq905vkqmze8w6w",
-    "amount": 0.02985136,
-    "usd": 2884.01,
-    "tx_count": 1,
-    "first_seen": 1738874895,
-    "last_seen": 1738874895
-   },
-   {
-    "address": "bc1qzhl7za60mz2f3wt0u33p92cm8qaxn5vlc60rw4",
-    "amount": 0.0293317,
-    "usd": 2883.81,
-    "tx_count": 1,
-    "first_seen": 1732241077,
-    "last_seen": 1732241077
-   },
-   {
-    "address": "bc1qhzaxl3htg7m9qpe3l0ddg98s4lqk5h0lddqafg",
-    "amount": 0.02998208,
-    "usd": 2868.44,
-    "tx_count": 1,
-    "first_seen": 1739998599,
-    "last_seen": 1739998599
-   },
-   {
-    "address": "bc1qdmp9d9jcknq5kk7g4gmq6qys0puzghxl25fuh0",
-    "amount": 0.02901943,
-    "usd": 2854.46,
-    "tx_count": 1,
-    "first_seen": 1736149175,
-    "last_seen": 1736149175
-   },
-   {
-    "address": "bc1q4egtd6uy0ym9xuar52l3j05zjnautxtdcnj645",
-    "amount": 0.03544708,
-    "usd": 2848.88,
-    "tx_count": 1,
-    "first_seen": 1731366848,
-    "last_seen": 1731366848
-   },
-   {
-    "address": "bc1qpjpyldf6yr3079rse0e54wmstzeg4a05r5elw7",
-    "amount": 0.02780817,
-    "usd": 2838.74,
-    "tx_count": 1,
-    "first_seen": 1738070413,
-    "last_seen": 1738070413
-   },
-   {
-    "address": "bc1qlvce2x0m0rwekfmzrdz9twuwd6t2ye7e03t4w3",
-    "amount": 0.03000258,
-    "usd": 2838.24,
-    "tx_count": 1,
-    "first_seen": 1736683153,
-    "last_seen": 1736683153
-   },
-   {
-    "address": "bc1qv969ah2efy5yfz26cw623sy39wjfc8208kntv6",
-    "amount": 0.04025538,
-    "usd": 2792.6,
-    "tx_count": 1,
-    "first_seen": 1730894069,
-    "last_seen": 1730894069
-   },
-   {
-    "address": "bc1q873a2z5r20k4gqgwvw8ns6780k8d3mduacvagg",
-    "amount": 0.04140657,
-    "usd": 2777.31,
-    "tx_count": 1,
-    "first_seen": 1729112463,
-    "last_seen": 1729112463
-   },
-   {
-    "address": "bc1q36pdl4wnledm7h8eqtvgjuppmdw42s4s2nh0u0",
-    "amount": 0.04200487,
-    "usd": 2775.85,
-    "tx_count": 1,
-    "first_seen": 1728991997,
-    "last_seen": 1728991997
-   },
-   {
-    "address": "bc1qdgshd4wnj5nk6v8n56c9dt54t4sd552dhy9leu",
-    "amount": 0.0396654,
-    "usd": 2751.78,
-    "tx_count": 1,
-    "first_seen": 1730674804,
-    "last_seen": 1730674804
-   },
-   {
-    "address": "bc1qzakcwku6fm0gesgn89gcc3cp28yjrwarq7rswa",
-    "amount": 0.02654868,
-    "usd": 2728.97,
-    "tx_count": 1,
-    "first_seen": 1747144711,
-    "last_seen": 1747144711
-   },
-   {
-    "address": "bc1qrl2rs7e72tha2t7dp9yx7dmkykt7mzmqukx358",
-    "amount": 0.03281697,
-    "usd": 2707.93,
-    "tx_count": 1,
-    "first_seen": 1743722638,
-    "last_seen": 1743722638
-   },
-   {
-    "address": "bc1qd6pq3gjusn6wctjgleq64w9agujctznlzh4wrv",
-    "amount": 0.0378544,
-    "usd": 2590.3,
-    "tx_count": 1,
-    "first_seen": 1729349171,
-    "last_seen": 1729349171
-   },
-   {
-    "address": "bc1qamneul5a9kmnacdcheg2rphs7dfdl3muav02nu",
-    "amount": 0.02650785,
-    "usd": 2526.2,
-    "tx_count": 1,
-    "first_seen": 1735512077,
-    "last_seen": 1735512077
-   },
-   {
-    "address": "bc1qhmpr5p76fqc6ga3pcrlzwclvhnpn3575ck3nxv",
-    "amount": 0.02577515,
-    "usd": 2488.7,
-    "tx_count": 1,
-    "first_seen": 1738958921,
-    "last_seen": 1738958921
-   },
-   {
-    "address": "bc1qmhzyuwyqxgj5v0epyf8ffe70p8l35wk2g0338w",
-    "amount": 0.02301074,
-    "usd": 2405.92,
-    "tx_count": 1,
-    "first_seen": 1737320969,
-    "last_seen": 1737320969
-   },
-   {
-    "address": "bc1qn64f08lsccw3wlktmj5tda0mz4ms3mltuyy5d7",
-    "amount": 0.02501777,
-    "usd": 2370.03,
-    "tx_count": 1,
-    "first_seen": 1746561884,
-    "last_seen": 1746561884
-   },
-   {
-    "address": "bc1q68rhfp8xgpejsl8s7p84655hjr9u9vnkj8azym",
-    "amount": 0.02401477,
-    "usd": 2367.55,
-    "tx_count": 1,
-    "first_seen": 1733390846,
-    "last_seen": 1733390846
-   },
-   {
-    "address": "bc1q02tafe7sjuzfjxx4549mut2evc82l4638kgx99",
-    "amount": 0.02784589,
-    "usd": 2334.62,
-    "tx_count": 1,
-    "first_seen": 1742761496,
-    "last_seen": 1742761496
-   },
-   {
-    "address": "bc1q5w9rlkge57vunac6ccstqlvnxx9n7wmsxl3t5g",
-    "amount": 0.02785012,
-    "usd": 2326.54,
-    "tx_count": 1,
-    "first_seen": 1743969775,
-    "last_seen": 1743969775
-   },
-   {
-    "address": "bc1q2w0tvtqe2pu9pwp273x948murcxe3afk87lwk5",
-    "amount": 0.03014512,
-    "usd": 2311.45,
-    "tx_count": 1,
-    "first_seen": 1731270181,
-    "last_seen": 1731270181
-   },
-   {
-    "address": "bc1qfs6cur35ktvuj29cyc20d38d9dxe7zf6mzcqvr",
-    "amount": 0.02261686,
-    "usd": 2190.08,
-    "tx_count": 1,
-    "first_seen": 1746609452,
-    "last_seen": 1746609452
-   },
-   {
-    "address": "bc1qdnygckj4rh0zzrsqx6vkgvnz4gyen73sp8rkyf",
-    "amount": 0.02223914,
-    "usd": 2177.21,
-    "tx_count": 1,
-    "first_seen": 1732574067,
-    "last_seen": 1732574067
-   },
-   {
-    "address": "bc1qd4wksmfs9yw4slvmdg79xxakuar3hjm59wc9rw",
-    "amount": 0.02485948,
-    "usd": 2170.87,
-    "tx_count": 1,
-    "first_seen": 1731682321,
-    "last_seen": 1731682321
-   },
-   {
-    "address": "bc1qzn7zqjjyc8gkn3373y6hz69eadn89qm9t5cagx",
-    "amount": 0.02478281,
-    "usd": 2081.34,
-    "tx_count": 1,
-    "first_seen": 1742074161,
-    "last_seen": 1742074161
-   },
-   {
-    "address": "1ALghftdrNP4XKKrrUQemu9Ss99xMwqoZN",
-    "amount": 0.02000004,
-    "usd": 1890.24,
-    "tx_count": 5,
-    "first_seen": 1736594164,
-    "last_seen": 1745357587
-   },
-   {
-    "address": "bc1qzm3pfj6spnek4hu4u24795lwg42rqh89avvn7f",
-    "amount": 0.02101952,
-    "usd": 1767.51,
-    "tx_count": 1,
-    "first_seen": 1742675798,
-    "last_seen": 1742675798
-   },
-   {
-    "address": "bc1qsctxwrh9m88h6d6l5yfral8r67jujcm9uvv75h",
-    "amount": 0.02296042,
-    "usd": 1595.66,
-    "tx_count": 1,
-    "first_seen": 1730567848,
-    "last_seen": 1730567848
-   },
-   {
-    "address": "bc1qvlcry9aehhzw2zzf8u5cc0vmcnh4mm2hg9n624",
-    "amount": 0.01707223,
-    "usd": 1453.84,
-    "tx_count": 1,
-    "first_seen": 1743616999,
-    "last_seen": 1743616999
-   },
-   {
-    "address": "bc1qq6nvndw6zh70nc3whu6nxjj4lt24zauwjn4jet",
-    "amount": 0.02168184,
-    "usd": 1345.53,
-    "tx_count": 1,
-    "first_seen": 1728183389,
-    "last_seen": 1728183389
-   },
-   {
-    "address": "bc1qvty3wcm3jhylc9da9jglt0jfyn95r0ddk48aj9",
-    "amount": 0.01263367,
-    "usd": 1324.13,
-    "tx_count": 1,
-    "first_seen": 1746990241,
-    "last_seen": 1746990241
-   },
-   {
-    "address": "bc1qvrc6vd39lze6smhff57l96jkg9amkweegrhuul",
-    "amount": 0.01565098,
-    "usd": 1076.41,
-    "tx_count": 1,
-    "first_seen": 1730719458,
-    "last_seen": 1730719458
-   },
-   {
-    "address": "bc1qar3g7v8rkex3j7a6u6decdgt8lvtpm3td452gd",
-    "amount": 0.01037658,
-    "usd": 1011.72,
-    "tx_count": 1,
-    "first_seen": 1739643154,
-    "last_seen": 1739643154
-   },
-   {
-    "address": "bc1qk4slhpqmk6ytcvc58a4pxq073zsxdqg62dx97d",
-    "amount": 0.01420573,
-    "usd": 985.48,
-    "tx_count": 1,
-    "first_seen": 1730914764,
-    "last_seen": 1730914764
-   },
-   {
-    "address": "bc1qwnk8yeu74e4hka49phlawp2rkvsas06w970s79",
-    "amount": 0.00747462,
-    "usd": 768.33,
-    "tx_count": 1,
-    "first_seen": 1747162528,
-    "last_seen": 1747162528
-   },
-   {
-    "address": "bc1q0e6kv9604awnkr9sk6pyss8s0hjdnt6yy5e84l",
-    "amount": 0.0013588,
-    "usd": 118.66,
-    "tx_count": 1,
-    "first_seen": 1731631535,
-    "last_seen": 1731631535
-   },
-   {
-    "address": "3EBKxnBP1aRiL6yFwNtiaZryZuYFQrdn9R",
-    "amount": 0.00146306,
-    "usd": 99.52,
-    "tx_count": 1,
-    "first_seen": 1730076354,
-    "last_seen": 1730076354
-   },
-   {
-    "address": "39mj1Rp4ukDpcVLXi9HCLREYpeorPj1JyG",
-    "amount": 0.001052,
-    "usd": 71.56,
-    "tx_count": 1,
-    "first_seen": 1730076354,
-    "last_seen": 1730076354
-   },
-   {
-    "address": "1AvZBBYkocHhXDoWaswPevMsN7bMDwy6xM",
-    "amount": 8.317e-05,
-    "usd": 7.26,
-    "tx_count": 1,
-    "first_seen": 1731631535,
-    "last_seen": 1731631535
-   }
-  ],
-  "total_sent_coin": 7.39541203,
-  "total_sent_usd": 624220.92,
-  "distinct_destinations": 141,
-  "unpriced_transfers": 0,
-  "price_source": "Binance BTCUSDT daily open (UTC), live rate at tx day"
+ "summary": {
+  "btc": {
+   "in": 5.7494681,
+   "out": 5.7494681,
+   "in_usd": 475371.55999041,
+   "out_usd": 476988.2614496,
+   "fees": 0.08126502,
+   "fees_usd": 6853.29193087,
+   "to_dest": 5.66820308,
+   "to_dest_usd": 470134.96951872,
+   "n_txs": 8860,
+   "n_sweep_txs": 47,
+   "addresses": 4083
+  },
+  "ltc": {
+   "in": 6853.86737339,
+   "out": 6853.86737339,
+   "in_usd": 618718.90633221,
+   "out_usd": 619179.13411656,
+   "fees": 0.72448138,
+   "fees_usd": 68.29383719,
+   "to_dest": 6853.14289201,
+   "to_dest_usd": 619110.84027937,
+   "n_txs": 14869,
+   "n_sweep_txs": 0,
+   "addresses": 4857
+  },
+  "price_source": "Binance daily open (UTC) on tx day",
+  "attribution": "Sweep txs (shared inputs): destinations credited with our net contribution = our inputs - proportional fee share - change back to us"
  },
- "ltc": {
-  "coin": "LTC",
-  "destinations": [
-   {
-    "address": "LYaQTr1QDSXnmDdi38A13WXWDiyuWw9h7G",
-    "amount": 916.97357483,
-    "usd": 74784.1,
-    "tx_count": 49,
-    "first_seen": 1728435385,
-    "last_seen": 1737202255
-   },
-   {
-    "address": "LeVXYdaeaX7Gtm8AXe87wc5U2uqiMQM4Cq",
-    "amount": 478.39531217,
-    "usd": 45571.15,
-    "tx_count": 31,
-    "first_seen": 1739661441,
-    "last_seen": 1746989958
-   },
-   {
-    "address": "LgZGiNoBd1tLwoNg2VjfU7vjFHqHdS6jis",
-    "amount": 424.89127181,
-    "usd": 43800.52,
-    "tx_count": 39,
-    "first_seen": 1737380979,
-    "last_seen": 1746560892
-   },
-   {
-    "address": "ltc1q6ysrmm54arwsxq3n7evy296slmvcu2el5jgng2",
-    "amount": 100.14889276,
-    "usd": 7087.54,
-    "tx_count": 1,
-    "first_seen": 1729560263,
-    "last_seen": 1729560263
-   },
-   {
-    "address": "ltc1qhz6xuu6znrr44e9w0kfhz273m07fne78d0yv7v",
-    "amount": 66.19599282,
-    "usd": 6437.56,
-    "tx_count": 1,
-    "first_seen": 1732762038,
-    "last_seen": 1732762038
-   },
-   {
-    "address": "ltc1qtltg229wfy6npenntcqsht5f7u9jp9vh23xezw",
-    "amount": 52.69852848,
-    "usd": 5414.77,
-    "tx_count": 1,
-    "first_seen": 1733058749,
-    "last_seen": 1733058749
-   },
-   {
-    "address": "ltc1q6d5sq0mr7le4qhlweul9g7vjpcv2udukgq2rc2",
-    "amount": 53.6987061,
-    "usd": 5401.02,
-    "tx_count": 1,
-    "first_seen": 1735423586,
-    "last_seen": 1735423586
-   },
-   {
-    "address": "ltc1q8t0tf74t7kusx289e7y5jmzvkkg79fufexuudc",
-    "amount": 75.36335746,
-    "usd": 5295.78,
-    "tx_count": 1,
-    "first_seen": 1730514499,
-    "last_seen": 1730514499
-   },
-   {
-    "address": "LgzbsbLsmev66YVzQdXqEfTTTBoRqmUUTf",
-    "amount": 78.11185458,
-    "usd": 5191.61,
-    "tx_count": 5,
-    "first_seen": 1728158828,
-    "last_seen": 1728345053
-   },
-   {
-    "address": "ltc1q75vtnrxte5a4dvpp3yaw5f50xzyysglvhwdj2v",
-    "amount": 48.77338016,
-    "usd": 5091.94,
-    "tx_count": 1,
-    "first_seen": 1736682781,
-    "last_seen": 1736682781
-   },
-   {
-    "address": "ltc1q8zggprvfzgwxyz8s2wdu3vq84w2cdky88ecv7z",
-    "amount": 51.85438482,
-    "usd": 4948.98,
-    "tx_count": 1,
-    "first_seen": 1731805883,
-    "last_seen": 1731805883
-   },
-   {
-    "address": "ltc1qn8p8nk539rdjyjyeph3qwt0u2v7wnk8pj4r67j",
-    "amount": 37.44509526,
-    "usd": 4741.3,
-    "tx_count": 1,
-    "first_seen": 1739551377,
-    "last_seen": 1739551377
-   },
-   {
-    "address": "ltc1qpetqtjg23c2m3lnf93jwfcd6cvlep4k0vcq6xq",
-    "amount": 33.3603502,
-    "usd": 4500.64,
-    "tx_count": 1,
-    "first_seen": 1733736720,
-    "last_seen": 1733736720
-   },
-   {
-    "address": "ltc1qa9dcqwwwgnkuf3w4ym3mw4s9lv9ntzq8g2ytmz",
-    "amount": 48.19538319,
-    "usd": 4496.15,
-    "tx_count": 1,
-    "first_seen": 1742596314,
-    "last_seen": 1742596314
-   },
-   {
-    "address": "ltc1q9vl8ktqjuntd6q294t8gzcmute9dfg9fklqvrm",
-    "amount": 64.24182543,
-    "usd": 4421.76,
-    "tx_count": 1,
-    "first_seen": 1729971752,
-    "last_seen": 1729971752
-   },
-   {
-    "address": "ltc1qmx6sz265vdqljg34lgn6spyxe7j2lajh8fazln",
-    "amount": 45.56381046,
-    "usd": 4416.04,
-    "tx_count": 1,
-    "first_seen": 1732515517,
-    "last_seen": 1732515517
-   },
-   {
-    "address": "ltc1qt997d8w8cc0tsqg936e5rkxrszmuc5hjm2m08w",
-    "amount": 67.00222577,
-    "usd": 4401.38,
-    "tx_count": 1,
-    "first_seen": 1728435385,
-    "last_seen": 1728435385
-   },
-   {
-    "address": "ltc1qrw9pmpfxy3g4fqndf66nya2kzy29xhsx5rphc9",
-    "amount": 38.52040412,
-    "usd": 4032.7,
-    "tx_count": 1,
-    "first_seen": 1739114712,
-    "last_seen": 1739114712
-   },
-   {
-    "address": "MLJfLK5kzy7NNE1sxGidpuqBdFqcMUSEZM",
-    "amount": 29.50330729,
-    "usd": 3921.87,
-    "tx_count": 1,
-    "first_seen": 1733237796,
-    "last_seen": 1733237796
-   },
-   {
-    "address": "ltc1qrgulgxych9y39fep3y9dgddt8z5jvx96xcfv3l",
-    "amount": 44.19586329,
-    "usd": 3853.88,
-    "tx_count": 1,
-    "first_seen": 1731962157,
-    "last_seen": 1731962157
-   },
-   {
-    "address": "ltc1qpyyy6s5zy96kdvx4apmek9ew9cqlq8gdl54qlz",
-    "amount": 50.37099782,
-    "usd": 3829.71,
-    "tx_count": 1,
-    "first_seen": 1744328487,
-    "last_seen": 1744328487
-   },
-   {
-    "address": "ltc1q5yjktv0lw6pzvttr3qqfmzpxhjaxd0lsyjfl25",
-    "amount": 58.0447954,
-    "usd": 3805.42,
-    "tx_count": 1,
-    "first_seen": 1730840254,
-    "last_seen": 1730840254
-   },
-   {
-    "address": "ltc1quj2vpdn7rql4leyx08xjlzpns26vz9ukjtljh8",
-    "amount": 34.87515198,
-    "usd": 3669.91,
-    "tx_count": 1,
-    "first_seen": 1735860302,
-    "last_seen": 1735860302
-   },
-   {
-    "address": "ltc1qzjxhzx5650dyr47090gr6fh94lnyll3hply7y8",
-    "amount": 30.60241986,
-    "usd": 3582.63,
-    "tx_count": 1,
-    "first_seen": 1737969207,
-    "last_seen": 1737969207
-   },
-   {
-    "address": "ltc1q3ca8vdlttysmhrfcupjw7h4mp30462qumaq94n",
-    "amount": 32.05999727,
-    "usd": 3540.39,
-    "tx_count": 1,
-    "first_seen": 1733829064,
-    "last_seen": 1733829064
-   },
-   {
-    "address": "ltc1q8zyps9wa4jyhtxe47s3af3pzqsv3kgzqlhz2w8",
-    "amount": 46.20974117,
-    "usd": 3538.74,
-    "tx_count": 1,
-    "first_seen": 1731351129,
-    "last_seen": 1731351129
-   },
-   {
-    "address": "ltc1qvck8tg9fdlsnmnthj32fv25smn8tj4a5mxw3hy",
-    "amount": 29.55011368,
-    "usd": 3519.71,
-    "tx_count": 1,
-    "first_seen": 1737577565,
-    "last_seen": 1737577565
-   },
-   {
-    "address": "ltc1qwnq7nyd65hh5e4jlm78z84qwaxvjfgf7y0nhve",
-    "amount": 34.70871382,
-    "usd": 3518.42,
-    "tx_count": 1,
-    "first_seen": 1734743131,
-    "last_seen": 1734743131
-   },
-   {
-    "address": "ltc1qx9d4em0e23spcmp6372f8get0006xjhf35j58s",
-    "amount": 35.33776734,
-    "usd": 3376.17,
-    "tx_count": 1,
-    "first_seen": 1732885075,
-    "last_seen": 1732885075
-   },
-   {
-    "address": "ltc1que6q67wl7pgew4j9ycm7hf2lrqjyke6exgvv40",
-    "amount": 33.92596288,
-    "usd": 3372.24,
-    "tx_count": 1,
-    "first_seen": 1735684345,
-    "last_seen": 1735684345
-   },
-   {
-    "address": "ltc1qsvj2hfenhhkfshagny2az4xxkf426ylytw7jjf",
-    "amount": 32.81122149,
-    "usd": 3361.51,
-    "tx_count": 1,
-    "first_seen": 1736936253,
-    "last_seen": 1736936253
-   },
-   {
-    "address": "MFQfcrEkMBSTupNSE5KKXwQtAaCBd7BnVB",
-    "amount": 30.0,
-    "usd": 3336.6,
-    "tx_count": 1,
-    "first_seen": 1736079107,
-    "last_seen": 1736079107
-   },
-   {
-    "address": "ltc1qxsn8dn6al07evlhkjjk0y6yud0xj2w27fuyt42",
-    "amount": 50.73516449,
-    "usd": 3327.72,
-    "tx_count": 1,
-    "first_seen": 1728710849,
-    "last_seen": 1728710849
-   },
-   {
-    "address": "MGtPPhuPEDSAYTvGxo2Hjevyepk2x28D8b",
-    "amount": 51.39544504,
-    "usd": 3319.63,
-    "tx_count": 1,
-    "first_seen": 1728546192,
-    "last_seen": 1728546192
-   },
-   {
-    "address": "ltc1q96ltw3x2wacuaumky6ahksvg5kh9e4d938kerw",
-    "amount": 30.00859896,
-    "usd": 3295.54,
-    "tx_count": 1,
-    "first_seen": 1735215411,
-    "last_seen": 1735215411
-   },
-   {
-    "address": "ltc1qs79s04evzxgjzj52q4r3w79sy2seqhgtgzfy43",
-    "amount": 39.07242102,
-    "usd": 3218.4,
-    "tx_count": 1,
-    "first_seen": 1731630524,
-    "last_seen": 1731630524
-   },
-   {
-    "address": "MFfN7ekRizPuVPPp5bmpXBJ5Ww4afDwGSS",
-    "amount": 48.17633876,
-    "usd": 3188.79,
-    "tx_count": 1,
-    "first_seen": 1728810891,
-    "last_seen": 1728810891
-   },
-   {
-    "address": "MAHUWU98iSqGEGA9zb6zA49Y621uhKbEAy",
-    "amount": 43.77913637,
-    "usd": 3186.68,
-    "tx_count": 1,
-    "first_seen": 1729216680,
-    "last_seen": 1729216680
-   },
-   {
-    "address": "ltc1q335gvlrtxvhk2etwhpyn67lnks3racz83fuudc",
-    "amount": 30.61808653,
-    "usd": 3144.78,
-    "tx_count": 1,
-    "first_seen": 1736342066,
-    "last_seen": 1736342066
-   },
-   {
-    "address": "ltc1q34x7yzcemxw4t44wxutzp23fnfx6zukzqf83ur",
-    "amount": 23.90729829,
-    "usd": 3129.47,
-    "tx_count": 1,
-    "first_seen": 1733321265,
-    "last_seen": 1733321265
-   },
-   {
-    "address": "ltc1qy9yt8mzuq6cv3ksj9ln33hej892uw8z2wdfkcu",
-    "amount": 26.12293417,
-    "usd": 3123.52,
-    "tx_count": 1,
-    "first_seen": 1733143082,
-    "last_seen": 1733143082
-   },
-   {
-    "address": "MDxyyA7VNzDsu1oFvBkLazGfTe4sPKMqCZ",
-    "amount": 46.53722445,
-    "usd": 3110.55,
-    "tx_count": 1,
-    "first_seen": 1729031339,
-    "last_seen": 1729031339
-   },
-   {
-    "address": "MQLRVi3YSwXW8FscNd4x3bZdrhfKkwZqBR",
-    "amount": 24.60068103,
-    "usd": 3063.28,
-    "tx_count": 1,
-    "first_seen": 1734203691,
-    "last_seen": 1734203691
-   },
-   {
-    "address": "MTWXgxrfNcZs3zCnhHAN8vjnVon3A5Hqsw",
-    "amount": 41.36484271,
-    "usd": 3060.58,
-    "tx_count": 1,
-    "first_seen": 1730299417,
-    "last_seen": 1730299417
-   },
-   {
-    "address": "ltc1qr3m67mna93255hcf7yyqsexyne4jwsfen5eeg6",
-    "amount": 23.77672342,
-    "usd": 3045.56,
-    "tx_count": 1,
-    "first_seen": 1738440957,
-    "last_seen": 1738440957
-   },
-   {
-    "address": "ltc1qzp9864m880y2shxj5fv4sd8hwletk2e68dysd7",
-    "amount": 40.43244244,
-    "usd": 2943.08,
-    "tx_count": 1,
-    "first_seen": 1731188638,
-    "last_seen": 1731188638
-   },
-   {
-    "address": "ltc1q30nanjhg69j8wc642xsf28n8hzd2kpaf99yxkj",
-    "amount": 38.60646752,
-    "usd": 2941.43,
-    "tx_count": 1,
-    "first_seen": 1744471596,
-    "last_seen": 1744471596
-   },
-   {
-    "address": "MQdDPSXgunB63cMjUzzPTU8ELv7xdNMzY9",
-    "amount": 36.66688325,
-    "usd": 2934.82,
-    "tx_count": 1,
-    "first_seen": 1731442655,
-    "last_seen": 1731442655
-   },
-   {
-    "address": "ltc1q2c9l32y8n03ctqgpw9yw5h2tv095kz2elk4cu6",
-    "amount": 21.49232327,
-    "usd": 2921.67,
-    "tx_count": 1,
-    "first_seen": 1733545516,
-    "last_seen": 1733545516
-   },
-   {
-    "address": "ltc1qhauqnw8hxz5l2jd59wt8j5shjt8t26k8qe0jta",
-    "amount": 24.19356088,
-    "usd": 2884.6,
-    "tx_count": 1,
-    "first_seen": 1734087742,
-    "last_seen": 1734087742
-   },
-   {
-    "address": "MSJBZD6pKVo4jFUpMfmsd6UdHgXwYx9Qvd",
-    "amount": 40.0,
-    "usd": 2830.8,
-    "tx_count": 1,
-    "first_seen": 1729638574,
-    "last_seen": 1729638574
-   },
-   {
-    "address": "MLzZP8t4y91CcdGVoygXamm62wBsknAUB9",
-    "amount": 24.13637826,
-    "usd": 2822.99,
-    "tx_count": 1,
-    "first_seen": 1737027320,
-    "last_seen": 1737027320
-   },
-   {
-    "address": "ltc1q4n2xz87lzta3m3jkmzs4qr9xhsc63tz8q4gm76",
-    "amount": 24.25760525,
-    "usd": 2790.84,
-    "tx_count": 1,
-    "first_seen": 1738068522,
-    "last_seen": 1738068522
-   },
-   {
-    "address": "ltc1qdxev39eusnsp85khe2atga9j8jtp8vpuxn6a20",
-    "amount": 40.74277364,
-    "usd": 2789.66,
-    "tx_count": 1,
-    "first_seen": 1730059221,
-    "last_seen": 1730059221
-   },
-   {
-    "address": "ltc1q3aal2qferj3a8f3gtthu8k90gel2u26ektnu4h",
-    "amount": 27.37955245,
-    "usd": 2758.49,
-    "tx_count": 1,
-    "first_seen": 1735511773,
-    "last_seen": 1735511773
-   },
-   {
-    "address": "MAKWhz6WqUYXL7q3MYPhM6NzGTGJv5itpM",
-    "amount": 25.33243132,
-    "usd": 2704.49,
-    "tx_count": 1,
-    "first_seen": 1735042586,
-    "last_seen": 1735042586
-   },
-   {
-    "address": "ltc1qc67uejrahhgyqz4dc2kzv4eutam9atkxsj4h90",
-    "amount": 29.39451184,
-    "usd": 2689.01,
-    "tx_count": 1,
-    "first_seen": 1742850185,
-    "last_seen": 1742850185
-   },
-   {
-    "address": "ltc1qfac35tmeackwsu2vqxf4r3f7d9stjy3xnfwhh8",
-    "amount": 30.48049742,
-    "usd": 2685.03,
-    "tx_count": 1,
-    "first_seen": 1741957797,
-    "last_seen": 1741957797
-   },
-   {
-    "address": "ML3QpVLAzV1RrcrWxx7PYUdGd5AFgGFZiF",
-    "amount": 22.74501724,
-    "usd": 2647.97,
-    "tx_count": 1,
-    "first_seen": 1737718905,
-    "last_seen": 1737718905
-   },
-   {
-    "address": "ltc1q66ehlgpfm8jgc76ew4ar377l9j75xze7l7u8cu",
-    "amount": 29.79069906,
-    "usd": 2646.9,
-    "tx_count": 1,
-    "first_seen": 1746218433,
-    "last_seen": 1746218433
-   },
-   {
-    "address": "MAvA6ELLQBnQyNVRAxKwyYSUeFEAdZ9Rx7",
-    "amount": 19.27022632,
-    "usd": 2640.79,
-    "tx_count": 1,
-    "first_seen": 1737202255,
-    "last_seen": 1737202255
-   },
-   {
-    "address": "MCvWRiddzzWTYjxq4ELGtx9Yh3S3Ah5FGf",
-    "amount": 35.30384299,
-    "usd": 2611.78,
-    "tx_count": 1,
-    "first_seen": 1731269885,
-    "last_seen": 1731269885
-   },
-   {
-    "address": "MDZwCwNvmZRK5gngQKs5funj4VfT3PPoMw",
-    "amount": 40.0,
-    "usd": 2598.0,
-    "tx_count": 1,
-    "first_seen": 1728158828,
-    "last_seen": 1728158828
-   },
-   {
-    "address": "MGEU3SKSt8NZGD7Ns46JNQGs8hA1ci2CFq",
-    "amount": 35.88916401,
-    "usd": 2564.64,
-    "tx_count": 1,
-    "first_seen": 1731071342,
-    "last_seen": 1731071342
-   },
-   {
-    "address": "MSCKtEKMjA75vVNtAnPwEk5VsED8pWvCy8",
-    "amount": 25.0,
-    "usd": 2534.25,
-    "tx_count": 1,
-    "first_seen": 1734743131,
-    "last_seen": 1734743131
-   },
-   {
-    "address": "ltc1q8ktk2775dpr9krsq500tzasa0h0ka5zzu9m2mf",
-    "amount": 23.0582307,
-    "usd": 2531.56,
-    "tx_count": 1,
-    "first_seen": 1733917478,
-    "last_seen": 1733917478
-   },
-   {
-    "address": "ltc1q7ez7uruk23rpplqgna4h2zfdmurzjkfq8rqfnp",
-    "amount": 30.55814682,
-    "usd": 2526.55,
-    "tx_count": 1,
-    "first_seen": 1743967636,
-    "last_seen": 1743967636
-   },
-   {
-    "address": "ltc1q0aky486pd35wzwx2jj5ww9aasve29ucxusxgnu",
-    "amount": 38.88627268,
-    "usd": 2519.83,
-    "tx_count": 1,
-    "first_seen": 1728907466,
-    "last_seen": 1728907466
-   },
-   {
-    "address": "ltc1q0qemnjhmyfvrmen8qdygag6ydntfpepf8p2jah",
-    "amount": 24.36145318,
-    "usd": 2518.49,
-    "tx_count": 1,
-    "first_seen": 1738872519,
-    "last_seen": 1738872519
-   },
-   {
-    "address": "MJCGgGPAxRBNAqKNLUZ4GUB4YYuY1kWHGL",
-    "amount": 30.08488849,
-    "usd": 2509.38,
-    "tx_count": 1,
-    "first_seen": 1732193330,
-    "last_seen": 1732193330
-   },
-   {
-    "address": "ltc1q7dx7xksjwp9cas8872fwntuwnygvwfkkwzkvk0",
-    "amount": 37.71995623,
-    "usd": 2500.83,
-    "tx_count": 1,
-    "first_seen": 1728241851,
-    "last_seen": 1728241851
-   },
-   {
-    "address": "MK9KcTNmynPuTKLVPeYfWWgWHfkaaTSJrZ",
-    "amount": 33.37816945,
-    "usd": 2500.02,
-    "tx_count": 1,
-    "first_seen": 1729427471,
-    "last_seen": 1729427471
-   },
-   {
-    "address": "ltc1qrkvnyx0n6tnj3vs9495v8c4vkw8hqlkn9fx4tx",
-    "amount": 29.4212001,
-    "usd": 2485.5,
-    "tx_count": 1,
-    "first_seen": 1743558345,
-    "last_seen": 1743558345
-   },
-   {
-    "address": "MVpX1AnAsa6HAE8z9ywW22kSMsFzUgijnS",
-    "amount": 21.02322193,
-    "usd": 2466.02,
-    "tx_count": 1,
-    "first_seen": 1734000203,
-    "last_seen": 1734000203
-   },
-   {
-    "address": "MUuo7hv1ZUHd23vxgi4Dn3nKrubeknqF7u",
-    "amount": 22.36638359,
-    "usd": 2440.84,
-    "tx_count": 1,
-    "first_seen": 1738609012,
-    "last_seen": 1738609012
-   },
-   {
-    "address": "MU8jZPfPGaivBbvEn6BedEVk3saxK9jLWZ",
-    "amount": 34.23763996,
-    "usd": 2434.3,
-    "tx_count": 1,
-    "first_seen": 1730147206,
-    "last_seen": 1730147206
-   },
-   {
-    "address": "ltc1quv4g6me3veljsu3uz7jsmkgj2ehlxjnst8tuhx",
-    "amount": 26.90252764,
-    "usd": 2408.05,
-    "tx_count": 1,
-    "first_seen": 1732241075,
-    "last_seen": 1732241075
-   },
-   {
-    "address": "ltc1qt6prlyh5yvrnfpxt6480wgs3ruhlazjpg20kh9",
-    "amount": 27.38933485,
-    "usd": 2396.29,
-    "tx_count": 1,
-    "first_seen": 1741734893,
-    "last_seen": 1741734893
-   },
-   {
-    "address": "M8gom1f8mwym9bSueMdaMtugERHJXRwbQq",
-    "amount": 20.0,
-    "usd": 2382.2,
-    "tx_count": 1,
-    "first_seen": 1737577565,
-    "last_seen": 1737577565
-   },
-   {
-    "address": "MFvJhPaZimwUYMCjv6UBPCuVt95ipom2Lc",
-    "amount": 20.58212298,
-    "usd": 2378.47,
-    "tx_count": 1,
-    "first_seen": 1737380979,
-    "last_seen": 1737380979
-   },
-   {
-    "address": "MVLAkqhWP1FkVJujeSEsE6dRCbwWg7nCih",
-    "amount": 27.36629047,
-    "usd": 2371.84,
-    "tx_count": 1,
-    "first_seen": 1732108299,
-    "last_seen": 1732108299
-   },
-   {
-    "address": "ltc1qpzdcchtepvfen84m3ysvwsku5kftx88e5e6gds",
-    "amount": 23.38257529,
-    "usd": 2371.69,
-    "tx_count": 1,
-    "first_seen": 1736426692,
-    "last_seen": 1736426692
-   },
-   {
-    "address": "ltc1qu8v9nzzvzsq8sz650w6ksedvk6045h25a9aujq",
-    "amount": 17.38805993,
-    "usd": 2345.3,
-    "tx_count": 1,
-    "first_seen": 1740083994,
-    "last_seen": 1740083994
-   },
-   {
-    "address": "MCRK8SWRWnyv7VV4hj2vDjyDxk2BQHqzTH",
-    "amount": 32.99797762,
-    "usd": 2338.57,
-    "tx_count": 1,
-    "first_seen": 1729117926,
-    "last_seen": 1729117926
-   },
-   {
-    "address": "MCoU863747eKRwhma8hUucyEgV3nWRGiP4",
-    "amount": 23.06040922,
-    "usd": 2330.95,
-    "tx_count": 1,
-    "first_seen": 1738754262,
-    "last_seen": 1738754262
-   },
-   {
-    "address": "ltc1qrluwymhspj7rensfs9tl22j6xj53pcw2pvh43j",
-    "amount": 33.00922605,
-    "usd": 2319.56,
-    "tx_count": 1,
-    "first_seen": 1730567535,
-    "last_seen": 1730567535
-   },
-   {
-    "address": "MH2vyHSbuLoPy96euzYyMB69p2QMEPzrdt",
-    "amount": 20.9805173,
-    "usd": 2306.18,
-    "tx_count": 1,
-    "first_seen": 1738149972,
-    "last_seen": 1738149972
-   },
-   {
-    "address": "MWdR8ugMv1EETcaKPWtkMzXzNJTqLbvRV6",
-    "amount": 25.29232637,
-    "usd": 2287.69,
-    "tx_count": 1,
-    "first_seen": 1741815631,
-    "last_seen": 1741815631
-   },
-   {
-    "address": "MJTWYfyQZgd7ShGDtYL2iB48HrvUvRWYLs",
-    "amount": 20.0,
-    "usd": 2280.0,
-    "tx_count": 1,
-    "first_seen": 1736251511,
-    "last_seen": 1736251511
-   },
-   {
-    "address": "MVt2TRa7HSkStTeYRxYPabeW8Zjp9dyQsC",
-    "amount": 25.44356249,
-    "usd": 2277.45,
-    "tx_count": 1,
-    "first_seen": 1732295944,
-    "last_seen": 1732295944
-   },
-   {
-    "address": "ltc1q2jxgfxfsfk24rwkmmqpvf8928l7se6kdvw62yt",
-    "amount": 32.30114264,
-    "usd": 2262.7,
-    "tx_count": 1,
-    "first_seen": 1729742072,
-    "last_seen": 1729742072
-   },
-   {
-    "address": "MRZTCnJN5CCxuZKMqFfQzDvqRDPakJy636",
-    "amount": 30.43355621,
-    "usd": 2225.0,
-    "tx_count": 1,
-    "first_seen": 1729297096,
-    "last_seen": 1729297096
-   },
-   {
-    "address": "MMdjeY3RUGzK8Fsq47T2kQVdPEQXArNSYg",
-    "amount": 32.03284564,
-    "usd": 2216.67,
-    "tx_count": 1,
-    "first_seen": 1730674427,
-    "last_seen": 1730674427
-   },
-   {
-    "address": "MPbs7bVSAo8BCkVmZrzu2qpxh5FxiEQwFJ",
-    "amount": 18.60529096,
-    "usd": 2195.42,
-    "tx_count": 1,
-    "first_seen": 1734435595,
-    "last_seen": 1734435595
-   },
-   {
-    "address": "ltc1q5d092a0tjn8tcawlcnqqyljm75g7pu4q9nel7x",
-    "amount": 27.86430024,
-    "usd": 2167.84,
-    "tx_count": 1,
-    "first_seen": 1745271038,
-    "last_seen": 1745271038
-   },
-   {
-    "address": "MGsgnxH2vzR3UzyEsssv93Bxv9kVxLBygM",
-    "amount": 20.0,
-    "usd": 2166.4,
-    "tx_count": 1,
-    "first_seen": 1734588448,
-    "last_seen": 1734588448
-   },
-   {
-    "address": "MK4az65JWMkQrnq53QZ7QfRXEpiao4crNW",
-    "amount": 18.13997583,
-    "usd": 2153.4,
-    "tx_count": 1,
-    "first_seen": 1737814043,
-    "last_seen": 1737814043
-   },
-   {
-    "address": "MPpqgv9fgEWYkThTApySUJnAtrWmNRyXGZ",
-    "amount": 25.0,
-    "usd": 2139.0,
-    "tx_count": 1,
-    "first_seen": 1746036512,
-    "last_seen": 1746036512
-   },
-   {
-    "address": "ltc1qe75n7gc70qrlqgge4hvmys9mpv8h3nxgslmv4u",
-    "amount": 20.40389811,
-    "usd": 2116.09,
-    "tx_count": 1,
-    "first_seen": 1741396539,
-    "last_seen": 1741396539
-   },
-   {
-    "address": "MSq35Xq58wQjNBbnWYLqQ3Y82yboWYvFMM",
-    "amount": 21.43594805,
-    "usd": 2108.87,
-    "tx_count": 1,
-    "first_seen": 1736852999,
-    "last_seen": 1736852999
-   },
-   {
-    "address": "MMKMurDiCRKhxgn2gPLmeQ5MhkN8bWiZbo",
-    "amount": 20.0,
-    "usd": 2094.6,
-    "tx_count": 1,
-    "first_seen": 1741291878,
-    "last_seen": 1741291878
-   },
-   {
-    "address": "MX9pYzN76fhPhxbzDWHHFfAtaCSrMKhAMB",
-    "amount": 20.41748317,
-    "usd": 2073.8,
-    "tx_count": 1,
-    "first_seen": 1734876853,
-    "last_seen": 1734876853
-   },
-   {
-    "address": "ltc1qy6fv62kvqzzhzeulp729xdx7mmv7ksd254xvxl",
-    "amount": 30.81842076,
-    "usd": 2065.76,
-    "tx_count": 1,
-    "first_seen": 1728331120,
-    "last_seen": 1728331120
-   },
-   {
-    "address": "ltc1qu96j796zft3lf3azx2fus7ug0ze4um8tw33s9r",
-    "amount": 18.93575859,
-    "usd": 2051.12,
-    "tx_count": 1,
-    "first_seen": 1734588448,
-    "last_seen": 1734588448
-   },
-   {
-    "address": "ltc1q4lhdgpzwrxze49cgqjw4n78fd7n9xwakfrlxur",
-    "amount": 31.88760954,
-    "usd": 2051.01,
-    "tx_count": 1,
-    "first_seen": 1728633263,
-    "last_seen": 1728633263
-   },
-   {
-    "address": "MN8oGtRtPxEBYKhk2bEjbHQaVXPexDpjxL",
-    "amount": 15.0,
-    "usd": 2039.1,
-    "tx_count": 1,
-    "first_seen": 1733545516,
-    "last_seen": 1733545516
-   },
-   {
-    "address": "ltc1qkm2fmccqe7k972j202y8j906qf62w7qpp4usd9",
-    "amount": 31.1696211,
-    "usd": 2038.49,
-    "tx_count": 1,
-    "first_seen": 1730913613,
-    "last_seen": 1730913613
-   },
-   {
-    "address": "MVThcJN2okdgFavUJMs43zU6q7MYdWobb7",
-    "amount": 20.0,
-    "usd": 2028.6,
-    "tx_count": 1,
-    "first_seen": 1736426692,
-    "last_seen": 1736426692
-   },
-   {
-    "address": "MCYbdqM7PX6GHmmpYqVMKBaMUiaa7D6ECQ",
-    "amount": 19.28235261,
-    "usd": 2004.21,
-    "tx_count": 1,
-    "first_seen": 1736594272,
-    "last_seen": 1736594272
-   },
-   {
-    "address": "M8mWBjA1rcT7FgnRnVKJefEPuC2bVFxnxZ",
-    "amount": 20.0,
-    "usd": 1988.0,
-    "tx_count": 1,
-    "first_seen": 1735684345,
-    "last_seen": 1735684345
-   },
-   {
-    "address": "MLTMMYeac8vQmpmoPkHABozZVg2g5R4V3u",
-    "amount": 17.21625557,
-    "usd": 1976.08,
-    "tx_count": 1,
-    "first_seen": 1740487293,
-    "last_seen": 1740487293
-   },
-   {
-    "address": "ltc1qec6990lkc9e3z0rt8r5yza63y37q2ptwvxxkz4",
-    "amount": 21.62838121,
-    "usd": 1975.1,
-    "tx_count": 1,
-    "first_seen": 1742074331,
-    "last_seen": 1742074331
-   },
-   {
-    "address": "MWuvRUjJyTG41VdBgTpj2ftZHyQBfTSa39",
-    "amount": 29.49070044,
-    "usd": 1971.45,
-    "tx_count": 1,
-    "first_seen": 1730756339,
-    "last_seen": 1730756339
-   },
-   {
-    "address": "ltc1q9nfvcv5kf65rh6m006635fzcypycv80j974j8v",
-    "amount": 17.20851272,
-    "usd": 1971.24,
-    "tx_count": 1,
-    "first_seen": 1740578998,
-    "last_seen": 1740578998
-   },
-   {
-    "address": "MDWgTJzAvahYgfZoxQJ6bq6jjBXjaA2iVC",
-    "amount": 15.0,
-    "usd": 1946.25,
-    "tx_count": 1,
-    "first_seen": 1739998776,
-    "last_seen": 1739998776
-   },
-   {
-    "address": "MFiPwoip6rjokVhm14K3zBcwA1g23HyVrH",
-    "amount": 25.0,
-    "usd": 1945.0,
-    "tx_count": 1,
-    "first_seen": 1745271038,
-    "last_seen": 1745271038
-   },
-   {
-    "address": "MSAr8z84d2iQuxzqkHxkMWLmKhqoj3RTmm",
-    "amount": 21.475101,
-    "usd": 1922.45,
-    "tx_count": 1,
-    "first_seen": 1746731409,
-    "last_seen": 1746731409
-   },
-   {
-    "address": "MGD9bxWw3XkcEeR4rfwL7sa1JVjy6YyJ45",
-    "amount": 15.0,
-    "usd": 1921.35,
-    "tx_count": 1,
-    "first_seen": 1738440957,
-    "last_seen": 1738440957
-   },
-   {
-    "address": "MQCXDnqC66mwP367MUPgw45tJfT1yaK66D",
-    "amount": 15.27403557,
-    "usd": 1907.73,
-    "tx_count": 1,
-    "first_seen": 1739642110,
-    "last_seen": 1739642110
-   },
-   {
-    "address": "MJWiDwS42La4id1adRx4bssLrG3PjxwH4P",
-    "amount": 15.0,
-    "usd": 1902.9,
-    "tx_count": 1,
-    "first_seen": 1740749023,
-    "last_seen": 1740749023
-   },
-   {
-    "address": "MKSUm9ozvPw9LP1A5rfyQXEVPkNH5GxtCp",
-    "amount": 25.0,
-    "usd": 1900.0,
-    "tx_count": 1,
-    "first_seen": 1745059210,
-    "last_seen": 1745059210
-   },
-   {
-    "address": "ltc1qucye0x0hnsa3vq8q8z7d6zlzt376ay8j2v2q7h",
-    "amount": 26.41567329,
-    "usd": 1895.59,
-    "tx_count": 1,
-    "first_seen": 1730341733,
-    "last_seen": 1730341733
-   },
-   {
-    "address": "ltc1qc5xpd2uqy034esevxa3txl78cap3zxmycarl7r",
-    "amount": 20.26622046,
-    "usd": 1880.5,
-    "tx_count": 1,
-    "first_seen": 1743192354,
-    "last_seen": 1743192354
-   },
-   {
-    "address": "MRQvYk2c7SkrpQQvuxXjG93dWavjJmuNLC",
-    "amount": 18.49045062,
-    "usd": 1879.74,
-    "tx_count": 1,
-    "first_seen": 1738958717,
-    "last_seen": 1738958717
-   },
-   {
-    "address": "M8WiYy3AsEwTjrQSirpWcEZtdtejRLVK1s",
-    "amount": 18.36304981,
-    "usd": 1879.46,
-    "tx_count": 1,
-    "first_seen": 1736754105,
-    "last_seen": 1736754105
-   },
-   {
-    "address": "M88XfsT5T6aidmwhT1En1iEHnUHe2nDQ56",
-    "amount": 20.0,
-    "usd": 1855.8,
-    "tx_count": 1,
-    "first_seen": 1743192354,
-    "last_seen": 1743192354
-   },
-   {
-    "address": "M8wBB6KZBxJZ4K1SCtpmD686t971YEHDcp",
-    "amount": 20.0,
-    "usd": 1827.4,
-    "tx_count": 1,
-    "first_seen": 1742761385,
-    "last_seen": 1742761385
-   },
-   {
-    "address": "MBtESaBcrLYK2n6ALJ911wDBHRCP3owQqF",
-    "amount": 17.68013507,
-    "usd": 1807.44,
-    "tx_count": 1,
-    "first_seen": 1736503150,
-    "last_seen": 1736503150
-   },
-   {
-    "address": "ltc1q4ad4qz8w0z7va3hesyqqm4zzyzkzemvz8rrmzw",
-    "amount": 25.44872234,
-    "usd": 1806.86,
-    "tx_count": 1,
-    "first_seen": 1730984668,
-    "last_seen": 1730984668
-   },
-   {
-    "address": "MQazTXWzBVuajJTiP8gVx4F2opMMxams9w",
-    "amount": 20.0,
-    "usd": 1804.4,
-    "tx_count": 1,
-    "first_seen": 1742223288,
-    "last_seen": 1742223288
-   },
-   {
-    "address": "MHHMPTRxAb7qXskh8efmXdBcXcFs5SvRCg",
-    "amount": 20.0,
-    "usd": 1800.6,
-    "tx_count": 1,
-    "first_seen": 1742415740,
-    "last_seen": 1742415740
-   },
-   {
-    "address": "ltc1qcj0se94ernt4t487f4lulm4mytc99v7zal6zun",
-    "amount": 15.08106377,
-    "usd": 1798.57,
-    "tx_count": 1,
-    "first_seen": 1739355627,
-    "last_seen": 1739355627
-   },
-   {
-    "address": "M9Dxnvp7o7J9mFNzp8fSe3yD7G3FYfWPP9",
-    "amount": 14.0,
-    "usd": 1790.46,
-    "tx_count": 1,
-    "first_seen": 1741026753,
-    "last_seen": 1741026753
-   },
-   {
-    "address": "MTdGRDmDvd8fhdDwdruhc5tva93VYPLhuL",
-    "amount": 19.05635506,
-    "usd": 1786.91,
-    "tx_count": 1,
-    "first_seen": 1742941224,
-    "last_seen": 1742941224
-   },
-   {
-    "address": "ltc1qjsz2z76q493q6fyuwhmjjc6ff3ds29a5eaz89s",
-    "amount": 17.0895374,
-    "usd": 1774.58,
-    "tx_count": 1,
-    "first_seen": 1747143036,
-    "last_seen": 1747143036
-   },
-   {
-    "address": "ltc1q9a0xesam65vdlfpfmw6zhfr2dz4x5cwnj7net7",
-    "amount": 23.27104254,
-    "usd": 1768.6,
-    "tx_count": 1,
-    "first_seen": 1745059210,
-    "last_seen": 1745059210
-   },
-   {
-    "address": "ltc1qy5jsau6jhuxwntsyj8mvtg88plu2kajj8gd7py",
-    "amount": 27.2724657,
-    "usd": 1767.26,
-    "tx_count": 1,
-    "first_seen": 1728937123,
-    "last_seen": 1728937123
-   },
-   {
-    "address": "ltc1qkhu4kuhthqqp68yr4w9q6p7pq7z8qsue2p06te",
-    "amount": 27.07639084,
-    "usd": 1758.61,
-    "tx_count": 1,
-    "first_seen": 1728158828,
-    "last_seen": 1728158828
-   },
-   {
-    "address": "ltc1qvrlw7hwu56juek7pctuw0ln4eugsww05rptgna",
-    "amount": 21.52548971,
-    "usd": 1754.97,
-    "tx_count": 1,
-    "first_seen": 1743715861,
-    "last_seen": 1743715861
-   },
-   {
-    "address": "M9pjeZUuBvkV4kDnm9bxAs1fyympueoeEE",
-    "amount": 20.0,
-    "usd": 1749.8,
-    "tx_count": 1,
-    "first_seen": 1741734893,
-    "last_seen": 1741734893
-   },
-   {
-    "address": "MTJcGbsedPtvWrUbwXYWZZrTk8CsGKus2g",
-    "amount": 21.0,
-    "usd": 1748.67,
-    "tx_count": 1,
-    "first_seen": 1745529143,
-    "last_seen": 1745529143
-   },
-   {
-    "address": "MS2GK7aBB6Cdc3hyxo8YUwjdFqn8N5Ca25",
-    "amount": 14.43822565,
-    "usd": 1735.62,
-    "tx_count": 1,
-    "first_seen": 1739268448,
-    "last_seen": 1739268448
-   },
-   {
-    "address": "MEXarSMRDpzoa4dvQsiAU5uBnna34iV9y9",
-    "amount": 13.54824371,
-    "usd": 1735.53,
-    "tx_count": 1,
-    "first_seen": 1740267383,
-    "last_seen": 1740267383
-   },
-   {
-    "address": "ltc1q3g5kp0de9sqevfqrxamzqcecgsglal0hverslt",
-    "amount": 14.96503743,
-    "usd": 1731.75,
-    "tx_count": 1,
-    "first_seen": 1736149827,
-    "last_seen": 1736149827
-   },
-   {
-    "address": "MFiMtEFuiN4w28cxeZKGoRisz1SjrxdJvL",
-    "amount": 22.0,
-    "usd": 1729.86,
-    "tx_count": 1,
-    "first_seen": 1744579306,
-    "last_seen": 1744579306
-   },
-   {
-    "address": "MLsqRqToAzfMyT8qPj5tsMm2abWBqRXJW3",
-    "amount": 20.0,
-    "usd": 1709.2,
-    "tx_count": 1,
-    "first_seen": 1743369907,
-    "last_seen": 1743369907
-   },
-   {
-    "address": "M9Nuq5hTeeNC1BikBTGVABPftKqnNSrqcs",
-    "amount": 20.0,
-    "usd": 1707.6,
-    "tx_count": 1,
-    "first_seen": 1745884787,
-    "last_seen": 1745884787
-   },
-   {
-    "address": "MREqgVC9V2VK8JXkjVzFzB5Bhy512G7iee",
-    "amount": 24.0,
-    "usd": 1695.12,
-    "tx_count": 1,
-    "first_seen": 1744059306,
-    "last_seen": 1744059306
-   },
-   {
-    "address": "MBNitVKsUsaSwMjv5CPoeo98mF8ynUqXvU",
-    "amount": 20.0,
-    "usd": 1689.6,
-    "tx_count": 1,
-    "first_seen": 1743558345,
-    "last_seen": 1743558345
-   },
-   {
-    "address": "ML7eyAAMBujpBJcL7b2ata9V7TZbuwuse6",
-    "amount": 20.0,
-    "usd": 1688.2,
-    "tx_count": 1,
-    "first_seen": 1743877065,
-    "last_seen": 1743877065
-   },
-   {
-    "address": "ltc1q2zvq3xuytm38tpucrz9hqk8yq89y9q586vp72a",
-    "amount": 16.61846541,
-    "usd": 1670.49,
-    "tx_count": 1,
-    "first_seen": 1746905036,
-    "last_seen": 1746905036
-   },
-   {
-    "address": "MQDNYpp4dNwSGis9AiKRBZhALy2AaPjaf9",
-    "amount": 19.28891412,
-    "usd": 1669.46,
-    "tx_count": 1,
-    "first_seen": 1746400881,
-    "last_seen": 1746400881
-   },
-   {
-    "address": "ltc1qql3ttpxhhzyhrl6l2zahnldkh2craqgpsclhud",
-    "amount": 23.57829815,
-    "usd": 1668.64,
-    "tx_count": 1,
-    "first_seen": 1729638574,
-    "last_seen": 1729638574
-   },
-   {
-    "address": "MEKvYZgJrudWCee1EiRZb3dvNuZ7ismmT5",
-    "amount": 22.0,
-    "usd": 1656.16,
-    "tx_count": 1,
-    "first_seen": 1744804742,
-    "last_seen": 1744804742
-   },
-   {
-    "address": "MKXduEcYkW2yNhZ2aCNMPU2dWMZRxfXVa7",
-    "amount": 15.41449006,
-    "usd": 1652.43,
-    "tx_count": 1,
-    "first_seen": 1739187474,
-    "last_seen": 1739187474
-   },
-   {
-    "address": "M9XviHubt8DBxmz4bX1B96tkQiafF9Vqk6",
-    "amount": 15.0,
-    "usd": 1648.5,
-    "tx_count": 1,
-    "first_seen": 1741119446,
-    "last_seen": 1741119446
-   },
-   {
-    "address": "MRrHNtWrLZTLNXdq5xuFpCPt9Gzhv5o2LA",
-    "amount": 20.0,
-    "usd": 1647.4,
-    "tx_count": 1,
-    "first_seen": 1731630524,
-    "last_seen": 1731630524
-   },
-   {
-    "address": "ltc1qd2wlfx4gnuwwdngt2vjty4w260ymwed8cfr8h4",
-    "amount": 13.49821042,
-    "usd": 1635.04,
-    "tx_count": 1,
-    "first_seen": 1734354438,
-    "last_seen": 1734354438
-   },
-   {
-    "address": "MFrJEB4UBAQrCTgGAzkYSbxswNdF1RHHzj",
-    "amount": 20.0,
-    "usd": 1630.6,
-    "tx_count": 1,
-    "first_seen": 1743715861,
-    "last_seen": 1743715861
-   },
-   {
-    "address": "MGXzzYohDPRxpVr9RsUfhUtRzhzv2T4FGC",
-    "amount": 18.5,
-    "usd": 1627.26,
-    "tx_count": 1,
-    "first_seen": 1746306155,
-    "last_seen": 1746306155
-   },
-   {
-    "address": "ltc1qatxa85dxmyk6pg7pkzq05mhd8kzt3p4jtttsx0",
-    "amount": 18.49122944,
-    "usd": 1609.85,
-    "tx_count": 1,
-    "first_seen": 1745776364,
-    "last_seen": 1745776364
-   },
-   {
-    "address": "MD82jCcALzYd8gXEHBmAhikpJNGqwtb1pk",
-    "amount": 19.0,
-    "usd": 1581.75,
-    "tx_count": 1,
-    "first_seen": 1746560892,
-    "last_seen": 1746560892
-   },
-   {
-    "address": "ltc1qwjtd36057s54dtmg9amhnhqar6n9wjgjeksy3v",
-    "amount": 17.63090695,
-    "usd": 1572.85,
-    "tx_count": 1,
-    "first_seen": 1732010408,
-    "last_seen": 1732010408
-   },
-   {
-    "address": "M8TNDSo6k3f7ftTQ9GdVvgPgCiYtqrVPVu",
-    "amount": 12.0,
-    "usd": 1569.84,
-    "tx_count": 1,
-    "first_seen": 1740144329,
-    "last_seen": 1740144329
-   },
-   {
-    "address": "ltc1q7s0e9t2gkt49wvj5ed9rjrmtpqnd59u6qu5u5z",
-    "amount": 12.22732002,
-    "usd": 1565.46,
-    "tx_count": 1,
-    "first_seen": 1740862260,
-    "last_seen": 1740862260
-   },
-   {
-    "address": "MLYtSeu7w7BrQuC2FiNkcKADuuKcTAhjQ2",
-    "amount": 12.0,
-    "usd": 1558.32,
-    "tx_count": 1,
-    "first_seen": 1740356132,
-    "last_seen": 1740356132
-   },
-   {
-    "address": "MF54pQjBtKUMoyv96y9bBSHsCTS2vamfZ4",
-    "amount": 15.0,
-    "usd": 1555.65,
-    "tx_count": 1,
-    "first_seen": 1741396539,
-    "last_seen": 1741396539
-   },
-   {
-    "address": "ltc1qys6w4kzh0em985vxp2qglvjw4re420efndyuu3",
-    "amount": 13.64069183,
-    "usd": 1555.04,
-    "tx_count": 1,
-    "first_seen": 1736251511,
-    "last_seen": 1736251511
-   },
-   {
-    "address": "ltc1qq78vg9tz3dcam73j75danzw7u268yk0dy0qgtc",
-    "amount": 20.01104333,
-    "usd": 1534.65,
-    "tx_count": 1,
-    "first_seen": 1731535747,
-    "last_seen": 1731535747
-   },
-   {
-    "address": "ltc1qwajpankn8v8a29a9uf4x9etrgu78ekpnyc3ny6",
-    "amount": 16.55861072,
-    "usd": 1526.7,
-    "tx_count": 1,
-    "first_seen": 1732355269,
-    "last_seen": 1732355269
-   },
-   {
-    "address": "MRfq7rsDfXtgDka4BXAX6wVBdx75V1pQBN",
-    "amount": 20.0,
-    "usd": 1523.8,
-    "tx_count": 1,
-    "first_seen": 1744471596,
-    "last_seen": 1744471596
-   },
-   {
-    "address": "ltc1qxzvepz0ln078sy56a2gmreucyajeahm3fpmmy9",
-    "amount": 12.95471881,
-    "usd": 1494.72,
-    "tx_count": 1,
-    "first_seen": 1737667483,
-    "last_seen": 1737667483
-   },
-   {
-    "address": "ltc1qhy262lk6pg9kwjl933ngnlfyfsa4j4hjh83wph",
-    "amount": 12.92619745,
-    "usd": 1437.65,
-    "tx_count": 1,
-    "first_seen": 1736079107,
-    "last_seen": 1736079107
-   },
-   {
-    "address": "ltc1qyj748l86t7m3x2k3lxva77kv5z77yajgmv8pjs",
-    "amount": 11.53030505,
-    "usd": 1434.83,
-    "tx_count": 1,
-    "first_seen": 1737109853,
-    "last_seen": 1737109853
-   },
-   {
-    "address": "ltc1q920jqqs0htkgfrafvexlwzgl2rang2txanjrms",
-    "amount": 21.44844613,
-    "usd": 1433.83,
-    "tx_count": 1,
-    "first_seen": 1730720292,
-    "last_seen": 1730720292
-   },
-   {
-    "address": "ltc1qfc5d9uk4jv3uhlss4dsh5ydanvvwlmxw9qvks0",
-    "amount": 14.41785753,
-    "usd": 1332.5,
-    "tx_count": 1,
-    "first_seen": 1743034098,
-    "last_seen": 1743034098
-   },
-   {
-    "address": "ltc1qxls4fe4htckra5myhcwera3k08dkkm3zpwskrr",
-    "amount": 9.39937738,
-    "usd": 1256.6,
-    "tx_count": 1,
-    "first_seen": 1733390778,
-    "last_seen": 1733390778
-   },
-   {
-    "address": "ltc1qyjuzmvw89s9tvj6tlw9965qe2narwy2ja7dch6",
-    "amount": 9.74648623,
-    "usd": 1225.33,
-    "tx_count": 1,
-    "first_seen": 1739821746,
-    "last_seen": 1739821746
-   },
-   {
-    "address": "ltc1qph0u6dza94xr4kdwlpm9qphgqq2erk8gnv7705",
-    "amount": 11.56465784,
-    "usd": 1194.4,
-    "tx_count": 1,
-    "first_seen": 1735762939,
-    "last_seen": 1735762939
-   },
-   {
-    "address": "ltc1qv5n7q45ygvdnhlrxlrplgqzqdwjuegsuvr0rf0",
-    "amount": 13.06773853,
-    "usd": 1176.49,
-    "tx_count": 1,
-    "first_seen": 1742415740,
-    "last_seen": 1742415740
-   },
-   {
-    "address": "ltc1q63rrmwznmeavvmat6lq2sf82dsytyzvzg8xfrc",
-    "amount": 11.37837593,
-    "usd": 1163.33,
-    "tx_count": 1,
-    "first_seen": 1735291476,
-    "last_seen": 1735291476
-   },
-   {
-    "address": "ltc1qf046q96qx8uqlsx0kzuusrytfaz2e48rch252a",
-    "amount": 16.93286209,
-    "usd": 1122.65,
-    "tx_count": 1,
-    "first_seen": 1728182525,
-    "last_seen": 1728182525
-   },
-   {
-    "address": "ltc1qq7mk25meg48zzw9ug2qhwhf6qzk74uhhtes7ua",
-    "amount": 11.91267526,
-    "usd": 1098.71,
-    "tx_count": 1,
-    "first_seen": 1732621527,
-    "last_seen": 1732621527
-   },
-   {
-    "address": "ltc1q68flnet40etnx8xuctsmda2rzevvt6ffmdvfrm",
-    "amount": 9.13529169,
-    "usd": 1080.07,
-    "tx_count": 1,
-    "first_seen": 1734286591,
-    "last_seen": 1734286591
-   },
-   {
-    "address": "ltc1qk9agwjy4nsqu0lsd0pq48785ruwfzty0dzavd2",
-    "amount": 13.36355026,
-    "usd": 1006.01,
-    "tx_count": 1,
-    "first_seen": 1744804742,
-    "last_seen": 1744804742
-   },
-   {
-    "address": "ltc1q2gyglxlakd7msv7frtg7l7nkpxayp7hqlkzsww",
-    "amount": 14.1958405,
-    "usd": 1002.65,
-    "tx_count": 1,
-    "first_seen": 1744059306,
-    "last_seen": 1744059306
-   },
-   {
-    "address": "ltc1qzepqvaffl3ccnrfrku205jeyst3deua3gghn7e",
-    "amount": 13.91851271,
-    "usd": 895.24,
-    "tx_count": 1,
-    "first_seen": 1728661285,
-    "last_seen": 1728661285
-   },
-   {
-    "address": "ltc1qp8pdjvttuzfjse8v8hhrj352a5wnuqw3w34tgu",
-    "amount": 10.01078305,
-    "usd": 881.85,
-    "tx_count": 1,
-    "first_seen": 1741986889,
-    "last_seen": 1741986889
-   },
-   {
-    "address": "ltc1qrum4aq2fra76mktuw447p5e3dks5yurc39rv72",
-    "amount": 7.31903665,
-    "usd": 838.4,
-    "tx_count": 1,
-    "first_seen": 1740601523,
-    "last_seen": 1740601523
-   },
-   {
-    "address": "ltc1qgv4kvyprjjfj7waeejkjfyr5gllt9p2xzwxqc4",
-    "amount": 10.91664934,
-    "usd": 731.74,
-    "tx_count": 1,
-    "first_seen": 1728277268,
-    "last_seen": 1728277268
-   },
-   {
-    "address": "ltc1qejem5jdw775x296kcsgxjx7lahvxe9gnt4mde3",
-    "amount": 7.90670029,
-    "usd": 666.53,
-    "tx_count": 1,
-    "first_seen": 1745611042,
-    "last_seen": 1745611042
-   },
-   {
-    "address": "LcAmRWcoogxkJuEs6uW3ese4qDK4Wr9BNf",
-    "amount": 4.74665259,
-    "usd": 499.63,
-    "tx_count": 1,
-    "first_seen": 1746989958,
-    "last_seen": 1746989958
-   },
-   {
-    "address": "ltc1q4a04qrl863jr568qanj3yuzhmv2y7vatxt6czx",
-    "amount": 3.85913247,
-    "usd": 400.73,
-    "tx_count": 2,
-    "first_seen": 1747162538,
-    "last_seen": 1747166528
-   },
-   {
-    "address": "LeSVbA96uaS5GirNSoFz9bcR6ubV19AuJD",
-    "amount": 1.55532734,
-    "usd": 117.27,
-    "tx_count": 1,
-    "first_seen": 1731550972,
-    "last_seen": 1731550972
-   },
-   {
-    "address": "ltc1qsndf04qnxdun4ckxzq35xkeg3hhywlpplkqskm",
-    "amount": 1.0297223,
-    "usd": 101.3,
-    "tx_count": 1,
-    "first_seen": 1736887583,
-    "last_seen": 1736887583
-   },
-   {
-    "address": "ltc1q7q93feq06eyl3cgd6vq6e6m5j50jh4eaq5vuju",
-    "amount": 1.11004671,
-    "usd": 60.72,
-    "tx_count": 1,
-    "first_seen": 1788728582,
-    "last_seen": 1788728582
-   },
-   {
-    "address": "LhdLhdkAdpE4R7a3YueaEjmNyvCcMTYH1Y",
-    "amount": 0.4989424,
-    "usd": 55.49,
-    "tx_count": 1,
-    "first_seen": 1736108957,
-    "last_seen": 1736108957
-   },
-   {
-    "address": "ltc1qhdwfh2qsv4plge63lus33vjz3vry7elq7yp7ha",
-    "amount": 0.09936222,
-    "usd": 12.51,
-    "tx_count": 1,
-    "first_seen": 1740277559,
-    "last_seen": 1740277559
-   }
+ "destinations": {
+  "btc": [
+   [
+    "bc1q5e89j7wu8ts7mk0dvrq7dpkgtv757x8794lach",
+    0.18054436,
+    12354.29,
+    1,
+    "2024-10-19",
+    "2024-10-19"
+   ],
+   [
+    "bc1qzyc8d4585dpun2ycteu9r0zmpvdketkqvp7rc8",
+    0.19490345,
+    11818.17,
+    1,
+    "2024-10-10",
+    "2024-10-10"
+   ],
+   [
+    "bc1q7gjq6lstjn5dsxxh87wl36xwn2wsvm4xp9z0ku",
+    0.16103586,
+    10740.82,
+    1,
+    "2024-10-26",
+    "2024-10-26"
+   ],
+   [
+    "bc1qrwf6zcgnpc7vjpkyj9agam238k9qqg07xq3xh4",
+    0.15300517,
+    10316.53,
+    1,
+    "2024-10-23",
+    "2024-10-23"
+   ],
+   [
+    "bc1qj0cvhhcm7nu82z86u97fky2ajv7wekuama8z87",
+    0.09012951,
+    8640.1,
+    1,
+    "2024-11-28",
+    "2024-11-28"
+   ],
+   [
+    "bc1qmc6g7x0td9sla69haekdczy4m66jgxr3syr974",
+    0.0894635,
+    8093.23,
+    1,
+    "2024-11-19",
+    "2024-11-19"
+   ],
+   [
+    "bc1q3kkt7zvdp2uszkx3xx95m7qhmagtq03sjz6ytd",
+    0.07579002,
+    7888.03,
+    1,
+    "2025-01-18",
+    "2025-01-18"
+   ],
+   [
+    "bc1qk4fhq78wc58g6wtkk4wg6tg0dvszya8grdjdkk",
+    0.07892018,
+    7751.58,
+    1,
+    "2025-01-05",
+    "2025-01-05"
+   ],
+   [
+    "bc1qkmpg3svey779zzx8k4udvf83j5gh3tp0pdgkhk",
+    0.07625104,
+    7625.43,
+    1,
+    "2024-12-13",
+    "2024-12-13"
+   ],
+   [
+    "bc1q220uuealwzusv3k2f525d7a90rud3em2pvy8ry",
+    0.11047572,
+    7300.68,
+    1,
+    "2024-10-15",
+    "2024-10-15"
+   ],
+   [
+    "bc1qp2dsrjs02jchzxqlk9whxq4mm20ttv5j4dr4qy",
+    0.07420285,
+    7219.34,
+    1,
+    "2024-12-22",
+    "2024-12-22"
+   ],
+   [
+    "bc1qhdqlstp0kyvkn9n5w5j0emunj24ydkxrcnu5wg",
+    0.11556767,
+    7175.13,
+    1,
+    "2024-10-05",
+    "2024-10-05"
+   ],
+   [
+    "bc1qeck0ra06550vp2m6ntx0vade6ucn2ma2eemqtv",
+    0.11404625,
+    7089.17,
+    1,
+    "2024-10-09",
+    "2024-10-09"
+   ],
+   [
+    "bc1qpm7da6davdu8ht23xr4add8gn2sns9p38s7za6",
+    0.07296854,
+    6898.16,
+    1,
+    "2025-01-14",
+    "2025-01-14"
+   ],
+   [
+    "bc1qr25wfjju99ptmm5s9lmw972yw7tv759706prvz",
+    0.0713443,
+    6878.16,
+    1,
+    "2024-12-01",
+    "2024-12-01"
+   ],
+   [
+    "bc1qm4l9r8866dgpjlrhfqy5260xkwgudlynpneg4r",
+    0.06385925,
+    6476.61,
+    1,
+    "2024-12-15",
+    "2024-12-15"
+   ],
+   [
+    "bc1qjtmzpxpae26u9ah7mpycuawn7vteyxl4pejxaq",
+    0.06765415,
+    6378.88,
+    1,
+    "2024-11-21",
+    "2024-11-21"
+   ],
+   [
+    "bc1qqeec2t9gl6pkr0cjetr6zh0n396ct0j98tyltx",
+    0.06389652,
+    6353.21,
+    1,
+    "2024-12-26",
+    "2024-12-26"
+   ],
+   [
+    "bc1qzhd95ank3yng946yzc0vprda8xgtg6ksmwxwul",
+    0.05810384,
+    6167.36,
+    1,
+    "2025-01-22",
+    "2025-01-22"
+   ],
+   [
+    "bc1qm5eme059n7dczpzzqj37tu0lr4fhyf4rlxf949",
+    0.08544371,
+    5938.0,
+    1,
+    "2024-11-02",
+    "2024-11-02"
+   ],
+   [
+    "1NfQVes1hEPmSBvLYzZnU9u8wofuQ9AAtk",
+    0.058,
+    5494.11,
+    1,
+    "2025-01-11",
+    "2025-01-11"
+   ],
+   [
+    "bc1q7afw4snpl85mrpq2p93phth9wyevpu027cz5y8",
+    0.08411515,
+    5316.6,
+    1,
+    "2024-10-13",
+    "2024-10-13"
+   ],
+   [
+    "bc1qzdhpz3wtshlx6q5uhrttlx4epsxj27277vnqfa",
+    0.08385446,
+    5300.12,
+    1,
+    "2024-10-13",
+    "2024-10-13"
+   ],
+   [
+    "bc1qd6qv4rklsaxetac0h9qa7w3jcmqqtpvjajknxn",
+    0.05386884,
+    5273.76,
+    1,
+    "2024-11-25",
+    "2024-11-25"
+   ],
+   [
+    "bc1q9jk00fjhf8vc07rjex6j273ydzjt0h8pus7f98",
+    0.05675488,
+    5266.4,
+    1,
+    "2024-12-31",
+    "2024-12-31"
+   ],
+   [
+    "bc1qwgs0jp5z0e6t9g3em7knhvjhf8ng90rkycy887",
+    0.08339087,
+    5238.61,
+    1,
+    "2024-10-07",
+    "2024-10-07"
+   ],
+   [
+    "bc1q0j7kynwqfexql6zwujv7wnzfgrhdvdxuexlzsw",
+    0.05133682,
+    5120.38,
+    1,
+    "2024-12-07",
+    "2024-12-07"
+   ],
+   [
+    "bc1q9y4r3np8eu5ljzg8sq5nkyunm05pegr6e0ln7n",
+    0.05077081,
+    5020.83,
+    1,
+    "2024-11-23",
+    "2024-11-23"
+   ],
+   [
+    "bc1qnyafnxy9gr2nrery9t655eqt6tjpdvcu5ew0ex",
+    0.04949497,
+    5004.42,
+    1,
+    "2024-12-09",
+    "2024-12-09"
+   ],
+   [
+    "bc1q5746j8nslqzmpp3f0njfcn5lm0q63yrqslzhwt",
+    0.05251885,
+    4952.48,
+    1,
+    "2024-12-28",
+    "2024-12-28"
+   ],
+   [
+    "bc1qtjyyme0uzx0ndvpvlssvk340llmr96u37vmnlg",
+    0.04925556,
+    4855.97,
+    1,
+    "2024-12-05",
+    "2024-12-05"
+   ],
+   [
+    "bc1q45xyljxtw9x5lsag645cg8gygqtq8vnmgxghlp",
+    0.06289924,
+    4822.95,
+    1,
+    "2024-11-10",
+    "2024-11-10"
+   ],
+   [
+    "bc1qypzjs35kcuxjun4nw3ay8k3rw2kwnqgr02cf2d",
+    0.06577008,
+    4758.12,
+    1,
+    "2024-10-31",
+    "2024-10-31"
+   ],
+   [
+    "bc1q9gjmyteulqp3dsc04pmsmf5uu939alx0vq7nkn",
+    0.07044208,
+    4655.09,
+    1,
+    "2024-10-15",
+    "2024-10-15"
+   ],
+   [
+    "bc1qq97l4lsglfqeq0hhucyklwrrh4lk3y7lu8v0pw",
+    0.0488924,
+    4624.82,
+    1,
+    "2025-01-02",
+    "2025-01-02"
+   ],
+   [
+    "bc1qzyqg9zjfgjyk7fc2xce4sglvrrut83dlxktvx6",
+    0.04523167,
+    4624.29,
+    1,
+    "2025-01-07",
+    "2025-01-07"
+   ],
+   [
+    "bc1qx9xatztsvcjlrt0jn58wsrfpzuuz6wekrcqtgx",
+    0.04370416,
+    4532.41,
+    1,
+    "2025-01-23",
+    "2025-01-23"
+   ],
+   [
+    "bc1qm8p3fx3wuxxdvkqsjzda67hstaa4dsrgyeeqqw",
+    0.04291389,
+    4395.65,
+    1,
+    "2025-02-01",
+    "2025-02-01"
+   ],
+   [
+    "bc1qhu8529t626n46qpaxzygggw47q2pqnttteh3l8",
+    0.06444233,
+    4383.48,
+    1,
+    "2024-10-28",
+    "2024-10-28"
+   ],
+   [
+    "bc1qy3q0tse5spug7peygu9p5a48y90ep27wvgycfp",
+    0.04346696,
+    4355.56,
+    1,
+    "2024-12-19",
+    "2024-12-19"
+   ],
+   [
+    "bc1qms8xfkhqtkrmehkj77dgffgcxrpvrdmdc7uf7n",
+    0.04528433,
+    4331.17,
+    1,
+    "2024-11-29",
+    "2024-11-29"
+   ],
+   [
+    "bc1qul0ya7cjsgyjqgzkfn6ksugyfdw56hep3zmuvr",
+    0.04094141,
+    4293.55,
+    1,
+    "2025-01-25",
+    "2025-01-25"
+   ],
+   [
+    "bc1q4plgucfksf27vh7xw6vcz2t722zap2aqvpr49r",
+    0.06287302,
+    4265.94,
+    1,
+    "2024-11-05",
+    "2024-11-05"
+   ],
+   [
+    "bc1qe2qeu7pfykw3je8vk65hwx89a6520n484cl3m7",
+    0.04182277,
+    4203.08,
+    1,
+    "2025-01-16",
+    "2025-01-16"
+   ],
+   [
+    "bc1q6urjw8w784wppquvdruqr30hz2wkx36qlnuz0g",
+    0.0472139,
+    4185.42,
+    1,
+    "2024-11-12",
+    "2024-11-12"
+   ],
+   [
+    "bc1qsn3r6g307mw7cv66zfq82p0n5vkmjl2macdl7j",
+    0.05425842,
+    4100.42,
+    1,
+    "2024-11-07",
+    "2024-11-07"
+   ],
+   [
+    "bc1q7fhwpgvlp8yvng6rj6kesdvgdlvhed5jau2yxv",
+    0.0599484,
+    4099.15,
+    1,
+    "2024-10-20",
+    "2024-10-20"
+   ],
+   [
+    "bc1qg2qawsg5g9y787hzhcg6rws22hhjh95a4seg3f",
+    0.05806479,
+    4062.34,
+    1,
+    "2024-10-29",
+    "2024-10-29"
+   ],
+   [
+    "bc1qd5dhs5zwxysc2hp8ke5wa0v7ef6jd2ep8xh26c",
+    0.04288448,
+    3884.82,
+    1,
+    "2024-11-17",
+    "2024-11-17"
+   ],
+   [
+    "bc1qa6cs8nzye54n7pg5vuvxd505h86p6aaspfz5nz",
+    0.03793215,
+    3843.87,
+    1,
+    "2025-01-29",
+    "2025-01-29"
+   ],
+   [
+    "bc1qr9rvw4q3ty20889829hyewrl3mukquwysyt5nc",
+    0.05638845,
+    3802.05,
+    1,
+    "2024-10-23",
+    "2024-10-23"
+   ],
+   [
+    "bc1qvum28rjyx3tss9n7nzdypwlcthe6hj7jfx5vaw",
+    0.05984064,
+    3759.18,
+    1,
+    "2024-10-07",
+    "2024-10-07"
+   ],
+   [
+    "bc1qr34mky7nfcct8033lg655e2t46azg6awrn4w7g",
+    0.03919596,
+    3756.56,
+    1,
+    "2024-12-03",
+    "2024-12-03"
+   ],
+   [
+    "bc1qk59l9jp8ur8pl72g46mrtthtmcgx6wc0qkmatj",
+    0.03472589,
+    3636.6,
+    1,
+    "2025-01-31",
+    "2025-01-31"
+   ],
+   [
+    "bc1qh593rnlmq90fllhlt97j8cgaszrmrgypyqljg9",
+    0.03825503,
+    3623.75,
+    1,
+    "2025-01-11",
+    "2025-01-11"
+   ],
+   [
+    "bc1qkeqxmq8jewnannawetwey0pkugp2hgen2hs70g",
+    0.04147354,
+    3621.7,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ],
+   [
+    "bc1q2vezlux6wt6exzaykjlgnfsdn4ud8s5nyu8kn8",
+    0.03743131,
+    3615.6,
+    1,
+    "2024-12-11",
+    "2024-12-11"
+   ],
+   [
+    "bc1qyrua28uaq38p6lza2ry8tcz0wh2eclxgpx5369",
+    0.03399658,
+    3608.18,
+    1,
+    "2024-12-18",
+    "2024-12-18"
+   ],
+   [
+    "bc1qhn6l7a66z6vq4e4g2xz8gzjsp76c48wvjpmpjj",
+    0.05370693,
+    3580.57,
+    1,
+    "2024-10-24",
+    "2024-10-24"
+   ],
+   [
+    "bc1q6x7f9yqrdrxxwlj7cyrwaqcdx76m0ryw5eya4e",
+    0.05689385,
+    3558.14,
+    1,
+    "2024-10-12",
+    "2024-10-12"
+   ],
+   [
+    "bc1qxfxfyrqysgyetjcp3pu64c7kx5chnucghl5hr2",
+    0.0324709,
+    3332.16,
+    1,
+    "2025-01-27",
+    "2025-01-27"
+   ],
+   [
+    "bc1qyg4463hz9hu0dt8htrgthqxnxmeqfmu4elnp2s",
+    0.03388983,
+    3301.91,
+    1,
+    "2025-02-11",
+    "2025-02-11"
+   ],
+   [
+    "bc1qmfu960z2vqu9myjeed59nhl0qc4qld85glsw5j",
+    0.03388217,
+    3245.23,
+    1,
+    "2025-02-18",
+    "2025-02-18"
+   ],
+   [
+    "bc1qpd6jcuer84vu8ldna35z8vcerz48trems5f2m2",
+    0.03311832,
+    3199.5,
+    1,
+    "2025-02-14",
+    "2025-02-14"
+   ],
+   [
+    "bc1qwyf76jejgnssfk8fp8slkdw96920y2aaz9gpls",
+    0.03276412,
+    3187.18,
+    1,
+    "2024-12-10",
+    "2024-12-10"
+   ],
+   [
+    "bc1qzwykffx8llpnsmyq66qecymlju2x7z8ym5t6pr",
+    0.03504196,
+    3166.92,
+    1,
+    "2024-11-14",
+    "2024-11-14"
+   ],
+   [
+    "bc1qyef3n5jtnp2agygzvfxfzq5svmrr5zs70tmvpn",
+    0.03200213,
+    3110.13,
+    1,
+    "2024-12-02",
+    "2024-12-02"
+   ],
+   [
+    "bc1qw66klnkwn53je6xty50xgphqg9cpkxpr0f2dht",
+    0.03158153,
+    3085.53,
+    1,
+    "2025-02-03",
+    "2025-02-03"
+   ],
+   [
+    "bc1qyf4jg6wzsze9g5zwn6f0pkvjqqj5l68cdm9duq",
+    0.04043424,
+    3067.26,
+    1,
+    "2024-11-08",
+    "2024-11-08"
+   ],
+   [
+    "bc1q0235359afem969d7w7vwtyqtptkwxsdcfvpyh4",
+    0.0444447,
+    2981.92,
+    1,
+    "2024-10-27",
+    "2024-10-27"
+   ],
+   [
+    "bc1qlakhq6rdn88mk32vc0vtv4gp6dgv6n3hxz9f4x",
+    0.03123985,
+    2973.61,
+    1,
+    "2024-12-23",
+    "2024-12-23"
+   ],
+   [
+    "bc1q44kvhhalp3yfvpny7l7jd8yrz8aghkywdgxqmu",
+    0.03420244,
+    2909.84,
+    1,
+    "2025-04-20",
+    "2025-04-20"
+   ],
+   [
+    "bc1qzhl7za60mz2f3wt0u33p92cm8qaxn5vlc60rw4",
+    0.0293317,
+    2883.81,
+    1,
+    "2024-11-22",
+    "2024-11-22"
+   ],
+   [
+    "bc1qdmp9d9jcknq5kk7g4gmq6qys0puzghxl25fuh0",
+    0.02901943,
+    2854.46,
+    1,
+    "2025-01-06",
+    "2025-01-06"
+   ],
+   [
+    "bc1q4egtd6uy0ym9xuar52l3j05zjnautxtdcnj645",
+    0.03544708,
+    2848.88,
+    1,
+    "2024-11-11",
+    "2024-11-11"
+   ],
+   [
+    "bc1qpjpyldf6yr3079rse0e54wmstzeg4a05r5elw7",
+    0.02780817,
+    2838.74,
+    1,
+    "2025-01-28",
+    "2025-01-28"
+   ],
+   [
+    "bc1qlvce2x0m0rwekfmzrdz9twuwd6t2ye7e03t4w3",
+    0.03000258,
+    2838.24,
+    1,
+    "2025-01-12",
+    "2025-01-12"
+   ],
+   [
+    "bc1qv969ah2efy5yfz26cw623sy39wjfc8208kntv6",
+    0.04025538,
+    2792.6,
+    1,
+    "2024-11-06",
+    "2024-11-06"
+   ],
+   [
+    "bc1q873a2z5r20k4gqgwvw8ns6780k8d3mduacvagg",
+    0.04140657,
+    2777.31,
+    1,
+    "2024-10-16",
+    "2024-10-16"
+   ],
+   [
+    "bc1q36pdl4wnledm7h8eqtvgjuppmdw42s4s2nh0u0",
+    0.04200487,
+    2775.85,
+    1,
+    "2024-10-15",
+    "2024-10-15"
+   ],
+   [
+    "bc1qdgshd4wnj5nk6v8n56c9dt54t4sd552dhy9leu",
+    0.0396654,
+    2751.78,
+    1,
+    "2024-11-03",
+    "2024-11-03"
+   ],
+   [
+    "bc1qc9s9w5v59hhf977ch559mzvev79a5spdpf29hl",
+    0.03328441,
+    2750.91,
+    1,
+    "2025-03-30",
+    "2025-03-30"
+   ],
+   [
+    "bc1qjd573ad0a7zs685pj9q6qaume7x7eu2k9l9sl4",
+    0.02959669,
+    2624.65,
+    1,
+    "2025-02-26",
+    "2025-02-26"
+   ],
+   [
+    "bc1qd6pq3gjusn6wctjgleq64w9agujctznlzh4wrv",
+    0.0378544,
+    2590.3,
+    1,
+    "2024-10-19",
+    "2024-10-19"
+   ],
+   [
+    "bc1qamneul5a9kmnacdcheg2rphs7dfdl3muav02nu",
+    0.02650785,
+    2526.2,
+    1,
+    "2024-12-29",
+    "2024-12-29"
+   ],
+   [
+    "bc1qmhzyuwyqxgj5v0epyf8ffe70p8l35wk2g0338w",
+    0.02301074,
+    2405.92,
+    1,
+    "2025-01-19",
+    "2025-01-19"
+   ],
+   [
+    "bc1q68rhfp8xgpejsl8s7p84655hjr9u9vnkj8azym",
+    0.02401477,
+    2367.55,
+    1,
+    "2024-12-05",
+    "2024-12-05"
+   ],
+   [
+    "bc1q2w0tvtqe2pu9pwp273x948murcxe3afk87lwk5",
+    0.03014512,
+    2311.45,
+    1,
+    "2024-11-10",
+    "2024-11-10"
+   ],
+   [
+    "bc1qdnygckj4rh0zzrsqx6vkgvnz4gyen73sp8rkyf",
+    0.02223914,
+    2177.21,
+    1,
+    "2024-11-25",
+    "2024-11-25"
+   ],
+   [
+    "bc1qd4wksmfs9yw4slvmdg79xxakuar3hjm59wc9rw",
+    0.02485948,
+    2170.87,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ],
+   [
+    "bc1qn3puvpu5ax3ydwnvh2k7qf2wdgwlxzqjptfsa3",
+    0.02600803,
+    2044.12,
+    1,
+    "2025-03-11",
+    "2025-03-11"
+   ],
+   [
+    "bc1qlyu73uuhfmkwup7y9j6ckfhj0xj7necryyzqfs",
+    0.02395752,
+    2020.82,
+    1,
+    "2025-03-01",
+    "2025-03-01"
+   ],
+   [
+    "bc1qaal4lwh4jq0l3ectkukldvz0ee54rnwssdfg46",
+    0.01854574,
+    1909.69,
+    1,
+    "2025-05-10",
+    "2025-05-10"
+   ],
+   [
+    "bc1qwq863uzekycznkcl6rlywt89sadfu35sx0hs92",
+    0.02247795,
+    1859.26,
+    1,
+    "2025-03-19",
+    "2025-03-19"
+   ],
+   [
+    "bc1qql73rwl04hqqjy8w87plyvzpvunw4t7ex47jj6",
+    0.02029567,
+    1838.91,
+    1,
+    "2025-03-06",
+    "2025-03-06"
+   ],
+   [
+    "bc1qvf4w0fvv8jt90ec7x2ypfht6wy4wqpv8d9gsx3",
+    0.02176804,
+    1797.49,
+    1,
+    "2025-03-17",
+    "2025-03-17"
+   ],
+   [
+    "bc1q0vccvxk2jnygsxsyrwuccqccm0lckc2dpyl05a",
+    0.01815584,
+    1774.97,
+    1,
+    "2025-02-05",
+    "2025-02-05"
+   ],
+   [
+    "bc1qkjmhxqspfjtxu9q8njch5u9jkt3zkx9l0gcz73",
+    0.02048616,
+    1725.41,
+    1,
+    "2025-03-21",
+    "2025-03-21"
+   ],
+   [
+    "bc1qsctxwrh9m88h6d6l5yfral8r67jujcm9uvv75h",
+    0.02296042,
+    1595.66,
+    1,
+    "2024-11-02",
+    "2024-11-02"
+   ],
+   [
+    "bc1qwdmrg7tqxga6huvw6ru632fzvqapk8qhdkvm76",
+    0.01780417,
+    1518.28,
+    1,
+    "2025-04-13",
+    "2025-04-13"
+   ],
+   [
+    "bc1qkgeyparrcmquut4y6lwd3qyz0k7s03vjddmqzd",
+    0.015379,
+    1449.78,
+    1,
+    "2025-03-03",
+    "2025-03-03"
+   ],
+   [
+    "bc1qq6nvndw6zh70nc3whu6nxjj4lt24zauwjn4jet",
+    0.02168184,
+    1345.53,
+    1,
+    "2024-10-06",
+    "2024-10-06"
+   ],
+   [
+    "bc1q9kg9nul8uk0ahxgrzx06u7yd3us5l2mjh44xem",
+    0.01362895,
+    1339.79,
+    1,
+    "2025-02-21",
+    "2025-02-21"
+   ],
+   [
+    "bc1qmfx07y9t4d3pvujdz6jjwxjzq905vkqmze8w6w",
+    0.01357969,
+    1311.97,
+    1,
+    "2025-02-06",
+    "2025-02-06"
+   ],
+   [
+    "bc1q4hpte946zxmhrsxz7jx8eue49z4nzmrs47uuqd",
+    0.01570022,
+    1273.54,
+    1,
+    "2025-03-14",
+    "2025-03-14"
+   ],
+   [
+    "bc1q8wlnqguwgp6klc0xdf09yv5hma4fjjnvqyrp5n",
+    0.01311188,
+    1262.12,
+    1,
+    "2025-02-24",
+    "2025-02-24"
+   ],
+   [
+    "bc1qg85d2z2l72ll7m467d32l4wpc84vtafxcnjcrs",
+    0.01601045,
+    1255.7,
+    1,
+    "2025-04-07",
+    "2025-04-07"
+   ],
+   [
+    "1ALghftdrNP4XKKrrUQemu9Ss99xMwqoZN",
+    0.01273507,
+    1244.74,
+    5,
+    "2025-01-11",
+    "2025-04-22"
+   ],
+   [
+    "bc1qhxg34g6smtfmkxmcth22n88g2qge7apry64xq2",
+    0.01431748,
+    1234.47,
+    1,
+    "2025-03-04",
+    "2025-03-04"
+   ],
+   [
+    "bc1qhzaxl3htg7m9qpe3l0ddg98s4lqk5h0lddqafg",
+    0.01235525,
+    1182.05,
+    1,
+    "2025-02-19",
+    "2025-02-19"
+   ],
+   [
+    "bc1qdscs79demsmas3xawqnhuzhzvywu872ltm40wr",
+    0.01296142,
+    1115.75,
+    1,
+    "2025-03-24",
+    "2025-03-24"
+   ],
+   [
+    "bc1qpr47qkdylsvh40j49luw3zus22wpqegquauvhl",
+    0.01297016,
+    1088.06,
+    1,
+    "2025-04-05",
+    "2025-04-05"
+   ],
+   [
+    "bc1qvrc6vd39lze6smhff57l96jkg9amkweegrhuul",
+    0.01565098,
+    1076.41,
+    1,
+    "2024-11-04",
+    "2024-11-04"
+   ],
+   [
+    "bc1qla7ypxpv233rru9m4klrdxy8fasx23uxu4wn93",
+    0.01088826,
+    1034.51,
+    1,
+    "2025-04-29",
+    "2025-04-29"
+   ],
+   [
+    "bc1qu8h0x8u30u6smfm232kvynd23l7jkegfxcea32",
+    0.01170564,
+    1016.07,
+    1,
+    "2025-03-08",
+    "2025-03-08"
+   ],
+   [
+    "bc1qk4slhpqmk6ytcvc58a4pxq073zsxdqg62dx97d",
+    0.01420573,
+    985.48,
+    1,
+    "2024-11-06",
+    "2024-11-06"
+   ],
+   [
+    "bc1qrl2rs7e72tha2t7dp9yx7dmkykt7mzmqukx358",
+    0.01190304,
+    982.19,
+    1,
+    "2025-04-03",
+    "2025-04-03"
+   ],
+   [
+    "bc1qvlcry9aehhzw2zzf8u5cc0vmcnh4mm2hg9n624",
+    0.01020204,
+    868.79,
+    1,
+    "2025-04-02",
+    "2025-04-02"
+   ],
+   [
+    "bc1q2ymln5pl5hheqy4x9lmvdsnye2h6um9neuxvvv",
+    0.0090568,
+    851.16,
+    1,
+    "2025-04-25",
+    "2025-04-25"
+   ],
+   [
+    "bc1q89lwjmnf4rkcs75angdh6kft87cdgmpty76mw4",
+    0.00959835,
+    840.01,
+    1,
+    "2025-04-22",
+    "2025-04-22"
+   ],
+   [
+    "12Wb77wD8zS7W4f6oGG7WyjMayxxh7Lqw4",
+    0.00915357,
+    828.42,
+    3,
+    "2025-04-10",
+    "2025-05-06"
+   ],
+   [
+    "bc1qkeyve4hjjnlhpf6wh5rgxk62e7el848lg27tzt",
+    0.00842986,
+    808.06,
+    1,
+    "2025-05-04",
+    "2025-05-04"
+   ],
+   [
+    "bc1qxn0hjcqsnx9k87hzs9y048vtwwr4t5fl0lwsck",
+    0.00959844,
+    792.98,
+    1,
+    "2025-04-10",
+    "2025-04-10"
+   ],
+   [
+    "bc1qjhhn4g7frsrz9y9737rmxderv0sx9xm033v3z2",
+    0.00929514,
+    791.56,
+    1,
+    "2025-04-02",
+    "2025-04-02"
+   ],
+   [
+    "bc1qgqtvdktwm96hjckszs4scxrmh54r4qp8tna024",
+    0.00810472,
+    785.24,
+    1,
+    "2025-05-03",
+    "2025-05-03"
+   ],
+   [
+    "bc1qhmpr5p76fqc6ga3pcrlzwclvhnpn3575ck3nxv",
+    0.00740871,
+    715.34,
+    1,
+    "2025-02-07",
+    "2025-02-07"
+   ],
+   [
+    "bc1qt5ruxd5s04q86k8qwsewvcncg2e9av59dp7g2z",
+    0.00725238,
+    682.97,
+    1,
+    "2025-05-01",
+    "2025-05-01"
+   ],
+   [
+    "bc1qzakcwku6fm0gesgn89gcc3cp28yjrwarq7rswa",
+    0.00659644,
+    678.06,
+    1,
+    "2025-05-13",
+    "2025-05-13"
+   ],
+   [
+    "bc1q5w9rlkge57vunac6ccstqlvnxx9n7wmsxl3t5g",
+    0.00599168,
+    500.53,
+    1,
+    "2025-04-06",
+    "2025-04-06"
+   ],
+   [
+    "bc1qzn7zqjjyc8gkn3373y6hz69eadn89qm9t5cagx",
+    0.00582865,
+    489.51,
+    1,
+    "2025-03-15",
+    "2025-03-15"
+   ],
+   [
+    "bc1qzm3pfj6spnek4hu4u24795lwg42rqh89avvn7f",
+    0.00547769,
+    460.61,
+    1,
+    "2025-03-22",
+    "2025-03-22"
+   ],
+   [
+    "bc1qar3g7v8rkex3j7a6u6decdgt8lvtpm3td452gd",
+    0.00407995,
+    397.8,
+    1,
+    "2025-02-15",
+    "2025-02-15"
+   ],
+   [
+    "bc1qvty3wcm3jhylc9da9jglt0jfyn95r0ddk48aj9",
+    0.00376882,
+    395.01,
+    1,
+    "2025-05-11",
+    "2025-05-11"
+   ],
+   [
+    "bc1q02tafe7sjuzfjxx4549mut2evc82l4638kgx99",
+    0.00459295,
+    385.08,
+    1,
+    "2025-03-23",
+    "2025-03-23"
+   ],
+   [
+    "bc1qn64f08lsccw3wlktmj5tda0mz4ms3mltuyy5d7",
+    0.00255508,
+    242.05,
+    1,
+    "2025-05-06",
+    "2025-05-06"
+   ],
+   [
+    "bc1qwnk8yeu74e4hka49phlawp2rkvsas06w970s79",
+    0.00153195,
+    157.47,
+    1,
+    "2025-05-13",
+    "2025-05-13"
+   ],
+   [
+    "bc1q0e6kv9604awnkr9sk6pyss8s0hjdnt6yy5e84l",
+    0.0013588,
+    118.66,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ],
+   [
+    "bc1qfs6cur35ktvuj29cyc20d38d9dxe7zf6mzcqvr",
+    0.00109049,
+    105.6,
+    1,
+    "2025-05-07",
+    "2025-05-07"
+   ],
+   [
+    "3EBKxnBP1aRiL6yFwNtiaZryZuYFQrdn9R",
+    0.00146306,
+    99.52,
+    1,
+    "2024-10-28",
+    "2024-10-28"
+   ],
+   [
+    "39mj1Rp4ukDpcVLXi9HCLREYpeorPj1JyG",
+    0.001052,
+    71.56,
+    1,
+    "2024-10-28",
+    "2024-10-28"
+   ],
+   [
+    "1AvZBBYkocHhXDoWaswPevMsN7bMDwy6xM",
+    8.317e-05,
+    7.26,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ]
   ],
-  "total_sent_coin": 6853.14289201,
-  "total_sent_usd": 619110.84,
-  "distinct_destinations": 198,
-  "unpriced_transfers": 0,
-  "price_source": "Binance LTCUSDT daily open (UTC), live rate at tx day"
- },
- "combined_total_usd": 1243331.76
+  "ltc": [
+   [
+    "LYaQTr1QDSXnmDdi38A13WXWDiyuWw9h7G",
+    916.97357483,
+    74784.1,
+    49,
+    "2024-10-09",
+    "2025-01-18"
+   ],
+   [
+    "LeVXYdaeaX7Gtm8AXe87wc5U2uqiMQM4Cq",
+    478.39531217,
+    45571.15,
+    31,
+    "2025-02-15",
+    "2025-05-11"
+   ],
+   [
+    "LgZGiNoBd1tLwoNg2VjfU7vjFHqHdS6jis",
+    424.89127181,
+    43800.52,
+    39,
+    "2025-01-20",
+    "2025-05-06"
+   ],
+   [
+    "ltc1q6ysrmm54arwsxq3n7evy296slmvcu2el5jgng2",
+    100.14889276,
+    7087.54,
+    1,
+    "2024-10-22",
+    "2024-10-22"
+   ],
+   [
+    "ltc1qhz6xuu6znrr44e9w0kfhz273m07fne78d0yv7v",
+    66.19599282,
+    6437.56,
+    1,
+    "2024-11-28",
+    "2024-11-28"
+   ],
+   [
+    "ltc1qtltg229wfy6npenntcqsht5f7u9jp9vh23xezw",
+    52.69852848,
+    5414.77,
+    1,
+    "2024-12-01",
+    "2024-12-01"
+   ],
+   [
+    "ltc1q6d5sq0mr7le4qhlweul9g7vjpcv2udukgq2rc2",
+    53.6987061,
+    5401.02,
+    1,
+    "2024-12-28",
+    "2024-12-28"
+   ],
+   [
+    "ltc1q8t0tf74t7kusx289e7y5jmzvkkg79fufexuudc",
+    75.36335746,
+    5295.78,
+    1,
+    "2024-11-02",
+    "2024-11-02"
+   ],
+   [
+    "LgzbsbLsmev66YVzQdXqEfTTTBoRqmUUTf",
+    78.11185458,
+    5191.61,
+    5,
+    "2024-10-05",
+    "2024-10-07"
+   ],
+   [
+    "ltc1q75vtnrxte5a4dvpp3yaw5f50xzyysglvhwdj2v",
+    48.77338016,
+    5091.94,
+    1,
+    "2025-01-12",
+    "2025-01-12"
+   ],
+   [
+    "ltc1q8zggprvfzgwxyz8s2wdu3vq84w2cdky88ecv7z",
+    51.85438482,
+    4948.98,
+    1,
+    "2024-11-17",
+    "2024-11-17"
+   ],
+   [
+    "ltc1qn8p8nk539rdjyjyeph3qwt0u2v7wnk8pj4r67j",
+    37.44509526,
+    4741.3,
+    1,
+    "2025-02-14",
+    "2025-02-14"
+   ],
+   [
+    "ltc1qpetqtjg23c2m3lnf93jwfcd6cvlep4k0vcq6xq",
+    33.3603502,
+    4500.64,
+    1,
+    "2024-12-09",
+    "2024-12-09"
+   ],
+   [
+    "ltc1qa9dcqwwwgnkuf3w4ym3mw4s9lv9ntzq8g2ytmz",
+    48.19538319,
+    4496.15,
+    1,
+    "2025-03-21",
+    "2025-03-21"
+   ],
+   [
+    "ltc1q9vl8ktqjuntd6q294t8gzcmute9dfg9fklqvrm",
+    64.24182543,
+    4421.76,
+    1,
+    "2024-10-26",
+    "2024-10-26"
+   ],
+   [
+    "ltc1qmx6sz265vdqljg34lgn6spyxe7j2lajh8fazln",
+    45.56381046,
+    4416.04,
+    1,
+    "2024-11-25",
+    "2024-11-25"
+   ],
+   [
+    "ltc1qt997d8w8cc0tsqg936e5rkxrszmuc5hjm2m08w",
+    67.00222577,
+    4401.38,
+    1,
+    "2024-10-09",
+    "2024-10-09"
+   ],
+   [
+    "ltc1qrw9pmpfxy3g4fqndf66nya2kzy29xhsx5rphc9",
+    38.52040412,
+    4032.7,
+    1,
+    "2025-02-09",
+    "2025-02-09"
+   ],
+   [
+    "MLJfLK5kzy7NNE1sxGidpuqBdFqcMUSEZM",
+    29.50330729,
+    3921.87,
+    1,
+    "2024-12-03",
+    "2024-12-03"
+   ],
+   [
+    "ltc1qrgulgxych9y39fep3y9dgddt8z5jvx96xcfv3l",
+    44.19586329,
+    3853.88,
+    1,
+    "2024-11-18",
+    "2024-11-18"
+   ],
+   [
+    "ltc1qpyyy6s5zy96kdvx4apmek9ew9cqlq8gdl54qlz",
+    50.37099782,
+    3829.71,
+    1,
+    "2025-04-10",
+    "2025-04-10"
+   ],
+   [
+    "ltc1q5yjktv0lw6pzvttr3qqfmzpxhjaxd0lsyjfl25",
+    58.0447954,
+    3805.42,
+    1,
+    "2024-11-05",
+    "2024-11-05"
+   ],
+   [
+    "ltc1quj2vpdn7rql4leyx08xjlzpns26vz9ukjtljh8",
+    34.87515198,
+    3669.91,
+    1,
+    "2025-01-02",
+    "2025-01-02"
+   ],
+   [
+    "ltc1qzjxhzx5650dyr47090gr6fh94lnyll3hply7y8",
+    30.60241986,
+    3582.63,
+    1,
+    "2025-01-27",
+    "2025-01-27"
+   ],
+   [
+    "ltc1q3ca8vdlttysmhrfcupjw7h4mp30462qumaq94n",
+    32.05999727,
+    3540.39,
+    1,
+    "2024-12-10",
+    "2024-12-10"
+   ],
+   [
+    "ltc1q8zyps9wa4jyhtxe47s3af3pzqsv3kgzqlhz2w8",
+    46.20974117,
+    3538.74,
+    1,
+    "2024-11-11",
+    "2024-11-11"
+   ],
+   [
+    "ltc1qvck8tg9fdlsnmnthj32fv25smn8tj4a5mxw3hy",
+    29.55011368,
+    3519.71,
+    1,
+    "2025-01-22",
+    "2025-01-22"
+   ],
+   [
+    "ltc1qwnq7nyd65hh5e4jlm78z84qwaxvjfgf7y0nhve",
+    34.70871382,
+    3518.42,
+    1,
+    "2024-12-21",
+    "2024-12-21"
+   ],
+   [
+    "ltc1qx9d4em0e23spcmp6372f8get0006xjhf35j58s",
+    35.33776734,
+    3376.17,
+    1,
+    "2024-11-29",
+    "2024-11-29"
+   ],
+   [
+    "ltc1que6q67wl7pgew4j9ycm7hf2lrqjyke6exgvv40",
+    33.92596288,
+    3372.24,
+    1,
+    "2024-12-31",
+    "2024-12-31"
+   ],
+   [
+    "ltc1qsvj2hfenhhkfshagny2az4xxkf426ylytw7jjf",
+    32.81122149,
+    3361.51,
+    1,
+    "2025-01-15",
+    "2025-01-15"
+   ],
+   [
+    "MFQfcrEkMBSTupNSE5KKXwQtAaCBd7BnVB",
+    30.0,
+    3336.6,
+    1,
+    "2025-01-05",
+    "2025-01-05"
+   ],
+   [
+    "ltc1qxsn8dn6al07evlhkjjk0y6yud0xj2w27fuyt42",
+    50.73516449,
+    3327.72,
+    1,
+    "2024-10-12",
+    "2024-10-12"
+   ],
+   [
+    "MGtPPhuPEDSAYTvGxo2Hjevyepk2x28D8b",
+    51.39544504,
+    3319.63,
+    1,
+    "2024-10-10",
+    "2024-10-10"
+   ],
+   [
+    "ltc1q96ltw3x2wacuaumky6ahksvg5kh9e4d938kerw",
+    30.00859896,
+    3295.54,
+    1,
+    "2024-12-26",
+    "2024-12-26"
+   ],
+   [
+    "ltc1qs79s04evzxgjzj52q4r3w79sy2seqhgtgzfy43",
+    39.07242102,
+    3218.4,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ],
+   [
+    "MFfN7ekRizPuVPPp5bmpXBJ5Ww4afDwGSS",
+    48.17633876,
+    3188.79,
+    1,
+    "2024-10-13",
+    "2024-10-13"
+   ],
+   [
+    "MAHUWU98iSqGEGA9zb6zA49Y621uhKbEAy",
+    43.77913637,
+    3186.68,
+    1,
+    "2024-10-18",
+    "2024-10-18"
+   ],
+   [
+    "ltc1q335gvlrtxvhk2etwhpyn67lnks3racz83fuudc",
+    30.61808653,
+    3144.78,
+    1,
+    "2025-01-08",
+    "2025-01-08"
+   ],
+   [
+    "ltc1q34x7yzcemxw4t44wxutzp23fnfx6zukzqf83ur",
+    23.90729829,
+    3129.47,
+    1,
+    "2024-12-04",
+    "2024-12-04"
+   ],
+   [
+    "ltc1qy9yt8mzuq6cv3ksj9ln33hej892uw8z2wdfkcu",
+    26.12293417,
+    3123.52,
+    1,
+    "2024-12-02",
+    "2024-12-02"
+   ],
+   [
+    "MDxyyA7VNzDsu1oFvBkLazGfTe4sPKMqCZ",
+    46.53722445,
+    3110.55,
+    1,
+    "2024-10-15",
+    "2024-10-15"
+   ],
+   [
+    "MQLRVi3YSwXW8FscNd4x3bZdrhfKkwZqBR",
+    24.60068103,
+    3063.28,
+    1,
+    "2024-12-14",
+    "2024-12-14"
+   ],
+   [
+    "MTWXgxrfNcZs3zCnhHAN8vjnVon3A5Hqsw",
+    41.36484271,
+    3060.58,
+    1,
+    "2024-10-30",
+    "2024-10-30"
+   ],
+   [
+    "ltc1qr3m67mna93255hcf7yyqsexyne4jwsfen5eeg6",
+    23.77672342,
+    3045.56,
+    1,
+    "2025-02-01",
+    "2025-02-01"
+   ],
+   [
+    "ltc1qzp9864m880y2shxj5fv4sd8hwletk2e68dysd7",
+    40.43244244,
+    2943.08,
+    1,
+    "2024-11-09",
+    "2024-11-09"
+   ],
+   [
+    "ltc1q30nanjhg69j8wc642xsf28n8hzd2kpaf99yxkj",
+    38.60646752,
+    2941.43,
+    1,
+    "2025-04-12",
+    "2025-04-12"
+   ],
+   [
+    "MQdDPSXgunB63cMjUzzPTU8ELv7xdNMzY9",
+    36.66688325,
+    2934.82,
+    1,
+    "2024-11-12",
+    "2024-11-12"
+   ],
+   [
+    "ltc1q2c9l32y8n03ctqgpw9yw5h2tv095kz2elk4cu6",
+    21.49232327,
+    2921.67,
+    1,
+    "2024-12-07",
+    "2024-12-07"
+   ],
+   [
+    "ltc1qhauqnw8hxz5l2jd59wt8j5shjt8t26k8qe0jta",
+    24.19356088,
+    2884.6,
+    1,
+    "2024-12-13",
+    "2024-12-13"
+   ],
+   [
+    "MSJBZD6pKVo4jFUpMfmsd6UdHgXwYx9Qvd",
+    40.0,
+    2830.8,
+    1,
+    "2024-10-22",
+    "2024-10-22"
+   ],
+   [
+    "MLzZP8t4y91CcdGVoygXamm62wBsknAUB9",
+    24.13637826,
+    2822.99,
+    1,
+    "2025-01-16",
+    "2025-01-16"
+   ],
+   [
+    "ltc1q4n2xz87lzta3m3jkmzs4qr9xhsc63tz8q4gm76",
+    24.25760525,
+    2790.84,
+    1,
+    "2025-01-28",
+    "2025-01-28"
+   ],
+   [
+    "ltc1qdxev39eusnsp85khe2atga9j8jtp8vpuxn6a20",
+    40.74277364,
+    2789.66,
+    1,
+    "2024-10-27",
+    "2024-10-27"
+   ],
+   [
+    "ltc1q3aal2qferj3a8f3gtthu8k90gel2u26ektnu4h",
+    27.37955245,
+    2758.49,
+    1,
+    "2024-12-29",
+    "2024-12-29"
+   ],
+   [
+    "MAKWhz6WqUYXL7q3MYPhM6NzGTGJv5itpM",
+    25.33243132,
+    2704.49,
+    1,
+    "2024-12-24",
+    "2024-12-24"
+   ],
+   [
+    "ltc1qc67uejrahhgyqz4dc2kzv4eutam9atkxsj4h90",
+    29.39451184,
+    2689.01,
+    1,
+    "2025-03-24",
+    "2025-03-24"
+   ],
+   [
+    "ltc1qfac35tmeackwsu2vqxf4r3f7d9stjy3xnfwhh8",
+    30.48049742,
+    2685.03,
+    1,
+    "2025-03-14",
+    "2025-03-14"
+   ],
+   [
+    "ML3QpVLAzV1RrcrWxx7PYUdGd5AFgGFZiF",
+    22.74501724,
+    2647.97,
+    1,
+    "2025-01-24",
+    "2025-01-24"
+   ],
+   [
+    "ltc1q66ehlgpfm8jgc76ew4ar377l9j75xze7l7u8cu",
+    29.79069906,
+    2646.9,
+    1,
+    "2025-05-02",
+    "2025-05-02"
+   ],
+   [
+    "MAvA6ELLQBnQyNVRAxKwyYSUeFEAdZ9Rx7",
+    19.27022632,
+    2640.79,
+    1,
+    "2025-01-18",
+    "2025-01-18"
+   ],
+   [
+    "MCvWRiddzzWTYjxq4ELGtx9Yh3S3Ah5FGf",
+    35.30384299,
+    2611.78,
+    1,
+    "2024-11-10",
+    "2024-11-10"
+   ],
+   [
+    "MDZwCwNvmZRK5gngQKs5funj4VfT3PPoMw",
+    40.0,
+    2598.0,
+    1,
+    "2024-10-05",
+    "2024-10-05"
+   ],
+   [
+    "MGEU3SKSt8NZGD7Ns46JNQGs8hA1ci2CFq",
+    35.88916401,
+    2564.64,
+    1,
+    "2024-11-08",
+    "2024-11-08"
+   ],
+   [
+    "MSCKtEKMjA75vVNtAnPwEk5VsED8pWvCy8",
+    25.0,
+    2534.25,
+    1,
+    "2024-12-21",
+    "2024-12-21"
+   ],
+   [
+    "ltc1q8ktk2775dpr9krsq500tzasa0h0ka5zzu9m2mf",
+    23.0582307,
+    2531.56,
+    1,
+    "2024-12-11",
+    "2024-12-11"
+   ],
+   [
+    "ltc1q7ez7uruk23rpplqgna4h2zfdmurzjkfq8rqfnp",
+    30.55814682,
+    2526.55,
+    1,
+    "2025-04-06",
+    "2025-04-06"
+   ],
+   [
+    "ltc1q0aky486pd35wzwx2jj5ww9aasve29ucxusxgnu",
+    38.88627268,
+    2519.83,
+    1,
+    "2024-10-14",
+    "2024-10-14"
+   ],
+   [
+    "ltc1q0qemnjhmyfvrmen8qdygag6ydntfpepf8p2jah",
+    24.36145318,
+    2518.49,
+    1,
+    "2025-02-06",
+    "2025-02-06"
+   ],
+   [
+    "MJCGgGPAxRBNAqKNLUZ4GUB4YYuY1kWHGL",
+    30.08488849,
+    2509.38,
+    1,
+    "2024-11-21",
+    "2024-11-21"
+   ],
+   [
+    "ltc1q7dx7xksjwp9cas8872fwntuwnygvwfkkwzkvk0",
+    37.71995623,
+    2500.83,
+    1,
+    "2024-10-06",
+    "2024-10-06"
+   ],
+   [
+    "MK9KcTNmynPuTKLVPeYfWWgWHfkaaTSJrZ",
+    33.37816945,
+    2500.02,
+    1,
+    "2024-10-20",
+    "2024-10-20"
+   ],
+   [
+    "ltc1qrkvnyx0n6tnj3vs9495v8c4vkw8hqlkn9fx4tx",
+    29.4212001,
+    2485.5,
+    1,
+    "2025-04-02",
+    "2025-04-02"
+   ],
+   [
+    "MVpX1AnAsa6HAE8z9ywW22kSMsFzUgijnS",
+    21.02322193,
+    2466.02,
+    1,
+    "2024-12-12",
+    "2024-12-12"
+   ],
+   [
+    "MUuo7hv1ZUHd23vxgi4Dn3nKrubeknqF7u",
+    22.36638359,
+    2440.84,
+    1,
+    "2025-02-03",
+    "2025-02-03"
+   ],
+   [
+    "MU8jZPfPGaivBbvEn6BedEVk3saxK9jLWZ",
+    34.23763996,
+    2434.3,
+    1,
+    "2024-10-28",
+    "2024-10-28"
+   ],
+   [
+    "ltc1quv4g6me3veljsu3uz7jsmkgj2ehlxjnst8tuhx",
+    26.90252764,
+    2408.05,
+    1,
+    "2024-11-22",
+    "2024-11-22"
+   ],
+   [
+    "ltc1qt6prlyh5yvrnfpxt6480wgs3ruhlazjpg20kh9",
+    27.38933485,
+    2396.29,
+    1,
+    "2025-03-11",
+    "2025-03-11"
+   ],
+   [
+    "M8gom1f8mwym9bSueMdaMtugERHJXRwbQq",
+    20.0,
+    2382.2,
+    1,
+    "2025-01-22",
+    "2025-01-22"
+   ],
+   [
+    "MFvJhPaZimwUYMCjv6UBPCuVt95ipom2Lc",
+    20.58212298,
+    2378.47,
+    1,
+    "2025-01-20",
+    "2025-01-20"
+   ],
+   [
+    "MVLAkqhWP1FkVJujeSEsE6dRCbwWg7nCih",
+    27.36629047,
+    2371.84,
+    1,
+    "2024-11-20",
+    "2024-11-20"
+   ],
+   [
+    "ltc1qpzdcchtepvfen84m3ysvwsku5kftx88e5e6gds",
+    23.38257529,
+    2371.69,
+    1,
+    "2025-01-09",
+    "2025-01-09"
+   ],
+   [
+    "ltc1qu8v9nzzvzsq8sz650w6ksedvk6045h25a9aujq",
+    17.38805993,
+    2345.3,
+    1,
+    "2025-02-20",
+    "2025-02-20"
+   ],
+   [
+    "MCRK8SWRWnyv7VV4hj2vDjyDxk2BQHqzTH",
+    32.99797762,
+    2338.57,
+    1,
+    "2024-10-16",
+    "2024-10-16"
+   ],
+   [
+    "MCoU863747eKRwhma8hUucyEgV3nWRGiP4",
+    23.06040922,
+    2330.95,
+    1,
+    "2025-02-05",
+    "2025-02-05"
+   ],
+   [
+    "ltc1qrluwymhspj7rensfs9tl22j6xj53pcw2pvh43j",
+    33.00922605,
+    2319.56,
+    1,
+    "2024-11-02",
+    "2024-11-02"
+   ],
+   [
+    "MH2vyHSbuLoPy96euzYyMB69p2QMEPzrdt",
+    20.9805173,
+    2306.18,
+    1,
+    "2025-01-29",
+    "2025-01-29"
+   ],
+   [
+    "MWdR8ugMv1EETcaKPWtkMzXzNJTqLbvRV6",
+    25.29232637,
+    2287.69,
+    1,
+    "2025-03-12",
+    "2025-03-12"
+   ],
+   [
+    "MJTWYfyQZgd7ShGDtYL2iB48HrvUvRWYLs",
+    20.0,
+    2280.0,
+    1,
+    "2025-01-07",
+    "2025-01-07"
+   ],
+   [
+    "MVt2TRa7HSkStTeYRxYPabeW8Zjp9dyQsC",
+    25.44356249,
+    2277.45,
+    1,
+    "2024-11-22",
+    "2024-11-22"
+   ],
+   [
+    "ltc1q2jxgfxfsfk24rwkmmqpvf8928l7se6kdvw62yt",
+    32.30114264,
+    2262.7,
+    1,
+    "2024-10-24",
+    "2024-10-24"
+   ],
+   [
+    "MRZTCnJN5CCxuZKMqFfQzDvqRDPakJy636",
+    30.43355621,
+    2225.0,
+    1,
+    "2024-10-19",
+    "2024-10-19"
+   ],
+   [
+    "MMdjeY3RUGzK8Fsq47T2kQVdPEQXArNSYg",
+    32.03284564,
+    2216.67,
+    1,
+    "2024-11-03",
+    "2024-11-03"
+   ],
+   [
+    "MPbs7bVSAo8BCkVmZrzu2qpxh5FxiEQwFJ",
+    18.60529096,
+    2195.42,
+    1,
+    "2024-12-17",
+    "2024-12-17"
+   ],
+   [
+    "ltc1q5d092a0tjn8tcawlcnqqyljm75g7pu4q9nel7x",
+    27.86430024,
+    2167.84,
+    1,
+    "2025-04-21",
+    "2025-04-21"
+   ],
+   [
+    "MGsgnxH2vzR3UzyEsssv93Bxv9kVxLBygM",
+    20.0,
+    2166.4,
+    1,
+    "2024-12-19",
+    "2024-12-19"
+   ],
+   [
+    "MK4az65JWMkQrnq53QZ7QfRXEpiao4crNW",
+    18.13997583,
+    2153.4,
+    1,
+    "2025-01-25",
+    "2025-01-25"
+   ],
+   [
+    "MPpqgv9fgEWYkThTApySUJnAtrWmNRyXGZ",
+    25.0,
+    2139.0,
+    1,
+    "2025-04-30",
+    "2025-04-30"
+   ],
+   [
+    "ltc1qe75n7gc70qrlqgge4hvmys9mpv8h3nxgslmv4u",
+    20.40389811,
+    2116.09,
+    1,
+    "2025-03-08",
+    "2025-03-08"
+   ],
+   [
+    "MSq35Xq58wQjNBbnWYLqQ3Y82yboWYvFMM",
+    21.43594805,
+    2108.87,
+    1,
+    "2025-01-14",
+    "2025-01-14"
+   ],
+   [
+    "MMKMurDiCRKhxgn2gPLmeQ5MhkN8bWiZbo",
+    20.0,
+    2094.6,
+    1,
+    "2025-03-06",
+    "2025-03-06"
+   ],
+   [
+    "MX9pYzN76fhPhxbzDWHHFfAtaCSrMKhAMB",
+    20.41748317,
+    2073.8,
+    1,
+    "2024-12-22",
+    "2024-12-22"
+   ],
+   [
+    "ltc1qy6fv62kvqzzhzeulp729xdx7mmv7ksd254xvxl",
+    30.81842076,
+    2065.76,
+    1,
+    "2024-10-07",
+    "2024-10-07"
+   ],
+   [
+    "ltc1qu96j796zft3lf3azx2fus7ug0ze4um8tw33s9r",
+    18.93575859,
+    2051.12,
+    1,
+    "2024-12-19",
+    "2024-12-19"
+   ],
+   [
+    "ltc1q4lhdgpzwrxze49cgqjw4n78fd7n9xwakfrlxur",
+    31.88760954,
+    2051.01,
+    1,
+    "2024-10-11",
+    "2024-10-11"
+   ],
+   [
+    "MN8oGtRtPxEBYKhk2bEjbHQaVXPexDpjxL",
+    15.0,
+    2039.1,
+    1,
+    "2024-12-07",
+    "2024-12-07"
+   ],
+   [
+    "ltc1qkm2fmccqe7k972j202y8j906qf62w7qpp4usd9",
+    31.1696211,
+    2038.49,
+    1,
+    "2024-11-06",
+    "2024-11-06"
+   ],
+   [
+    "MVThcJN2okdgFavUJMs43zU6q7MYdWobb7",
+    20.0,
+    2028.6,
+    1,
+    "2025-01-09",
+    "2025-01-09"
+   ],
+   [
+    "MCYbdqM7PX6GHmmpYqVMKBaMUiaa7D6ECQ",
+    19.28235261,
+    2004.21,
+    1,
+    "2025-01-11",
+    "2025-01-11"
+   ],
+   [
+    "M8mWBjA1rcT7FgnRnVKJefEPuC2bVFxnxZ",
+    20.0,
+    1988.0,
+    1,
+    "2024-12-31",
+    "2024-12-31"
+   ],
+   [
+    "MLTMMYeac8vQmpmoPkHABozZVg2g5R4V3u",
+    17.21625557,
+    1976.08,
+    1,
+    "2025-02-25",
+    "2025-02-25"
+   ],
+   [
+    "ltc1qec6990lkc9e3z0rt8r5yza63y37q2ptwvxxkz4",
+    21.62838121,
+    1975.1,
+    1,
+    "2025-03-15",
+    "2025-03-15"
+   ],
+   [
+    "MWuvRUjJyTG41VdBgTpj2ftZHyQBfTSa39",
+    29.49070044,
+    1971.45,
+    1,
+    "2024-11-04",
+    "2024-11-04"
+   ],
+   [
+    "ltc1q9nfvcv5kf65rh6m006635fzcypycv80j974j8v",
+    17.20851272,
+    1971.24,
+    1,
+    "2025-02-26",
+    "2025-02-26"
+   ],
+   [
+    "MDWgTJzAvahYgfZoxQJ6bq6jjBXjaA2iVC",
+    15.0,
+    1946.25,
+    1,
+    "2025-02-19",
+    "2025-02-19"
+   ],
+   [
+    "MFiPwoip6rjokVhm14K3zBcwA1g23HyVrH",
+    25.0,
+    1945.0,
+    1,
+    "2025-04-21",
+    "2025-04-21"
+   ],
+   [
+    "MSAr8z84d2iQuxzqkHxkMWLmKhqoj3RTmm",
+    21.475101,
+    1922.45,
+    1,
+    "2025-05-08",
+    "2025-05-08"
+   ],
+   [
+    "MGD9bxWw3XkcEeR4rfwL7sa1JVjy6YyJ45",
+    15.0,
+    1921.35,
+    1,
+    "2025-02-01",
+    "2025-02-01"
+   ],
+   [
+    "MQCXDnqC66mwP367MUPgw45tJfT1yaK66D",
+    15.27403557,
+    1907.73,
+    1,
+    "2025-02-15",
+    "2025-02-15"
+   ],
+   [
+    "MJWiDwS42La4id1adRx4bssLrG3PjxwH4P",
+    15.0,
+    1902.9,
+    1,
+    "2025-02-28",
+    "2025-02-28"
+   ],
+   [
+    "MKSUm9ozvPw9LP1A5rfyQXEVPkNH5GxtCp",
+    25.0,
+    1900.0,
+    1,
+    "2025-04-19",
+    "2025-04-19"
+   ],
+   [
+    "ltc1qucye0x0hnsa3vq8q8z7d6zlzt376ay8j2v2q7h",
+    26.41567329,
+    1895.59,
+    1,
+    "2024-10-31",
+    "2024-10-31"
+   ],
+   [
+    "ltc1qc5xpd2uqy034esevxa3txl78cap3zxmycarl7r",
+    20.26622046,
+    1880.5,
+    1,
+    "2025-03-28",
+    "2025-03-28"
+   ],
+   [
+    "MRQvYk2c7SkrpQQvuxXjG93dWavjJmuNLC",
+    18.49045062,
+    1879.74,
+    1,
+    "2025-02-07",
+    "2025-02-07"
+   ],
+   [
+    "M8WiYy3AsEwTjrQSirpWcEZtdtejRLVK1s",
+    18.36304981,
+    1879.46,
+    1,
+    "2025-01-13",
+    "2025-01-13"
+   ],
+   [
+    "M88XfsT5T6aidmwhT1En1iEHnUHe2nDQ56",
+    20.0,
+    1855.8,
+    1,
+    "2025-03-28",
+    "2025-03-28"
+   ],
+   [
+    "M8wBB6KZBxJZ4K1SCtpmD686t971YEHDcp",
+    20.0,
+    1827.4,
+    1,
+    "2025-03-23",
+    "2025-03-23"
+   ],
+   [
+    "MBtESaBcrLYK2n6ALJ911wDBHRCP3owQqF",
+    17.68013507,
+    1807.44,
+    1,
+    "2025-01-10",
+    "2025-01-10"
+   ],
+   [
+    "ltc1q4ad4qz8w0z7va3hesyqqm4zzyzkzemvz8rrmzw",
+    25.44872234,
+    1806.86,
+    1,
+    "2024-11-07",
+    "2024-11-07"
+   ],
+   [
+    "MQazTXWzBVuajJTiP8gVx4F2opMMxams9w",
+    20.0,
+    1804.4,
+    1,
+    "2025-03-17",
+    "2025-03-17"
+   ],
+   [
+    "MHHMPTRxAb7qXskh8efmXdBcXcFs5SvRCg",
+    20.0,
+    1800.6,
+    1,
+    "2025-03-19",
+    "2025-03-19"
+   ],
+   [
+    "ltc1qcj0se94ernt4t487f4lulm4mytc99v7zal6zun",
+    15.08106377,
+    1798.57,
+    1,
+    "2025-02-12",
+    "2025-02-12"
+   ],
+   [
+    "M9Dxnvp7o7J9mFNzp8fSe3yD7G3FYfWPP9",
+    14.0,
+    1790.46,
+    1,
+    "2025-03-03",
+    "2025-03-03"
+   ],
+   [
+    "MTdGRDmDvd8fhdDwdruhc5tva93VYPLhuL",
+    19.05635506,
+    1786.91,
+    1,
+    "2025-03-25",
+    "2025-03-25"
+   ],
+   [
+    "ltc1qjsz2z76q493q6fyuwhmjjc6ff3ds29a5eaz89s",
+    17.0895374,
+    1774.58,
+    1,
+    "2025-05-13",
+    "2025-05-13"
+   ],
+   [
+    "ltc1q9a0xesam65vdlfpfmw6zhfr2dz4x5cwnj7net7",
+    23.27104254,
+    1768.6,
+    1,
+    "2025-04-19",
+    "2025-04-19"
+   ],
+   [
+    "ltc1qy5jsau6jhuxwntsyj8mvtg88plu2kajj8gd7py",
+    27.2724657,
+    1767.26,
+    1,
+    "2024-10-14",
+    "2024-10-14"
+   ],
+   [
+    "ltc1qkhu4kuhthqqp68yr4w9q6p7pq7z8qsue2p06te",
+    27.07639084,
+    1758.61,
+    1,
+    "2024-10-05",
+    "2024-10-05"
+   ],
+   [
+    "ltc1qvrlw7hwu56juek7pctuw0ln4eugsww05rptgna",
+    21.52548971,
+    1754.97,
+    1,
+    "2025-04-03",
+    "2025-04-03"
+   ],
+   [
+    "M9pjeZUuBvkV4kDnm9bxAs1fyympueoeEE",
+    20.0,
+    1749.8,
+    1,
+    "2025-03-11",
+    "2025-03-11"
+   ],
+   [
+    "MTJcGbsedPtvWrUbwXYWZZrTk8CsGKus2g",
+    21.0,
+    1748.67,
+    1,
+    "2025-04-24",
+    "2025-04-24"
+   ],
+   [
+    "MS2GK7aBB6Cdc3hyxo8YUwjdFqn8N5Ca25",
+    14.43822565,
+    1735.62,
+    1,
+    "2025-02-11",
+    "2025-02-11"
+   ],
+   [
+    "MEXarSMRDpzoa4dvQsiAU5uBnna34iV9y9",
+    13.54824371,
+    1735.53,
+    1,
+    "2025-02-22",
+    "2025-02-22"
+   ],
+   [
+    "ltc1q3g5kp0de9sqevfqrxamzqcecgsglal0hverslt",
+    14.96503743,
+    1731.75,
+    1,
+    "2025-01-06",
+    "2025-01-06"
+   ],
+   [
+    "MFiMtEFuiN4w28cxeZKGoRisz1SjrxdJvL",
+    22.0,
+    1729.86,
+    1,
+    "2025-04-13",
+    "2025-04-13"
+   ],
+   [
+    "MLsqRqToAzfMyT8qPj5tsMm2abWBqRXJW3",
+    20.0,
+    1709.2,
+    1,
+    "2025-03-30",
+    "2025-03-30"
+   ],
+   [
+    "M9Nuq5hTeeNC1BikBTGVABPftKqnNSrqcs",
+    20.0,
+    1707.6,
+    1,
+    "2025-04-28",
+    "2025-04-28"
+   ],
+   [
+    "MREqgVC9V2VK8JXkjVzFzB5Bhy512G7iee",
+    24.0,
+    1695.12,
+    1,
+    "2025-04-07",
+    "2025-04-07"
+   ],
+   [
+    "MBNitVKsUsaSwMjv5CPoeo98mF8ynUqXvU",
+    20.0,
+    1689.6,
+    1,
+    "2025-04-02",
+    "2025-04-02"
+   ],
+   [
+    "ML7eyAAMBujpBJcL7b2ata9V7TZbuwuse6",
+    20.0,
+    1688.2,
+    1,
+    "2025-04-05",
+    "2025-04-05"
+   ],
+   [
+    "ltc1q2zvq3xuytm38tpucrz9hqk8yq89y9q586vp72a",
+    16.61846541,
+    1670.49,
+    1,
+    "2025-05-10",
+    "2025-05-10"
+   ],
+   [
+    "MQDNYpp4dNwSGis9AiKRBZhALy2AaPjaf9",
+    19.28891412,
+    1669.46,
+    1,
+    "2025-05-04",
+    "2025-05-04"
+   ],
+   [
+    "ltc1qql3ttpxhhzyhrl6l2zahnldkh2craqgpsclhud",
+    23.57829815,
+    1668.64,
+    1,
+    "2024-10-22",
+    "2024-10-22"
+   ],
+   [
+    "MEKvYZgJrudWCee1EiRZb3dvNuZ7ismmT5",
+    22.0,
+    1656.16,
+    1,
+    "2025-04-16",
+    "2025-04-16"
+   ],
+   [
+    "MKXduEcYkW2yNhZ2aCNMPU2dWMZRxfXVa7",
+    15.41449006,
+    1652.43,
+    1,
+    "2025-02-10",
+    "2025-02-10"
+   ],
+   [
+    "M9XviHubt8DBxmz4bX1B96tkQiafF9Vqk6",
+    15.0,
+    1648.5,
+    1,
+    "2025-03-04",
+    "2025-03-04"
+   ],
+   [
+    "MRrHNtWrLZTLNXdq5xuFpCPt9Gzhv5o2LA",
+    20.0,
+    1647.4,
+    1,
+    "2024-11-15",
+    "2024-11-15"
+   ],
+   [
+    "ltc1qd2wlfx4gnuwwdngt2vjty4w260ymwed8cfr8h4",
+    13.49821042,
+    1635.04,
+    1,
+    "2024-12-16",
+    "2024-12-16"
+   ],
+   [
+    "MFrJEB4UBAQrCTgGAzkYSbxswNdF1RHHzj",
+    20.0,
+    1630.6,
+    1,
+    "2025-04-03",
+    "2025-04-03"
+   ],
+   [
+    "MGXzzYohDPRxpVr9RsUfhUtRzhzv2T4FGC",
+    18.5,
+    1627.26,
+    1,
+    "2025-05-03",
+    "2025-05-03"
+   ],
+   [
+    "ltc1qatxa85dxmyk6pg7pkzq05mhd8kzt3p4jtttsx0",
+    18.49122944,
+    1609.85,
+    1,
+    "2025-04-27",
+    "2025-04-27"
+   ],
+   [
+    "MD82jCcALzYd8gXEHBmAhikpJNGqwtb1pk",
+    19.0,
+    1581.75,
+    1,
+    "2025-05-06",
+    "2025-05-06"
+   ],
+   [
+    "ltc1qwjtd36057s54dtmg9amhnhqar6n9wjgjeksy3v",
+    17.63090695,
+    1572.85,
+    1,
+    "2024-11-19",
+    "2024-11-19"
+   ],
+   [
+    "M8TNDSo6k3f7ftTQ9GdVvgPgCiYtqrVPVu",
+    12.0,
+    1569.84,
+    1,
+    "2025-02-21",
+    "2025-02-21"
+   ],
+   [
+    "ltc1q7s0e9t2gkt49wvj5ed9rjrmtpqnd59u6qu5u5z",
+    12.22732002,
+    1565.46,
+    1,
+    "2025-03-01",
+    "2025-03-01"
+   ],
+   [
+    "MLYtSeu7w7BrQuC2FiNkcKADuuKcTAhjQ2",
+    12.0,
+    1558.32,
+    1,
+    "2025-02-24",
+    "2025-02-24"
+   ],
+   [
+    "MF54pQjBtKUMoyv96y9bBSHsCTS2vamfZ4",
+    15.0,
+    1555.65,
+    1,
+    "2025-03-08",
+    "2025-03-08"
+   ],
+   [
+    "ltc1qys6w4kzh0em985vxp2qglvjw4re420efndyuu3",
+    13.64069183,
+    1555.04,
+    1,
+    "2025-01-07",
+    "2025-01-07"
+   ],
+   [
+    "ltc1qq78vg9tz3dcam73j75danzw7u268yk0dy0qgtc",
+    20.01104333,
+    1534.65,
+    1,
+    "2024-11-13",
+    "2024-11-13"
+   ],
+   [
+    "ltc1qwajpankn8v8a29a9uf4x9etrgu78ekpnyc3ny6",
+    16.55861072,
+    1526.7,
+    1,
+    "2024-11-23",
+    "2024-11-23"
+   ],
+   [
+    "MRfq7rsDfXtgDka4BXAX6wVBdx75V1pQBN",
+    20.0,
+    1523.8,
+    1,
+    "2025-04-12",
+    "2025-04-12"
+   ],
+   [
+    "ltc1qxzvepz0ln078sy56a2gmreucyajeahm3fpmmy9",
+    12.95471881,
+    1494.72,
+    1,
+    "2025-01-23",
+    "2025-01-23"
+   ],
+   [
+    "ltc1qhy262lk6pg9kwjl933ngnlfyfsa4j4hjh83wph",
+    12.92619745,
+    1437.65,
+    1,
+    "2025-01-05",
+    "2025-01-05"
+   ],
+   [
+    "ltc1qyj748l86t7m3x2k3lxva77kv5z77yajgmv8pjs",
+    11.53030505,
+    1434.83,
+    1,
+    "2025-01-17",
+    "2025-01-17"
+   ],
+   [
+    "ltc1q920jqqs0htkgfrafvexlwzgl2rang2txanjrms",
+    21.44844613,
+    1433.83,
+    1,
+    "2024-11-04",
+    "2024-11-04"
+   ],
+   [
+    "ltc1qfc5d9uk4jv3uhlss4dsh5ydanvvwlmxw9qvks0",
+    14.41785753,
+    1332.5,
+    1,
+    "2025-03-27",
+    "2025-03-27"
+   ],
+   [
+    "ltc1qxls4fe4htckra5myhcwera3k08dkkm3zpwskrr",
+    9.39937738,
+    1256.6,
+    1,
+    "2024-12-05",
+    "2024-12-05"
+   ],
+   [
+    "ltc1qyjuzmvw89s9tvj6tlw9965qe2narwy2ja7dch6",
+    9.74648623,
+    1225.33,
+    1,
+    "2025-02-17",
+    "2025-02-17"
+   ],
+   [
+    "ltc1qph0u6dza94xr4kdwlpm9qphgqq2erk8gnv7705",
+    11.56465784,
+    1194.4,
+    1,
+    "2025-01-01",
+    "2025-01-01"
+   ],
+   [
+    "ltc1qv5n7q45ygvdnhlrxlrplgqzqdwjuegsuvr0rf0",
+    13.06773853,
+    1176.49,
+    1,
+    "2025-03-19",
+    "2025-03-19"
+   ],
+   [
+    "ltc1q63rrmwznmeavvmat6lq2sf82dsytyzvzg8xfrc",
+    11.37837593,
+    1163.33,
+    1,
+    "2024-12-27",
+    "2024-12-27"
+   ],
+   [
+    "ltc1qf046q96qx8uqlsx0kzuusrytfaz2e48rch252a",
+    16.93286209,
+    1122.65,
+    1,
+    "2024-10-06",
+    "2024-10-06"
+   ],
+   [
+    "ltc1qq7mk25meg48zzw9ug2qhwhf6qzk74uhhtes7ua",
+    11.91267526,
+    1098.71,
+    1,
+    "2024-11-26",
+    "2024-11-26"
+   ],
+   [
+    "ltc1q68flnet40etnx8xuctsmda2rzevvt6ffmdvfrm",
+    9.13529169,
+    1080.07,
+    1,
+    "2024-12-15",
+    "2024-12-15"
+   ],
+   [
+    "ltc1qk9agwjy4nsqu0lsd0pq48785ruwfzty0dzavd2",
+    13.36355026,
+    1006.01,
+    1,
+    "2025-04-16",
+    "2025-04-16"
+   ],
+   [
+    "ltc1q2gyglxlakd7msv7frtg7l7nkpxayp7hqlkzsww",
+    14.1958405,
+    1002.65,
+    1,
+    "2025-04-07",
+    "2025-04-07"
+   ],
+   [
+    "ltc1qzepqvaffl3ccnrfrku205jeyst3deua3gghn7e",
+    13.91851271,
+    895.24,
+    1,
+    "2024-10-11",
+    "2024-10-11"
+   ],
+   [
+    "ltc1qp8pdjvttuzfjse8v8hhrj352a5wnuqw3w34tgu",
+    10.01078305,
+    881.85,
+    1,
+    "2025-03-14",
+    "2025-03-14"
+   ],
+   [
+    "ltc1qrum4aq2fra76mktuw447p5e3dks5yurc39rv72",
+    7.31903665,
+    838.4,
+    1,
+    "2025-02-26",
+    "2025-02-26"
+   ],
+   [
+    "ltc1qgv4kvyprjjfj7waeejkjfyr5gllt9p2xzwxqc4",
+    10.91664934,
+    731.74,
+    1,
+    "2024-10-07",
+    "2024-10-07"
+   ],
+   [
+    "ltc1qejem5jdw775x296kcsgxjx7lahvxe9gnt4mde3",
+    7.90670029,
+    666.53,
+    1,
+    "2025-04-25",
+    "2025-04-25"
+   ],
+   [
+    "LcAmRWcoogxkJuEs6uW3ese4qDK4Wr9BNf",
+    4.74665259,
+    499.63,
+    1,
+    "2025-05-11",
+    "2025-05-11"
+   ],
+   [
+    "ltc1q4a04qrl863jr568qanj3yuzhmv2y7vatxt6czx",
+    3.85913247,
+    400.73,
+    2,
+    "2025-05-13",
+    "2025-05-13"
+   ],
+   [
+    "LeSVbA96uaS5GirNSoFz9bcR6ubV19AuJD",
+    1.55532734,
+    117.27,
+    1,
+    "2024-11-14",
+    "2024-11-14"
+   ],
+   [
+    "ltc1qsndf04qnxdun4ckxzq35xkeg3hhywlpplkqskm",
+    1.0297223,
+    101.3,
+    1,
+    "2025-01-14",
+    "2025-01-14"
+   ],
+   [
+    "ltc1q7q93feq06eyl3cgd6vq6e6m5j50jh4eaq5vuju",
+    1.11004671,
+    60.72,
+    1,
+    "2026-09-06",
+    "2026-09-06"
+   ],
+   [
+    "LhdLhdkAdpE4R7a3YueaEjmNyvCcMTYH1Y",
+    0.4989424,
+    55.49,
+    1,
+    "2025-01-05",
+    "2025-01-05"
+   ],
+   [
+    "ltc1qhdwfh2qsv4plge63lus33vjz3vry7elq7yp7ha",
+    0.09936222,
+    12.51,
+    1,
+    "2025-02-23",
+    "2025-02-23"
+   ]
+  ]
+ }
 }

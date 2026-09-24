@@ -1,0 +1,30 @@
+{
+ "btc": {
+  "in": 5.7494681,
+  "out": 5.7494681,
+  "in_usd": 475371.55999041,
+  "out_usd": 476988.2614496,
+  "fees": 0.08126502,
+  "fees_usd": 6853.29193087,
+  "to_dest": 5.66820308,
+  "to_dest_usd": 470134.96951872,
+  "n_txs": 8860,
+  "n_sweep_txs": 47,
+  "addresses": 4083
+ },
+ "ltc": {
+  "in": 6853.86737339,
+  "out": 6853.86737339,
+  "in_usd": 618718.90633221,
+  "out_usd": 619179.13411656,
+  "fees": 0.72448138,
+  "fees_usd": 68.29383719,
+  "to_dest": 6853.14289201,
+  "to_dest_usd": 619110.84027937,
+  "n_txs": 14869,
+  "n_sweep_txs": 0,
+  "addresses": 4857
+ },
+ "price_source": "Binance daily open (UTC) on tx day",
+ "attribution": "Sweep txs (shared inputs): destinations credited with our net contribution = our inputs - proportional fee share - change back to us"
+}
