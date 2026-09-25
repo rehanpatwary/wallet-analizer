@@ -1,0 +1,20 @@
+{
+  "xpubs": [
+    {"slug": "btc-2022", "coin": "btc", "from": "2022-01-22", "to": "2023-01-16",
+     "xpub": "xpub6DFomX6tBEmW6nPtzRW3rGhuh7gg83bg8BVkgrP8DAqxpAZYNxpMfV1igLnQ9oryjXp2N1vAZjm965Svy225u7LYMNsaA2ebpN2Ti4G1SjE"},
+    {"slug": "btc-2023", "coin": "btc", "from": "2023-01-17", "to": "2024-10-04",
+     "xpub": "xpub6CTBy4T1MFoX4xKrkUxAhJtbYhWZsJfvEwv9eSQKuaLZFn7yNTyk8QkMmCMSVn5J6X8rG9ZLVHnUP8p5YmBD53kkxPdrjipdp4EmMXjhHJJ"},
+    {"slug": "btc-2024-25", "coin": "btc", "from": "2024-10-04", "to": "2025-05-13",
+     "xpub": "xpub6DLFCJ5Dg9DRF1vUgEATheBGxAqqJ99CHR6DzKCyzoCgXw1v55STMkDWns5ybgM2uGbaMei7kpnvMRKLqysmq3paxChwAvTvuG5LcotZ7UD"},
+    {"slug": "btc-2025", "coin": "btc", "from": "2025-05-13", "to": "2025-10-10",
+     "xpub": "xpub6C47wPLFRPBdvQRhZG9WYXJ6MnSsufJcTMS2HxYMQFDBiUhhcrfkq5c11xw1GBcxJzQnnF7S7PB61BKa61bndxNT89XGjZGhQHeX4tEZjiV"},
+    {"slug": "ltc-2023", "coin": "ltc", "from": "2023-11-10", "to": "2023-11-12", "script": "p2pkh",
+     "xpub": "xpub6CFUF27ce9AD447om1pbhLyg6uWtqHtV9qjDVW8FqqHDiwu8MZa33eForwzuE9W2MKG59yb3F7oAXMh93HfVoSNf6j4TGX2cmN2Q5FCDw3W"},
+    {"slug": "ltc-2023-24", "coin": "ltc", "from": "2023-11-12", "to": "2024-10-04", "script": "p2pkh",
+     "xpub": "xpub6CNnbDfVZhb3okr58B4sKCLLFHTxqU5ziUfo26hSkmzAhPqsfDbEvCtRJiAhAc8XzoTqWaJSNUJUcAivsS2XcjjyUDTSoTzKqxMzedFjEKj"},
+    {"slug": "ltc-2024-25", "coin": "ltc", "from": "2024-10-04", "to": "2025-05-13", "script": "p2pkh",
+     "xpub": "xpub6DKEAKEkRjmaeJSVFTAo4GaqRgxnEtw37JNsu4NPJwDtA92rmMCqp48DDD2m6kE9AYagjXUBC3JdFffzoKoP3hmrZT6iUkLWeGPmBrHynxG"},
+    {"slug": "ltc-2025", "coin": "ltc", "from": "2025-05-13", "to": "2025-10-10", "script": "p2pkh",
+     "xpub": "xpub6D4DLTj3qTkoAhPJqMnYabJRgZtF6UbcEEa1bqSVAbQV9pY7LrwY52aFmm7yDMDmn6k7viXJm4APeZH1QwPrX9iDVVvGJGNJaqpYfiixBae"}
+  ]
+}
