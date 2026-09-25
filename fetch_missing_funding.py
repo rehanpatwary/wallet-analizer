@@ -17,7 +17,7 @@ import sys
 import time
 import urllib.request
 
-PROJ = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+from wallet_config import PROJ
 APIS = {
     "btc": ["http://10.10.20.3:3006/api", "https://mempool.space/api"],
     "ltc": ["http://10.10.20.3:3006/api", "https://litecoinspace.org/api"],

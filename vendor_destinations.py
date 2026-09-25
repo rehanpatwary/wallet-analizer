@@ -17,7 +17,7 @@ import json
 import sys
 from collections import defaultdict
 
-PROJ = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+from wallet_config import PROJ
 
 
 def load_own_addresses(path):

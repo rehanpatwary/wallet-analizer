@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import MNEMONIC as _MNEMONIC
 """
 Streamlined BTC/LTC address checker using blockchain.info (BTC) and chain.so (LTC).
 """
@@ -153,7 +154,7 @@ def scan_mnemonic(mnemonic, coin='btc', depth=100, gap=20):
     return found_addrs
 
 if __name__ == '__main__':
-    MNEMONIC = 'resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff'
+    MNEMONIC = _MNEMONIC
     btc_addrs = scan_mnemonic(MNEMONIC, coin='btc', depth=50, gap=10)
     ltc_addrs = scan_mnemonic(MNEMONIC, coin='ltc', depth=50, gap=10)
 

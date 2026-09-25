@@ -1,0 +1,10 @@
+.git
+.env
+*.log
+*.pid
+*.checkpoint.json
+__pycache__/
+.DS_Store
+all_transactions.json
+all_ltc_transactions.json
+classified_report.json

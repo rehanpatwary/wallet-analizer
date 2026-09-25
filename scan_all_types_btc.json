@@ -1,8 +1,7 @@
 {
   "coin": "btc",
-  "source": "electrum:electrum.emzy.de:50002,bitcoin.lu.ke:50001,bitcoin.lu.ke:50002,electrum.arkade.sh:50001,blackie.c3-soft.com:57006",
-  "server_tip_height": 966713,
-  "generated": "2026-09-13T01:44:08.723590",
+  "source": "https://mempool.emzy.de/api",
+  "generated": "2026-09-13T00:46:29.724501",
   "types": {
     "bip44_legacy": {
       "status": "USED",
@@ -13,321 +12,320 @@
           "lookups": 0
         },
         "0/change": {
-          "status": "empty (gap-5000 verified, scanned to idx 5024)",
+          "status": "empty (gap-5000 verified, scanned to idx 5000)",
           "found": 0,
-          "lookups": 5024
+          "lookups": 5000
         },
         "1/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "1/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         }
       },
       "found": 4083,
-      "lookups": 7328
+      "lookups": 6800
     },
     "bip49_segwit": {
       "status": "NOT USED",
       "accounts": {
         "0/external": {
-          "status": "NOT USED (first 500 empty, 628 checked)",
+          "status": "NOT USED (first 500 empty, 600 checked)",
           "found": 0,
-          "lookups": 640
+          "lookups": 600
         },
         "0/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "1/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "1/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         }
       },
       "found": 0,
-      "lookups": 3072
+      "lookups": 2500
     },
     "bip84_native_segwit": {
       "status": "NOT USED",
       "accounts": {
         "0/external": {
-          "status": "NOT USED (first 500 empty, 628 checked)",
+          "status": "NOT USED (first 500 empty, 600 checked)",
           "found": 0,
-          "lookups": 640
+          "lookups": 600
         },
         "0/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "1/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "1/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "2/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "3/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "4/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "5/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "6/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "7/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "8/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/external": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         },
         "9/change": {
-          "status": "empty (gap-100 checked to idx 128)",
+          "status": "empty (gap-100 checked to idx 100)",
           "found": 0,
-          "lookups": 128
+          "lookups": 100
         }
       },
       "found": 0,
-      "lookups": 3072
+      "lookups": 2500
     }
   },
   "total_found_new": 0,
-  "total_lookups": 13472,
-  "grand_total_found": 4083,
-  "server_end_tip_height": 966713
+  "total_lookups": 11800,
+  "grand_total_found": 4083
 }

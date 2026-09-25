@@ -8,3 +8,6 @@ all_transactions.json
 classified_report.json
 __pycache__/
 .DS_Store
+# secrets — never commit the mnemonic or local overrides
+.env
+missing_funding_*.json

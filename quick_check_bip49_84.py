@@ -6,7 +6,7 @@ import ecdsa, base58, bech32
 from mnemonic import Mnemonic
 
 BASE = "http://10.10.20.3:3006"
-MNEMONIC = 'resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff'
+from wallet_config import MNEMONIC
 HARDENED = 0x80000000
 
 def hash160(d): return __import__('hashlib').new('ripemd160', __import__('hashlib').sha256(d).digest()).digest()

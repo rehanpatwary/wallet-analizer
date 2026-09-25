@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 BTC type x account-depth verification via Electrum servers (no REST API).
 
@@ -21,12 +22,12 @@ import json, os, sys, time, ssl, socket, hashlib, threading
 from datetime import datetime
 
 sys.path.insert(0, '/Users/agenticos/Library/Python/3.9/lib/python/site-packages')
-sys.path.insert(0, '/Users/agenticos/Documents/kimi/workspace/wallet-analizer')
+sys.path.insert(0, PROJ)
 
 from wallet_analyzer import derive_addresses, hash160
 
-MNEMONIC = "resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff"
-OUT_DIR = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+from wallet_config import MNEMONIC
+OUT_DIR = PROJ
 
 TYPES = ['bip44_legacy', 'bip49_segwit', 'bip84_native_segwit']
 ACCOUNTS = range(10)

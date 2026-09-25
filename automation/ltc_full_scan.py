@@ -1,3 +1,4 @@
+from wallet_config import PROJ
 """Execution: full LTC wallet analysis, run when the LTC blockbook node is online.
 
 Steps:
@@ -18,7 +19,10 @@ import ssl
 import concurrent.futures
 from datetime import datetime
 
-MNEMONIC = "resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff"
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parent.parent))
+from wallet_config import MNEMONIC
 GAP_LIMIT = 5000
 MAX_SCAN = 6000
 
@@ -38,7 +42,7 @@ PUBLIC_LTC_APIS = [
     "https://mempool.space/litecoin",
 ]
 
-PROJECT_DIR = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+PROJECT_DIR = PROJ
 
 _ctx = ssl.create_default_context()
 _ctx.check_hostname = False

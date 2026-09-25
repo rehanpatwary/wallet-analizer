@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 Exhaustive address-type x account-depth verification scanner.
 
@@ -29,12 +30,12 @@ from datetime import datetime
 socket.setdefaulttimeout(15)
 
 sys.path.insert(0, '/Users/agenticos/Library/Python/3.9/lib/python/site-packages')
-sys.path.insert(0, '/Users/agenticos/Documents/kimi/workspace/wallet-analizer')
+sys.path.insert(0, PROJ)
 
 from wallet_analyzer import derive_addresses
 
-MNEMONIC = "resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff"
-OUT_DIR = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+from wallet_config import MNEMONIC
+OUT_DIR = PROJ
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 
 TYPES = ['bip44_legacy', 'bip49_segwit', 'bip84_native_segwit']

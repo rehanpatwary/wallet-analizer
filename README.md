@@ -1,160 +1,81 @@
-# Crypto Wallet Recovery & Transaction Analysis System
+# wallet-analizer
 
-A comprehensive Python tool to recover Bitcoin (BTC) and Litecoin (LTC) wallet addresses from BIP39 mnemonic phrases, scan blockchain transaction history, and classify outgoing transactions into **self-withdrawals** and **vendor withdrawals**.
+Forensic analysis toolkit for a **BIP39 mnemonic-derived Bitcoin + Litecoin
+wallet** (legacy BIP44). Recovers every address, downloads the full
+transaction history, builds a per-address ledger with USD valuation at each
+transaction's actual rate, and ranks where the money went — correctly
+handling shared custodial sweep transactions.
 
-## Features
+Built to be operated by humans **and AI coding agents**: see
+[AGENTS.md](AGENTS.md) for the agent runbook (golden rules, pipeline,
+verified analytical facts).
 
-- **Multi-Path Address Discovery**: Scans BIP44 (Legacy), BIP49 (SegWit Compatible), and BIP84 (Native SegWit) derivation paths
-- **Change Address Detection**: Also scans internal/change chains (m/.../1/*) for complete wallet coverage
-- **Blockchain API Integration**: Uses mempool.space, BlockCypher, Chain.so, and Blockchain.info for redundancy
-- **Transaction Classification**:
-  - **Incoming**: Deposits received from external addresses
-  - **Outgoing (Vendor Withdrawal)**: Payments sent to external addresses
-  - **Self-Transfer**: Funds moved between your own addresses (consolidation)
-- **Fund Flow Mapping**: Visual HTML report showing where your money went
-- **CSV Export**: Machine-readable export for spreadsheet analysis
+## Results at a glance
 
-## Installation
+| | BTC | LTC |
+|---|---|---|
+| Addresses found | 4,083 | 4,857 |
+| Total received | 5.74946810 (**$475,371**) | 6,853.86737339 (**$618,718**) |
+| Network fees (our share) | 0.08126502 | 0.72448138 |
+| Net sent to destinations | 5.66820308 (**$470,134**) | 6,853.14289201 (**$619,110**) |
+| Current on-chain balance | **0** | **0** |
 
-```bash
-pip3 install ecdsa base58 mnemonic bech32
-```
+USD values are computed per-transaction at the live rate on the day it
+confirmed (Binance daily open, UTC).
 
-Or use the provided requirements file:
-```bash
-pip3 install -r requirements.txt
-```
-
-## Usage
-
-### Basic Usage
+## Quick start
 
 ```bash
-python3 wallet_analyzer.py --mnemonic "your twelve word seed phrase here" --coin btc
+make setup        # install dependencies
+make env          # creates .env — put your WALLET_MNEMONIC in it
+make restore-data # decompress committed tx archives
+make fix-funding  # repair any missing funding transactions
+make ledger       # rebuild ledger + interactive HTML report
 ```
 
-### With Options
+Full pipeline from a fresh clone: `make all`. Every target is also runnable
+without make — see the `Makefile` or `AGENTS.md` for the raw commands.
+
+Docker:
 
 ```bash
-python3 wallet_analyzer.py \
-  --mnemonic "word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12" \
-  --coin btc \
-  --depth 100 \
-  --gap 20 \
-  --output my_wallet_report.html \
-  --csv my_wallet_report.csv
+docker build -t wallet-analizer .
+docker run -e WALLET_MNEMONIC="word1 ... word12" wallet-analizer make ledger
 ```
 
-### From File
+## How it works
 
-```bash
-# Save your mnemonic to a file first
-echo "your twelve word seed phrase" > seed.txt
+1. **Address sweep** (`scan_all_types_accounts.py`) — derives BIP44/BIP49/
+   BIP84 × accounts 0–9 × external/internal from the mnemonic; legacy
+   account-0 external was the only active path (everything else verified
+   empty). Gap limit 5000.
+2. **History download** (`fetch_all_txs_fast.py`) — pulls every transaction
+   touching any found address from a self-hosted mempool/esplora node
+   (`MEMPOOL_API`, default `http://10.10.20.3:3006/api`), failing over to
+   mempool.space / litecoinspace.org.
+3. **Gap repair** (`fetch_missing_funding.py`) — esplora downloads can miss
+   funding transactions; this reconciles spent-vs-received and backfills any
+   missing funding txs automatically (checkpointed, retry-safe).
+4. **Ledger + report** (`build_ledger.py`) — per-address in/out with USD at
+   tx-day rates; sweep-aware vendor attribution; emits `ledger.csv`,
+   `ledger.json`, `wallet_summary.json`, `vendor_destinations_usd_report.*`,
+   `vendor_tx_usd.csv`, and a self-contained interactive
+   `wallet_report.html` (searchable/sortable ledger, cumulative USD flow
+   chart, top destinations).
 
-# Run the analyzer
-python3 wallet_analyzer.py --mnemonic-file seed.txt --coin btc
-```
+## Configuration
 
-### Parameters
+Everything is env-driven via `wallet_config.py` / `.env` (see
+`.env.example`): `WALLET_MNEMONIC`, `MEMPOOL_API`, `BINANCE_API`, `GAP_LIMIT`,
+`ACCOUNT_DEPTH`. No machine-specific paths are hardcoded anywhere.
 
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `--mnemonic` | BIP39 mnemonic phrase (space-separated words) | - |
-| `--mnemonic-file` | File containing the mnemonic phrase | - |
-| `--coin` | Cryptocurrency to analyze (`btc` or `ltc`) | `btc` |
-| `--depth` | Maximum address index to scan | `100` |
-| `--gap` | Consecutive empty addresses before stopping | `20` |
-| `--output` | Output HTML report path | `wallet_report.html` |
-| `--csv` | Output CSV report path | `wallet_report.csv` |
-| `--passphrase` | Optional BIP39 passphrase | (empty) |
+## Security notice
 
-## How It Works
+⚠️ The mnemonic analyzed by this project was exposed in this repository's
+early commit history. **Treat this wallet as compromised**: never deposit
+funds to any of its addresses again. Never commit your `.env`.
 
-### 1. Address Discovery
-The tool derives addresses from your mnemonic across multiple derivation paths:
-- **BIP44 Legacy**: `m/44'/0'/0'/0/i` → `1xxx...` addresses
-- **BIP49 SegWit**: `m/49'/0'/0'/0/i` → `3xxx...` addresses  
-- **BIP84 Native SegWit**: `m/84'/0'/0'/0/i` → `bc1q...` addresses
+## Requirements
 
-It also scans change addresses at `m/...'/1/i`.
-
-### 2. Transaction Fetching
-For each discovered address with transaction history, the tool queries multiple blockchain APIs to retrieve all related transactions.
-
-### 3. Classification Logic
-
-| Condition | Classification |
-|-----------|---------------|
-| No inputs from our addresses | **Incoming** (deposit) |
-| Inputs from our addresses, outputs to external addresses | **Outgoing / Vendor Withdrawal** |
-| Inputs from our addresses, all outputs to our addresses | **Self-Transfer** |
-
-### 4. Report Generation
-
-The HTML report includes:
-- **Summary Dashboard**: Total received, sent, net balance, transaction counts
-- **Address List**: All discovered addresses with derivation paths
-- **Transaction History**: Chronological table with direction, amounts, fees
-- **Vendor Destinations**: Aggregated list of where money was sent
-- **Fund Flow Map**: Visual diagram of outgoing and self-transfer transactions
-- **JSON Export**: Raw transaction data for further analysis
-
-## Security Notes
-
-- **Never share your mnemonic phrase** with anyone or commit it to version control
-- This tool runs entirely locally - your mnemonic is never sent to any server
-- The tool only uses **public blockchain APIs** to query transaction data
-- Consider running on an offline/air-gapped machine for maximum security
-
-## Example Output
-
-```
-============================================================
-  CRYPTO WALLET RECOVERY & ANALYSIS SYSTEM
-============================================================
-Coin: BTC
-Scan depth: 100
-Gap limit: 20
-
-[DISCOVERY] Scanning BTC addresses...
-  Path: bip44_legacy (external chain)
-    [FOUND] 1LqBGSKu... (bip44_legacy, external, index 0)
-    [FOUND] 1Ak8PffB... (bip44_legacy, external, index 1)
-  Path: bip84_native_segwit (external chain)
-    [FOUND] bc1qcr8te... (bip84_native_segwit, external, index 0)
-
-[DISCOVERY] Total addresses with transactions: 3
-
-[TX FETCH] Retrieving transaction history...
-  Fetching txs for 1LqBGSKuX5yYUonjxT5qGfpUsXKYYWeabA...
-  Fetching txs for 1Ak8PffB2meyfYnbXZR9EGfLfFZVpzJvQP...
-  Fetching txs for bc1qcr8te4kr609gcawutmrza0j4xv80jy8z306fyu...
-[TX FETCH] Found 15 unique transactions
-
-[CLASSIFY] Analyzing transaction directions...
-
-============================================================
-  ANALYSIS SUMMARY
-============================================================
-  Addresses Found:     3
-  Total Transactions:  15
-  Incoming:            8
-  Outgoing:            5
-  Self-Transfers:      2
-  Total Received:      +12.50000000 BTC
-  Total Sent:          -8.25000000 BTC
-  Net Balance:         +4.25000000 BTC
-  Self-Moved:          +2.00000000 BTC
-
-  VENDOR WITHDRAWAL DESTINATIONS:
-    → 1Abc...: 3.50000000 BTC
-    → bc1q...: 2.75000000 BTC
-    → 3Def...: 2.00000000 BTC
-
-[REPORT] HTML report saved to: wallet_report.html
-[REPORT] CSV report saved to: wallet_report.csv
-```
-
-## License
-
-MIT License - Use at your own risk. Verify all transactions independently before taking any action.
+Python 3.10+ (no other system deps). `requirements.txt`: ecdsa, base58,
+mnemonic, bech32.

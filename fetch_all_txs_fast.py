@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 Concurrent transaction fetcher for wallet analysis.
 Uses threading to speed up API calls.
@@ -9,9 +10,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 
 BASE = "http://10.10.20.3:3006"
-ADDRESSES_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/found_addresses_btc_bip44_external.json'
-STATE_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/tx_fetch_state.json'
-OUTPUT_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/all_transactions.json'
+ADDRESSES_FILE = f'{PROJ}/found_addresses_btc_bip44_external.json'
+STATE_FILE = f'{PROJ}/tx_fetch_state.json'
+OUTPUT_FILE = f'{PROJ}/all_transactions.json'
 MAX_WORKERS = 16
 
 def load_addresses():

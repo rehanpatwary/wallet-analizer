@@ -14,7 +14,7 @@ import json, urllib.request, ssl, socket, concurrent.futures, time, os, sys, arg
 from datetime import datetime
 
 # Mnemonic and config
-MNEMONIC = "resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff"
+from wallet_config import MNEMONIC
 GAP_LIMIT = 5000
 MAX_SCAN = 6000
 

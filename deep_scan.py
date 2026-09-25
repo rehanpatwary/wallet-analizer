@@ -12,7 +12,7 @@ import ecdsa, base58, bech32
 from mnemonic import Mnemonic
 
 BASE = "http://10.10.20.3:3006"
-MNEMONIC = 'resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff'
+from wallet_config import MNEMONIC
 HARDENED = 0x80000000
 BTC_COIN_TYPE = 0
 LTC_COIN_TYPE = 2

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 Generate comprehensive wallet analysis report.
 """
@@ -7,10 +8,10 @@ import json
 from datetime import datetime
 from collections import defaultdict
 
-ADDRESSES_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/found_addresses_btc_bip44_external.json'
-TXS_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/all_transactions.json'
-REPORT_JSON = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/final_report.json'
-REPORT_TXT = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/final_report.txt'
+ADDRESSES_FILE = f'{PROJ}/found_addresses_btc_bip44_external.json'
+TXS_FILE = f'{PROJ}/all_transactions.json'
+REPORT_JSON = f'{PROJ}/final_report.json'
+REPORT_TXT = f'{PROJ}/final_report.txt'
 
 def load_data():
     with open(ADDRESSES_FILE, 'r') as f:
@@ -188,7 +189,7 @@ def main():
     lines.append("           BITCOIN WALLET ANALYSIS REPORT")
     lines.append("=" * 70)
     lines.append("")
-    lines.append(f"Mnemonic: resemble praise oxygen rhythm rate rose mutual upon")
+    lines.append("Mnemonic: <redacted - set via WALLET_MNEMONIC env var>")
     lines.append(f"          beach april behave cliff")
     lines.append(f"Derivation Path: m/44'/0'/0'/0/* (BTC BIP44 External Chain)")
     lines.append("")

@@ -30,7 +30,7 @@ import time
 import urllib.request
 from collections import defaultdict
 
-PROJ = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+from wallet_config import PROJ
 BINANCE = "https://api.binance.com/api/v3/klines"
 DAY = 86_400_000
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 LTC Wallet Scanner via litecoinspace.org (mempool.space fork)
 Deep scan + transaction fetch + classification using public API.
@@ -8,15 +9,15 @@ import json, os, sys, time, urllib.request
 from datetime import datetime
 
 sys.path.insert(0, '/Users/agenticos/Library/Python/3.9/lib/python/site-packages')
-sys.path.insert(0, '/Users/agenticos/Documents/kimi/workspace/wallet-analizer')
+sys.path.insert(0, PROJ)
 
 from wallet_analyzer import derive_addresses
 
-MNEMONIC = "resemble praise oxygen rhythm rate rose mutual upon beach april behave cliff"
+from wallet_config import MNEMONIC
 GAP_LIMIT = 100
 MAX_SCAN = 6000
 BASE = "https://litecoinspace.org/api"
-OUT_DIR = "/Users/agenticos/Documents/kimi/workspace/wallet-analizer"
+OUT_DIR = PROJ
 
 
 def req(path, timeout=12):

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 Transaction classifier for wallet analysis.
 Classifies each transaction as:
@@ -11,9 +12,9 @@ import json
 from datetime import datetime
 from collections import defaultdict
 
-ADDRESSES_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/found_addresses_btc_bip44_external.json'
-TXS_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/all_transactions.json'
-REPORT_FILE = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/classified_report.json'
+ADDRESSES_FILE = f'{PROJ}/found_addresses_btc_bip44_external.json'
+TXS_FILE = f'{PROJ}/all_transactions.json'
+REPORT_FILE = f'{PROJ}/classified_report.json'
 
 # Threshold: outputs below this value to our own addresses may be change
 # But user said change chain is empty, so all our-address outputs are on external chain

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """
 Continuation scanner for the LTC deep scan.
 
@@ -21,7 +22,7 @@ import time
 import concurrent.futures
 
 sys.path.insert(0, '/Users/agenticos/Library/Python/3.9/lib/python/site-packages')
-sys.path.insert(0, '/Users/agenticos/Documents/kimi/workspace/wallet-analizer')
+sys.path.insert(0, PROJ)
 
 from ltc_scan_litecoinspace import (
     MNEMONIC, GAP_LIMIT, OUT_DIR,

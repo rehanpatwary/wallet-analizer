@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """Extract addresses from deep scan log and save to JSON."""
 
 import re, json, sys
@@ -28,7 +29,7 @@ if found:
     tx_counts = Counter(a['n_tx'] for a in found)
     print(f"Tx count distribution: {dict(sorted(tx_counts.items()))}")
 
-out_path = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer/found_addresses_btc_bip44_external.json'
+out_path = f'{PROJ}/found_addresses_btc_bip44_external.json'
 with open(out_path, 'w') as f:
     json.dump(found, f, indent=2)
 print(f"Saved to {out_path}")

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+from wallet_config import PROJ
 """Merge per-coin type x account verification into one final report."""
 import json, os
 from datetime import datetime
 
-D = '/Users/agenticos/Documents/kimi/workspace/wallet-analizer'
+D = PROJ
 btc = json.load(open(os.path.join(D, 'scan_all_types_btc.json')))
 ltc = json.load(open(os.path.join(D, 'scan_all_types_ltc.json')))
 
