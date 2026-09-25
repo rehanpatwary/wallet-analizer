@@ -139,21 +139,33 @@ def analyze_xpub(entry, prices):
     own = {f["address"] for f in ckpt["funded"]}
     print(f"  [{slug}] total funded addresses: {len(own)}", flush=True)
 
-    # ---- fetch txs ----
+    # ---- fetch txs (parallel; local node handles concurrency, public
+    #      LTC source stays at 3 workers to be polite) ----
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     done = set(ckpt.get("fetched", []))
-    for i, f in enumerate(ckpt["funded"], 1):
-        addr = f["address"]
-        if addr in done:
-            continue
-        for tx in fetch_address_txs(coin, addr):
-            ckpt["txs"][tx["txid"]] = tx
-        done.add(addr)
-        if i % 50 == 0:
-            json.dump(ckpt, open(ckpt_path, "w"))
-            print(f"  [{slug}] fetched txs for {i}/{len(ckpt['funded'])} addresses "
-                  f"({len(ckpt['txs'])} txs)", flush=True)
-        time.sleep(0.04)
-    ckpt["fetched"] = sorted(done)
+    pending = [f["address"] for f in ckpt["funded"] if f["address"] not in done]
+    workers = 8 if coin == "btc" else 3
+    completed = 0
+    t_fetch = time.time()
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futs = {ex.submit(fetch_address_txs, coin, a): a for a in pending}
+        for fut in as_completed(futs):
+            addr = futs[fut]
+            try:
+                for tx in fut.result():
+                    ckpt["txs"][tx["txid"]] = tx
+                ckpt.setdefault("fetched", []).append(addr)
+            except Exception as e:
+                print(f"  [{slug}] WARN fetch failed {addr}: {e}", flush=True)
+            completed += 1
+            if completed % 200 == 0:
+                json.dump(ckpt, open(ckpt_path, "w"))
+                rate = completed / max(1, time.time() - t_fetch)
+                eta = (len(pending) - completed) / max(rate, 0.01) / 60
+                print(f"  [{slug}] fetched txs for {completed}/{len(pending)} "
+                      f"addresses ({len(ckpt['txs'])} txs, {rate:.1f}/s, "
+                      f"eta {eta:.0f}m)", flush=True)
+    ckpt["fetched"] = sorted(set(ckpt.get("fetched", [])))
     json.dump(ckpt, open(ckpt_path, "w"))
     txs = list(ckpt["txs"].values())
     print(f"  [{slug}] total txs fetched: {len(txs)}", flush=True)
