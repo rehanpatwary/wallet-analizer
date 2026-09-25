@@ -144,7 +144,7 @@ def analyze_xpub(entry, prices):
     from concurrent.futures import ThreadPoolExecutor, as_completed
     done = set(ckpt.get("fetched", []))
     pending = [f["address"] for f in ckpt["funded"] if f["address"] not in done]
-    workers = 8 if coin == "btc" else 3
+    workers = 24 if coin == "btc" else 3
     completed = 0
     t_fetch = time.time()
     with ThreadPoolExecutor(max_workers=workers) as ex:
