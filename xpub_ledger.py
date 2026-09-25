@@ -62,14 +62,33 @@ def _get_json(url, timeout=25, retries=4):
 def fetch_address_txs(coin, address):
     """All confirmed + mempool txs for an address, esplora/electrs format.
 
-    Uses the single-shot `/txs` endpoint, which works on both stock esplora
-    (mempool.space, litecoinspace.org) and electrs (Umbrel): it returns all
-    confirmed txs plus mempool txs in one response.
+    CRITICAL: never use single-shot /txs for history — electrs truncates to
+    the 10 most recent txs and esplora to 25. We page backwards with a
+    cursor (after_txid works on electrs AND esplora-family APIs) until a
+    short or empty page. Note: esplora's last_seen pagination can skip txs
+    that share a block with the cursor (dense consolidation blocks), so the
+    local electrs node is preferred; its pages are small (10) and complete.
     """
     for base in FALLBACK_APIS[coin]:
         try:
-            page = _get_json(f"{base}/address/{address}/txs")
-            return list({tx["txid"]: tx for tx in page}.values())
+            txs, seen, cursor = {}, set(), None
+            while True:
+                url = f"{base}/address/{address}/txs"
+                if cursor:
+                    url += f"?after_txid={cursor}"
+                page = _get_json(url, timeout=60)
+                new = 0
+                for tx in page:
+                    if tx["txid"] not in seen:
+                        seen.add(tx["txid"])
+                        txs[tx["txid"]] = tx
+                        new += 1
+                if len(page) < 10 or new == 0:
+                    break
+                cursor = page[-1]["txid"]
+                time.sleep(0.03)
+            if txs:
+                return list(txs.values())
         except urllib.error.HTTPError as e:
             if 400 <= e.code < 500:
                 continue  # endpoint/address not served by this source — next
