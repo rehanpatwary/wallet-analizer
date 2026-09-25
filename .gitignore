@@ -11,3 +11,7 @@ __pycache__/
 # secrets — never commit the mnemonic or local overrides
 .env
 missing_funding_*.json
+
+# multi-wallet secrets and generated outputs
+wallets.json
+results/

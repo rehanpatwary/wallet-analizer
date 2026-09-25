@@ -57,6 +57,13 @@ addresses and re-download history from scratch (slow; needs the mnemonic).
 | 2. Tx download | `fetch_all_txs_fast.py` | found addresses → `all_transactions.json` (BTC), `all_ltc_transactions.json` (LTC) |
 | 2b. Gap repair | `fetch_missing_funding.py` | tx dumps (+ APIs) → merges missing funding txs into the dumps |
 | 3. Ledger + report | `build_ledger.py` | tx dumps → `ledger.json`, `ledger.csv`, `wallet_summary.json`, `vendor_destinations_usd_report.*`, `vendor_tx_usd.csv`, `wallet_report.html` |
+| 0–3. Multi-wallet | `run_wallets.py` (`make wallets`) | `wallets.json` → `results/<name>/` per wallet + `results/index.html` |
+
+Stages 0–3 run per wallet with `WALLET_DIR=results/<name>`; secrets (mnemonic
+or account xpub) are referenced by env var NAME in `wallets.json` — never
+inline. `wallet_derive.py` supports mnemonic seeds and watch-only account
+xpubs (xpub/ypub/zpub, tpub/upub/vpub, Ltub/Mtub); derivation was verified
+against live chain funded-status for BTC and LTC.
 
 Supporting one-off/diagnostic scripts: `usd_valuation.py`,
 `vendor_destinations.py`, `btc_electrum_scan.py` (Electrum-server fallback

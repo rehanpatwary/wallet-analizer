@@ -1,0 +1,23 @@
+{
+  "wallets": [
+    {
+      "name": "main",
+      "type": "mnemonic",
+      "env": "WALLET_MNEMONIC",
+      "coins": ["btc", "ltc"]
+    },
+    {
+      "name": "trezor-watch-btc",
+      "type": "xpub",
+      "env": "TREZOR_BTC_XPUB",
+      "include_internal": true,
+      "_comment": "account-level xpub/ypub/zpub; version byte selects network+script; env var holds the key"
+    },
+    {
+      "name": "ledger-nano-ltc",
+      "type": "xpub",
+      "env": "LEDGER_LTC_LTUB",
+      "include_internal": true
+    }
+  ]
+}

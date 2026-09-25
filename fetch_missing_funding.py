@@ -17,7 +17,7 @@ import sys
 import time
 import urllib.request
 
-from wallet_config import PROJ
+from wallet_config import P, PROJ
 APIS = {
     "btc": ["http://10.10.20.3:3006/api", "https://mempool.space/api"],
     "ltc": ["http://10.10.20.3:3006/api", "https://litecoinspace.org/api"],
@@ -28,7 +28,7 @@ OWN_FILES = {"btc": "found_addresses_btc_bip44_external.json",
 
 
 def load_own(coin):
-    with open(f"{PROJ}/{OWN_FILES[coin]}") as f:
+    with open(P(OWN_FILES[coin])) as f:
         data = json.load(f)
     out = set()
     for e in (data.values() if isinstance(data, dict) else data):
@@ -40,7 +40,7 @@ def load_own(coin):
 
 
 def load_txs(coin):
-    with open(f"{PROJ}/{TX_FILES[coin]}") as f:
+    with open(P(TX_FILES[coin])) as f:
         raw = json.load(f)
     return raw
 
@@ -99,7 +99,7 @@ def run(coin):
         print(f"[{coin}] nothing to fetch", flush=True)
         return
 
-    ckpt_path = f"{PROJ}/missing_funding_{coin}.json"
+    ckpt_path = P(f"missing_funding_{coin}.json")
     try:
         with open(ckpt_path) as f:
             fetched = json.load(f)
@@ -131,12 +131,12 @@ def run(coin):
     else:
         seen = {t["txid"] for t in raw}
         merged = raw + [t for tid, t in fetched.items() if tid not in seen]
-    with open(f"{PROJ}/{TX_FILES[coin]}", "w") as f:
+    with open(P(TX_FILES[coin]), "w") as f:
         json.dump(merged, f)
     print(f"[{coin}] done. dataset now {len(merged)} txs; "
           f"merge-failures: {len(failed)}", flush=True)
     if failed:
-        with open(f"{PROJ}/missing_funding_{coin}_failed.json", "w") as f:
+        with open(P(f"missing_funding_{coin}_failed.json"), "w") as f:
             json.dump(failed, f, indent=1)
 
 

@@ -30,7 +30,7 @@ import time
 import urllib.request
 from collections import defaultdict
 
-from wallet_config import PROJ
+from wallet_config import P, PROJ
 BINANCE = "https://api.binance.com/api/v3/klines"
 DAY = 86_400_000
 
@@ -198,16 +198,16 @@ def build_coin_ledger(txs, own, prices):
 
 def main():
     print("Loading address sets...", flush=True)
-    own_btc = load_own_addresses(f"{PROJ}/found_addresses_btc_bip44_external.json")
-    own_ltc = load_own_addresses(f"{PROJ}/found_addresses_ltc.json")
+    own_btc = load_own_addresses(P("found_addresses_btc_bip44_external.json"))
+    own_ltc = load_own_addresses(P("found_addresses_ltc.json"))
 
     print("Loading BTC txs...", flush=True)
-    with open(f"{PROJ}/all_transactions.json") as f:
+    with open(P("all_transactions.json")) as f:
         raw_btc = json.load(f)
     btc_txs = list(raw_btc.values()) if isinstance(raw_btc, dict) else raw_btc
     del raw_btc
     print("Loading LTC txs...", flush=True)
-    with open(f"{PROJ}/all_ltc_transactions.json") as f:
+    with open(P("all_ltc_transactions.json")) as f:
         raw_ltc = json.load(f)
     ltc_txs = list(raw_ltc) if isinstance(raw_ltc, list) else list(raw_ltc.values())
     del raw_ltc
@@ -269,11 +269,11 @@ def main():
         "attribution": "Sweep txs (shared inputs): destinations credited with our net contribution "
                        "= our inputs - proportional fee share - change back to us",
     }
-    with open(f"{PROJ}/ledger.json", "w") as f:
+    with open(P("ledger.json"), "w") as f:
         json.dump({"summary": summary, "addresses": ledger_rows}, f)
-    with open(f"{PROJ}/wallet_summary.json", "w") as f:
+    with open(P("wallet_summary.json"), "w") as f:
         json.dump(summary, f, indent=1)
-    with open(f"{PROJ}/ledger.csv", "w", newline="") as f:
+    with open(P("ledger.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["coin", "address", "n_in", "total_in", "total_in_usd",
                     "n_out", "total_out", "total_out_usd", "first_active", "last_active"])
@@ -298,9 +298,9 @@ def main():
     dests = {"btc": agg(vend_b), "ltc": agg(vend_l)}
     totals = {"btc": round(wallet_b["to_dest_usd"], 2), "ltc": round(wallet_l["to_dest_usd"], 2)}
 
-    with open(f"{PROJ}/vendor_destinations_usd_report.json", "w") as f:
+    with open(P("vendor_destinations_usd_report.json"), "w") as f:
         json.dump({"summary": summary, "destinations": dests}, f, indent=1)
-    with open(f"{PROJ}/vendor_destinations_usd_report.txt", "w") as f:
+    with open(P("vendor_destinations_usd_report.txt"), "w") as f:
         for coin in ("btc", "ltc"):
             rows = dests[coin]
             f.write(f"=== {rows and 'BTC' if coin=='btc' else 'LTC'} vendor destinations "
@@ -312,7 +312,7 @@ def main():
             for i, r in enumerate(rows, 1):
                 f.write(f"{i:>4} {r[0]:<40} {r[1]:>18.8f} {r[2]:>16,.2f} {r[3]:>5}  {r[4] or '-'} .. {r[5] or '-'}\n")
             f.write("\n")
-    with open(f"{PROJ}/vendor_tx_usd.csv", "w", newline="") as f:
+    with open(P("vendor_tx_usd.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["coin", "date_utc", "destination", "amount", "usd_value"])
         for coin, vends in (("BTC", vend_b), ("LTC", vend_l)):
@@ -545,7 +545,7 @@ def write_html(summary, ledger_rows, dests, chart):
             .replace("__DATA__", data_js)
             .replace("__ADDRS__", f"{len(ledger_rows):,}")
             .replace("__DATE__", datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-    with open(f"{PROJ}/wallet_report.html", "w") as f:
+    with open(P("wallet_report.html"), "w") as f:
         f.write(html)
     print(f"  wallet_report.html: {len(html)/1e6:.1f} MB")
 

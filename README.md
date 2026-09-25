@@ -33,6 +33,21 @@ make fix-funding  # repair any missing funding transactions
 make ledger       # rebuild ledger + interactive HTML report
 ```
 
+### Multiple wallets (seeds and/or watch-only xpubs)
+
+```bash
+cp wallets.example.json wallets.json   # define your wallets
+export WALLET_MNEMONIC="..."           # env vars hold the secrets
+export TREZOR_BTC_XPUB="xpub6..."
+make wallets                           # -> results/<name>/ per wallet
+```
+
+Each wallet gets `results/<name>/` with its own ledger, vendor report, and
+interactive `wallet_report.html`; `results/index.html` aggregates all
+wallets with USD totals. Wallet inputs can be BIP39 mnemonics or account
+xpubs (xpub/ypub/zpub, tpub/upub/vpub, Ltub/Mtub) — xpub wallets run fully
+watch-only, no private material ever touches disk or the repo.
+
 Full pipeline from a fresh clone: `make all`. Every target is also runnable
 without make — see the `Makefile` or `AGENTS.md` for the raw commands.
 

@@ -28,6 +28,9 @@ fix-funding: ## Find + fetch any funding txs missing from the tx dumps
 ledger: ## Rebuild per-address ledger, USD valuation, and interactive HTML
 	$(PYTHON) build_ledger.py
 
+wallets: ## Run the full multi-wallet pipeline (wallets.json -> results/<name>/)
+	$(PYTHON) run_wallets.py
+
 report: ledger ## Alias for ledger (produces wallet_report.html)
 
 all: setup env restore-data fix-funding ledger ## Full pipeline from a fresh clone

@@ -34,6 +34,18 @@ GAP_LIMIT = int(os.environ.get("GAP_LIMIT", "5000"))   # user rule: 5000
 ACCOUNT_DEPTH = int(os.environ.get("ACCOUNT_DEPTH", "10"))  # accounts 0..9
 
 
+# --- per-wallet working directory ------------------------------------------
+# All pipeline scripts read/write their data files inside WALLET_DIR.
+# run_wallets.py sets this to results/<wallet-name> per wallet; running any
+# script directly defaults WALLET_DIR to the project root (legacy layout).
+WALLET_DIR = os.environ.get("WALLET_DIR", PROJ)
+
+
+def P(filename: str) -> str:
+    """Resolve a data filename inside the active WALLET_DIR."""
+    return os.path.join(WALLET_DIR, filename)
+
+
 def require_mnemonic():
     """Fail fast with a clear message instead of deriving from an empty seed."""
     if not MNEMONIC.strip():
