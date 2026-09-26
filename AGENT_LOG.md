@@ -44,8 +44,8 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
 
 - [x] Stage 0: log + plan (this file)
 - [x] Stage 1: extract outgoing txs from 8 ckpts → cache (1859 unique txs)
-- [ ] Stage 2: destination profiling (count/amount/interval stats)
-- [ ] Stage 3: hop lookups (fan-in + forwarding)
+- [x] Stage 2: destination profiling (count/amount/interval stats)
+- [x] Stage 3: hop lookups — 1262/1262 cached (litecoinspace outage worked around via BlockCypher adapter; 5 heavy BTC dests truncated at 25 txs via blockstream, mitigated: funded_txo_sum in info; annotated history_partial)
 - [ ] Stage 4: classification + fiat P&L
 - [ ] Stage 5: report.html + commit/push
 
