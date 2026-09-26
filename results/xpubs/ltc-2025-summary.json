@@ -1,0 +1,16 @@
+{
+ "slug": "ltc-2025",
+ "coin": "ltc",
+ "range": [
+  "2025-05-13",
+  "2025-10-10"
+ ],
+ "funded_addresses": 2752,
+ "txs_in_range": 7238,
+ "total_in": 2449.08838451,
+ "total_in_usd": 248678.11,
+ "total_out": 2417.75326837,
+ "total_out_usd": 245520.04,
+ "fees": 0.52259666,
+ "fees_usd": 54.07
+}

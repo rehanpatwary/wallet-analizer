@@ -1,0 +1,130 @@
+[
+ {
+  "slug": "btc-2022",
+  "coin": "btc",
+  "range": [
+   "2022-01-22",
+   "2023-01-16"
+  ],
+  "funded_addresses": 2280,
+  "txs_in_range": 8420,
+  "total_in": 21.36781625,
+  "total_in_usd": 479851.85,
+  "total_out": 20.80947171,
+  "total_out_usd": 466969.29,
+  "fees": 0.09103494,
+  "fees_usd": 2027.59
+ },
+ {
+  "slug": "btc-2023",
+  "coin": "btc",
+  "range": [
+   "2023-01-17",
+   "2024-10-04"
+  ],
+  "funded_addresses": 16096,
+  "txs_in_range": 36503,
+  "total_in": 57.44101148,
+  "total_in_usd": 2000761.79,
+  "total_out": 56.42569901,
+  "total_out_usd": 1966530.42,
+  "fees": 1.05798206,
+  "fees_usd": 43958.79
+ },
+ {
+  "slug": "btc-2024-25",
+  "coin": "btc",
+  "range": [
+   "2024-10-04",
+   "2025-05-13"
+  ],
+  "funded_addresses": 4083,
+  "txs_in_range": 8860,
+  "total_in": 5.7494681,
+  "total_in_usd": 475371.56,
+  "total_out": 5.67431821,
+  "total_out_usd": 470687.05,
+  "fees": 0.09581859,
+  "fees_usd": 8164.13
+ },
+ {
+  "slug": "btc-2025",
+  "coin": "btc",
+  "range": [
+   "2025-05-13",
+   "2025-10-10"
+  ],
+  "funded_addresses": 2820,
+  "txs_in_range": 5853,
+  "total_in": 2.00538815,
+  "total_in_usd": 223431.52,
+  "total_out": 1.93891355,
+  "total_out_usd": 216774.39,
+  "fees": 0.02296547,
+  "fees_usd": 2591.36
+ },
+ {
+  "slug": "ltc-2023",
+  "coin": "ltc",
+  "range": [
+   "2023-11-10",
+   "2023-11-12"
+  ],
+  "funded_addresses": 45,
+  "txs_in_range": 63,
+  "total_in": 42.82773355,
+  "total_in_usd": 3146.72,
+  "total_out": 42.82587435,
+  "total_out_usd": 3223.08,
+  "fees": 0.0018592,
+  "fees_usd": 0.14
+ },
+ {
+  "slug": "ltc-2023-24",
+  "coin": "ltc",
+  "range": [
+   "2023-11-12",
+   "2024-10-04"
+  ],
+  "funded_addresses": 6798,
+  "txs_in_range": 21346,
+  "total_in": 12611.50724206,
+  "total_in_usd": 934905.97,
+  "total_out": 12610.25685912,
+  "total_out_usd": 935513.09,
+  "fees": 1.00078537,
+  "fees_usd": 75.2
+ },
+ {
+  "slug": "ltc-2024-25",
+  "coin": "ltc",
+  "range": [
+   "2024-10-04",
+   "2025-05-13"
+  ],
+  "funded_addresses": 4857,
+  "txs_in_range": 14864,
+  "total_in": 6852.7573076,
+  "total_in_usd": 618610.6,
+  "total_out": 6852.0328453,
+  "total_out_usd": 619050.12,
+  "fees": 0.7244623,
+  "fees_usd": 68.29
+ },
+ {
+  "slug": "ltc-2025",
+  "coin": "ltc",
+  "range": [
+   "2025-05-13",
+   "2025-10-10"
+  ],
+  "funded_addresses": 2752,
+  "txs_in_range": 7238,
+  "total_in": 2449.08838451,
+  "total_in_usd": 248678.11,
+  "total_out": 2417.75326837,
+  "total_out_usd": 245520.04,
+  "fees": 0.52259666,
+  "fees_usd": 54.07
+ }
+]

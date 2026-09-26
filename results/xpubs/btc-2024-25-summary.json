@@ -1,0 +1,16 @@
+{
+ "slug": "btc-2024-25",
+ "coin": "btc",
+ "range": [
+  "2024-10-04",
+  "2025-05-13"
+ ],
+ "funded_addresses": 4083,
+ "txs_in_range": 8860,
+ "total_in": 5.7494681,
+ "total_in_usd": 475371.56,
+ "total_out": 5.67431821,
+ "total_out_usd": 470687.05,
+ "fees": 0.09581859,
+ "fees_usd": 8164.13
+}

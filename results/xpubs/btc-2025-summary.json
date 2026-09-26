@@ -1,0 +1,16 @@
+{
+ "slug": "btc-2025",
+ "coin": "btc",
+ "range": [
+  "2025-05-13",
+  "2025-10-10"
+ ],
+ "funded_addresses": 2820,
+ "txs_in_range": 5853,
+ "total_in": 2.00538815,
+ "total_in_usd": 223431.52,
+ "total_out": 1.93891355,
+ "total_out_usd": 216774.39,
+ "fees": 0.02296547,
+ "fees_usd": 2591.36
+}

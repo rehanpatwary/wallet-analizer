@@ -1,0 +1,16 @@
+{
+ "slug": "ltc-2023-24",
+ "coin": "ltc",
+ "range": [
+  "2023-11-12",
+  "2024-10-04"
+ ],
+ "funded_addresses": 6798,
+ "txs_in_range": 21346,
+ "total_in": 12611.50724206,
+ "total_in_usd": 934905.97,
+ "total_out": 12610.25685912,
+ "total_out_usd": 935513.09,
+ "fees": 1.00078537,
+ "fees_usd": 75.2
+}

@@ -1,0 +1,16 @@
+{
+ "slug": "btc-2022",
+ "coin": "btc",
+ "range": [
+  "2022-01-22",
+  "2023-01-16"
+ ],
+ "funded_addresses": 2280,
+ "txs_in_range": 8420,
+ "total_in": 21.36781625,
+ "total_in_usd": 479851.85,
+ "total_out": 20.80947171,
+ "total_out_usd": 466969.29,
+ "fees": 0.09103494,
+ "fees_usd": 2027.59
+}
