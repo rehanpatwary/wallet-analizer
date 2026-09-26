@@ -56,13 +56,13 @@ def fetch_addr_history(coin, address):
     """Return {info, txs} — txs is full paginated history (slim)."""
     for base in FALLBACK_APIS[coin]:
         try:
-            info = _get_json(f"{base}/address/{address}")
+            info = _get_json(f"{base}/address/{address}", timeout=30)
             txs, seen, cursor = {}, set(), None
             while True:
                 url = f"{base}/address/{address}/txs"
                 if cursor:
                     url += f"?after_txid={cursor}"
-                page = _get_json(url)
+                page = _get_json(url, timeout=60)
                 new = 0
                 for tx in page:
                     if tx["txid"] not in seen:
@@ -80,7 +80,48 @@ def fetch_addr_history(coin, address):
             continue
         except Exception:
             continue
+    if coin == "ltc":
+        return fetch_addr_history_blockcypher(address)
     raise RuntimeError(f"no source returned history for {address}")
+
+
+BC_API = "https://api.blockcypher.com/v1/ltc/main"
+
+
+def fetch_addr_history_blockcypher(address):
+    """BlockCypher fallback (used when esplora-family LTC sources hang).
+    Reconstructs a slim per-address history from txrefs; counterparty
+    addresses are NOT available — fan-in uses funded sums instead.
+    """
+    d = _get_json(f"{BC_API}/addrs/{address}?limit=2000&unconfirmed=1",
+                  timeout=30)
+    txrefs = d.get("txrefs") or []
+    txs, spent_refs = {}, []
+    for r in txrefs:
+        t = txs.setdefault(r["tx_hash"], {
+            "txid": r["tx_hash"], "time": None, "vin": [], "vout": []})
+        conf = r.get("confirmed")
+        if conf and t["time"] is None:
+            try:
+                import datetime as _dt
+                t["time"] = int(_dt.datetime.fromisoformat(
+                    conf.replace("Z", "+00:00")).timestamp())
+            except Exception:
+                pass
+        if (r.get("tx_input_n") or -1) >= 0:
+            t["vin"].append({"a": address, "v": r.get("value") or 0})
+        else:
+            t["vout"].append({"a": address, "v": r.get("value") or 0})
+        if r.get("spent") and r.get("spent_by"):
+            spent_refs.append({"by": r["spent_by"], "v": r.get("value") or 0})
+    info = {
+        "chain_stats": {"tx_count": d.get("n_tx", 0),
+                        "funded_txo_sum": d.get("total_received", 0)},
+        "mempool_stats": {"tx_count": d.get("unconfirmed_n_tx", 0)},
+        "final_balance": d.get("final_balance", 0),
+        "source": "blockcypher",
+    }
+    return {"info": info, "txs": list(txs.values()), "spent_refs": spent_refs}
 
 
 def build_own_set():
@@ -119,18 +160,25 @@ def main():
             data = fetch_addr_history(coin, addr)
             slim = []
             for tx in data["txs"]:
-                slim.append({
-                    "txid": tx["txid"],
-                    "time": (tx.get("status") or {}).get("block_time"),
-                    "vin": [{"a": (v.get("prevout") or {}).get("scriptpubkey_address"),
-                             "v": (v.get("prevout") or {}).get("value") or 0}
-                            for v in tx.get("vin", [])],
-                    "vout": [{"a": v.get("scriptpubkey_address"),
-                              "v": v.get("value") or 0}
-                             for v in tx.get("vout", [])],
-                })
-            json.dump({"info": data["info"], "txs": slim},
-                      open(os.path.join(CACHE, f"{addr}.json"), "w"))
+                if tx.get("vout") and "a" in (tx["vout"][0] or {}):
+                    # already slim (blockcypher adapter shape)
+                    slim.append({"txid": tx["txid"], "time": tx.get("time"),
+                                 "vin": tx["vin"], "vout": tx["vout"]})
+                else:
+                    slim.append({
+                        "txid": tx["txid"],
+                        "time": (tx.get("status") or {}).get("block_time"),
+                        "vin": [{"a": (v.get("prevout") or {}).get("scriptpubkey_address"),
+                                 "v": (v.get("prevout") or {}).get("value") or 0}
+                                for v in tx.get("vin", [])],
+                        "vout": [{"a": v.get("scriptpubkey_address"),
+                                  "v": v.get("value") or 0}
+                                 for v in tx.get("vout", [])],
+                    })
+            out = {"info": data["info"], "txs": slim}
+            if data.get("spent_refs"):
+                out["spent_refs"] = data["spent_refs"]
+            json.dump(out, open(os.path.join(CACHE, f"{addr}.json"), "w"))
             return True
         except Exception as e:
             print(f"  FAIL {addr}: {e}", flush=True)
