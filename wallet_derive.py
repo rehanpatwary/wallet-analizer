@@ -144,15 +144,16 @@ def funded_check(coin: str, address: str, timeout=10):
     across all configured sources; an unreachable source raises — an address
     is only 'unfunded' when a source VERIFIES tx_count == 0."""
     last = None
-    for base in FALLBACK_APIS[coin]:
-        try:
-            d = _get_json(f"{base}/address/{address}", timeout)
-            ts = (d.get("chain_stats") or {}).get("tx_count", 0) + \
-                 (d.get("mempool_stats") or {}).get("tx_count", 0)
-            return ts > 0
-        except Exception as e:
-            last = f"{base}: {e}"
-            time.sleep(0.3)
+    for attempt in range(4):
+        for base in FALLBACK_APIS[coin]:
+            try:
+                d = _get_json(f"{base}/address/{address}", timeout)
+                ts = (d.get("chain_stats") or {}).get("tx_count", 0) + \
+                     (d.get("mempool_stats") or {}).get("tx_count", 0)
+                return ts > 0
+            except Exception as e:
+                last = f"{base}: {e}"
+        time.sleep(2.0 * (attempt + 1))  # source-wide backoff (5xx/429 waves)
     raise RuntimeError(f"no source verified {address}: {last}")
 
 

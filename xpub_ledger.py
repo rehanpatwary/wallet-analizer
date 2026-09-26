@@ -338,10 +338,15 @@ def main():
     for entry in entries:
         print(f"[{entry['slug']}] {entry['coin']} {entry['from']}..{entry['to']}", flush=True)
         prices = prices_btc if entry["coin"] == "btc" else prices_ltc
-        slug, rows, addr_stats, totals, n_addr, n_txs = analyze_xpub(entry, prices)
-        write_outputs(slug, entry["coin"], entry, rows, addr_stats, totals, n_addr, n_txs)
-        summaries.append(json.load(open(os.path.join(OUT_DIR, f"{slug}-summary.json"))))
-        json.dump(summaries, open(os.path.join(OUT_DIR, "summaries.json"), "w"), indent=1)
+        try:
+            slug, rows, addr_stats, totals, n_addr, n_txs = analyze_xpub(entry, prices)
+            write_outputs(slug, entry["coin"], entry, rows, addr_stats, totals,
+                          n_addr, n_txs)
+            summaries.append(json.load(open(os.path.join(OUT_DIR, f"{slug}-summary.json"))))
+            json.dump(summaries, open(os.path.join(OUT_DIR, "summaries.json"), "w"), indent=1)
+        except Exception as e:
+            # one account must not kill the remaining ones
+            print(f"[{entry['slug']}] FAILED: {e}", flush=True)
     write_index(summaries)
     print("results/xpubs/index.html written", flush=True)
 
