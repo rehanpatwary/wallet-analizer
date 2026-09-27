@@ -39,6 +39,22 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
 - 2026-09-27 **D8 — Artifacts**:
   `results/classify/{outgoing.csv, destinations.csv, classes.json, report.html, agent_log.md}`
   plus this root log. Commit after every stage.
+- 2026-09-27 **D9 — electrs funded=0 bug**: Umbrel electrs
+  (10.10.20.3:3006) reports `chain_stats.funded_txo_sum: 0` for addresses
+  with long histories (verified on bc1qxt22…, 431 txs, on-chain vouts
+  confirmed). Fix in `dest_signals`: denominator
+  `funded = max(chain_stats, history-derived sum of vouts to the address)`,
+  zero treated as missing. Never trust a zero funded sum from electrs.
+- 2026-09-27 **D10 — Merchant check ordering**: FIXED_MERCHANT pattern
+  (n≥3, amount_cv≤0.15, interval_cv 0<x≤0.5) is evaluated BEFORE the
+  fan_in≥0.98 self rules — an exclusive merchant (fan_in=1.0, only we pay
+  them) must not be swallowed by SELF_FORWARD. Sweeps fail amount_cv
+  naturally, so no collision.
+- 2026-09-27 **D11 — Lightweight hop-2**: hop targets only need
+  `/address` info (chain_stats), never full paginated history (that made
+  stage 4 crawl at ~5 lookups/min). One request per hop, 24 workers,
+  2303 hops in minutes. `LTC_PRIMARY_OK` health probe must be referenced
+  via module attribute (`m23.LTC_PRIMARY_OK`), not a from-import binding.
 
 ## Execution state
 
@@ -46,8 +62,12 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
 - [x] Stage 1: extract outgoing txs from 8 ckpts → cache (1859 unique txs)
 - [x] Stage 2: destination profiling (count/amount/interval stats)
 - [x] Stage 3: hop lookups — 1262/1262 cached (litecoinspace outage worked around via BlockCypher adapter; 5 heavy BTC dests truncated at 25 txs via blockstream, mitigated: funded_txo_sum in info; annotated history_partial)
-- [ ] Stage 4: classification + fiat P&L
-- [ ] Stage 5: report.html + commit/push
+- [x] Stage 4: classification + fiat P&L — 2163/2163 ext outputs classified,
+      UNKNOWN=0. Totals: SELF_FORWARD 1432 tx/$4,217,237 · MIXED_CUSTODIAL
+      576/$649,427 · VENDOR_REPEAT 64/$123,707 · FIXED_MERCHANT 54/$60,991 ·
+      VENDOR_ONCE 29/$38,751 · SELF_SWEEP 8/$23,529. Grand total out
+      $5,113,642 at exit-day rates.
+- [x] Stage 5: report.html + commit/push
 
 ## Handoff notes for the next agent
 
@@ -64,3 +84,10 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
 - Known caveat carried from ledger stage: btc-2024-25 has 9 txs where segwit
   self-change (~0.339 BTC) is counted as external out (segwit xpub not
   provided). Flag these in classification (they're SELF_FORWARD by shape).
+- Stage 4 reruns are cheap: all 2303 hop-2 lookups cached in
+  `results/classify/cache/hop/` (info-only JSONs). `hop2_lookup` is
+  cache-first — safe to re-run anytime.
+- SELF_FORWARD volume ($4.2M) is an upper bound on self-moves: hop-2 rows
+  carry funded_sats only (no fan-in by construction), so chains ending in
+  segwit addresses owned by the user are indistinguishable from chains
+  ending at a private 3rd party. Resolvable only with segwit-side xpubs.

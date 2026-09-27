@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallet Outflow Classification — BTC &amp; LTC (8 xpub accounts)</title>
+<style>
+  :root {
+    --bg:#0d1117; --panel:#161b22; --line:#30363d; --fg:#e6edf3; --dim:#8b949e;
+    --self:#3fb950; --third:#f0883e; --acc:#58a6ff;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:14px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding:28px 32px 12px; }
+  h1 { margin:0 0 4px; font-size:22px; }
+  h2 { margin:28px 0 10px; font-size:16px; color:var(--acc); }
+  .sub { color:var(--dim); }
+  main { padding:0 32px 48px; max-width:1200px; }
+  .cards { display:flex; gap:14px; flex-wrap:wrap; margin-top:18px; }
+  .card { background:var(--panel); border:1px solid var(--line);
+          border-radius:10px; padding:14px 18px; min-width:190px; }
+  .card .k { color:var(--dim); font-size:12px; text-transform:uppercase; }
+  .card .v { font-size:22px; font-weight:650; margin-top:2px; }
+  .card.self .v { color:var(--self); } .card.third .v { color:var(--third); }
+  table { width:100%; border-collapse:collapse; background:var(--panel);
+          border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  th, td { padding:8px 12px; text-align:left; border-bottom:1px solid var(--line);
+           vertical-align:top; }
+  th { color:var(--dim); font-size:12px; text-transform:uppercase; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  tr.self td:first-child { border-left:3px solid var(--self); }
+  tr.third td:first-child { border-left:3px solid var(--third); }
+  td.addr { font-family:ui-monospace, monospace; font-size:12px; }
+  td.why { color:var(--dim); font-size:12px; max-width:340px; }
+  code { background:#21262d; padding:1px 6px; border-radius:5px; font-size:12px; }
+  .caveats { background:var(--panel); border:1px solid var(--line);
+             border-left:3px solid var(--third); border-radius:8px;
+             padding:12px 16px; color:var(--dim); }
+  .caveats li { margin:4px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Wallet Outflow Classification — BTC &amp; LTC</h1>
+  <div class="sub">8 xpub accounts (4 BTC + 4 LTC, Jan 2022 – Oct 2025) ·
+  2,163 outgoing payments to 1,262 unique destinations ·
+  USD valued at each transaction's day rate (Binance daily open)</div>
+</header>
+<main>
+  <div class="cards">
+    <div class="card"><div class="k">Total out (USD at exit)</div>
+      <div class="v">$5,113,643</div></div>
+    <div class="card self"><div class="k">Self-moved (SELF_FORWARD + SELF_SWEEP)</div>
+      <div class="v">$4,240,766</div></div>
+    <div class="card third"><div class="k">3rd-party spend (custodial + vendors + merchant)</div>
+      <div class="v">$872,876</div></div>
+    <div class="card"><div class="k">Classified</div>
+      <div class="v">2,163 / 2,163</div></div>
+  </div>
+
+  <h2>Classification totals</h2>
+  <table>
+    <tr><th>Class</th><th class="num">Payments</th>
+        <th class="num">Coin amount</th>
+        <th class="num">USD at exit</th><th class="num">Share</th></tr>
+    
+      <tr class="self">
+        <td>Self-move (forwarding wallet)<br><code>SELF_FORWARD</code></td>
+        <td class="num">1,432</td>
+        <td class="num">70.1651 BTC<br>
+            17,183.0566 LTC</td>
+        <td class="num">$4,217,237</td>
+        <td class="num">82.5%</td>
+      </tr>
+      <tr class="self">
+        <td>Self-move (receive-only / sweep)<br><code>SELF_SWEEP</code></td>
+        <td class="num">8</td>
+        <td class="num">1.0119 BTC<br>
+            1.609 LTC</td>
+        <td class="num">$23,529</td>
+        <td class="num">0.5%</td>
+      </tr>
+      <tr class="third">
+        <td>3rd-party — custodial / exchange (shared addr)<br><code>MIXED_CUSTODIAL</code></td>
+        <td class="num">576</td>
+        <td class="num">11.4195 BTC<br>
+            4,329.4007 LTC</td>
+        <td class="num">$649,427</td>
+        <td class="num">12.7%</td>
+      </tr>
+      <tr class="third">
+        <td>3rd-party — fixed merchant (recurring pattern)<br><code>FIXED_MERCHANT</code></td>
+        <td class="num">54</td>
+        <td class="num">0.1484 BTC<br>
+            537.7915 LTC</td>
+        <td class="num">$60,991</td>
+        <td class="num">1.2%</td>
+      </tr>
+      <tr class="third">
+        <td>3rd-party — repeat vendor<br><code>VENDOR_REPEAT</code></td>
+        <td class="num">64</td>
+        <td class="num">3.2353 BTC<br>
+            97 LTC</td>
+        <td class="num">$123,707</td>
+        <td class="num">2.4%</td>
+      </tr>
+      <tr class="third">
+        <td>3rd-party — one-off payment<br><code>VENDOR_ONCE</code></td>
+        <td class="num">29</td>
+        <td class="num">1.1076 BTC<br>
+            61.4462 LTC</td>
+        <td class="num">$38,751</td>
+        <td class="num">0.8%</td>
+      </tr>
+  </table>
+
+  <h2>Top 25 destinations by value sent</h2>
+  <table>
+    <tr><th>Address</th><th>Coin</th><th>Class</th><th class="num"># pays</th>
+        <th class="num">Total sent</th><th class="num">USD equiv</th>
+        <th class="num">fan-in</th><th>Why</th></tr>
+    
+      <tr>
+        <td class="addr" title="LYaQTr1QDSXnmDdi38A13WXWDiyuWw9h7G">LYaQTr1QDSXnmDdi38A13WXWDi…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">49</td>
+        <td class="num">916.9736</td>
+        <td class="num">$125,662</td>
+        <td class="num">0.67</td>
+        <td class="why">fan_in=0.67 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LgzbsbLsmev66YVzQdXqEfTTTBoRqmUUTf">LgzbsbLsmev66YVzQdXqEfTTTB…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">56</td>
+        <td class="num">856.7212</td>
+        <td class="num">$57,426</td>
+        <td class="num">0.63</td>
+        <td class="why">fan_in=0.63 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LdpzETAzWYCptoB4nZ4qDRfQFoP3Qps1Am">LdpzETAzWYCptoB4nZ4qDRfQFo…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">45</td>
+        <td class="num">643</td>
+        <td class="num">$45,839</td>
+        <td class="num">0.98</td>
+        <td class="why">fan_in=0.98 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LeVXYdaeaX7Gtm8AXe87wc5U2uqiMQM4Cq">LeVXYdaeaX7Gtm8AXe87wc5U2u…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">31</td>
+        <td class="num">478.3953</td>
+        <td class="num">$50,356</td>
+        <td class="num">0.83</td>
+        <td class="why">fan_in=0.83 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LgZGiNoBd1tLwoNg2VjfU7vjFHqHdS6jis">LgZGiNoBd1tLwoNg2VjfU7vjFH…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">39</td>
+        <td class="num">424.8913</td>
+        <td class="num">$35,372</td>
+        <td class="num">0.74</td>
+        <td class="why">fan_in=0.74 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LWtbU9hkHzsgPAQmiw1VrUuk53jwiUfSBr">LWtbU9hkHzsgPAQmiw1VrUuk53…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">26</td>
+        <td class="num">339</td>
+        <td class="num">$26,483</td>
+        <td class="num">0.75</td>
+        <td class="why">fan_in=0.75 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LcAmRWcoogxkJuEs6uW3ese4qDK4Wr9BNf">LcAmRWcoogxkJuEs6uW3ese4qD…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">38</td>
+        <td class="num">311.06</td>
+        <td class="num">$34,817</td>
+        <td class="num">0.82</td>
+        <td class="why">fan_in=0.82 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LU2KcACzdW64icSUmiiQQAugSRZca2zqoy">LU2KcACzdW64icSUmiiQQAugSR…</td>
+        <td>LTC</td>
+        <td><code class="cls-FIXED_MERCHANT">FIXED_MERCHANT</code></td>
+        <td class="num">36</td>
+        <td class="num">297.7918</td>
+        <td class="num">$34,815</td>
+        <td class="num">0.88</td>
+        <td class="why">n=36, amount_cv=0.12, interval_cv=0.42</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1q99fdeeq680wsyr09qw0akyjxlrwmzq6r3cv2st">ltc1q99fdeeq680wsyr09qw0ak…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">263.4529</td>
+        <td class="num">$20,331</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LQVX7tduj89w7gCBLyE9wsSSiGP43UShq1">LQVX7tduj89w7gCBLyE9wsSSiG…</td>
+        <td>LTC</td>
+        <td><code class="cls-FIXED_MERCHANT">FIXED_MERCHANT</code></td>
+        <td class="num">3</td>
+        <td class="num">239.9997</td>
+        <td class="num">$15,838</td>
+        <td class="num">0.76</td>
+        <td class="why">n=3, amount_cv=0.05, interval_cv=0.38</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LcjxhoDh5PZUem6bamadLgA79VrXMuj8NT">LcjxhoDh5PZUem6bamadLgA79V…</td>
+        <td>LTC</td>
+        <td><code class="cls-MIXED_CUSTODIAL">MIXED_CUSTODIAL</code></td>
+        <td class="num">24</td>
+        <td class="num">225.3595</td>
+        <td class="num">$21,326</td>
+        <td class="num">0.64</td>
+        <td class="why">fan_in=0.64 (custodial-scale shared address)</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qxuntfhaajpmt8xnkwv9creh68vjgm4q3u8jlf2">ltc1qxuntfhaajpmt8xnkwv9cr…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">180.6848</td>
+        <td class="num">$11,573</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1q298n7wlhez6ggjcec2hxuj4pse50qjx728kaq4">ltc1q298n7wlhez6ggjcec2hxu…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">133.8608</td>
+        <td class="num">$8,848</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qkymwp6gw7ems3lqt8z2jyxj8cj9a4a4fkn4cy5">ltc1qkymwp6gw7ems3lqt8z2jy…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">127.0421</td>
+        <td class="num">$9,400</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qye4r4k2557fslp8x9wluknrdsc3xw5dqjw0jww">ltc1qye4r4k2557fslp8x9wluk…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">124.3359</td>
+        <td class="num">$7,427</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qumtx597kt6jl02n0sv8qat2c5zrk7ttzup28ad">ltc1qumtx597kt6jl02n0sv8qa…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">122.908</td>
+        <td class="num">$8,597</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qh562f89de0m3xe42ylhvj2a4ucf92vldu4p0rm">ltc1qh562f89de0m3xe42ylhvj…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">116.3661</td>
+        <td class="num">$8,608</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qu9e4vmn96y2hs9vw6gn6lfvadjgk8ua5w3z0rx">ltc1qu9e4vmn96y2hs9vw6gn6l…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">2</td>
+        <td class="num">107.5593</td>
+        <td class="num">$7,037</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qfv8lqd75he8v055vwcytc8lkqxke3gqkcrsamf">ltc1qfv8lqd75he8v055vwcytc…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">104.301</td>
+        <td class="num">$6,378</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1qmhdvy4da9a2c0n97y4k0g42huv48du0cx2zdg0">ltc1qmhdvy4da9a2c0n97y4k0g…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">101.8533</td>
+        <td class="num">$6,800</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1q6ysrmm54arwsxq3n7evy296slmvcu2el5jgng2">ltc1q6ysrmm54arwsxq3n7evy2…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">100.1489</td>
+        <td class="num">$7,088</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="MVW7PQ8Z4ut4wtmb5XtMfvBHxGduEy7HsU">MVW7PQ8Z4ut4wtmb5XtMfvBHxG…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">100</td>
+        <td class="num">$7,231</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="MM3jz3YV4k94TFCXu7ssfe1wv8xBniet4o">MM3jz3YV4k94TFCXu7ssfe1wv8…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">100</td>
+        <td class="num">$7,003</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+      <tr>
+        <td class="addr" title="LaVUmL6MUVmzmr66Qpqj2gFNdWz1z3nyfo">LaVUmL6MUVmzmr66Qpqj2gFNdW…</td>
+        <td>LTC</td>
+        <td><code class="cls-VENDOR_REPEAT">VENDOR_REPEAT</code></td>
+        <td class="num">3</td>
+        <td class="num">97</td>
+        <td class="num">$7,940</td>
+        <td class="num">0.07</td>
+        <td class="why">n=3, no fixed-amount pattern</td>
+      </tr>
+      <tr>
+        <td class="addr" title="ltc1q7xquyxufq32eyf3fe9pwmr4la98y286ue4j3r3">ltc1q7xquyxufq32eyf3fe9pwm…</td>
+        <td>LTC</td>
+        <td><code class="cls-SELF_FORWARD">SELF_FORWARD</code></td>
+        <td class="num">1</td>
+        <td class="num">89.0592</td>
+        <td class="num">$8,068</td>
+        <td class="num">1.00</td>
+        <td class="why">fan_in=1.00, spends</td>
+      </tr>
+  </table>
+
+  <h2>Caveats</h2>
+  <ul class="caveats">
+    <li>8 heavy BTC destinations carry truncated histories (25 txs, annotated
+        <code>history_partial</code>); their funded totals come from
+        chain_stats, not the truncated history.</li>
+    <li>btc-2024-25: 9 transactions (~0.339 BTC) spend to segwit self-change
+        counted as external (segwit-side xpubs never provided) — they classify
+        as SELF_FORWARD by shape.</li>
+    <li>SELF_FORWARD means "funded ≥98% by us, then forwards onward". Final
+        owner of hop-2 targets is unresolvable without the segwit xpubs —
+        treat self-moved volume as an upper bound.</li>
+    <li>USD values use the transaction day's opening rate; intra-day P&amp;L
+        and FIFO matching are out of scope.</li>
+  </ul>
+</main>
+</body>
+</html>

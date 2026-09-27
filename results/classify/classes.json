@@ -1,0 +1,56 @@
+{
+ "SELF_FORWARD": {
+  "txs": 1432,
+  "coin_total": 17253.22168882,
+  "usd_at_exit": 4217237.08,
+  "by_coin": {
+   "btc": 70.16508465000005,
+   "ltc": 17183.05660416999
+  }
+ },
+ "MIXED_CUSTODIAL": {
+  "txs": 576,
+  "coin_total": 4340.82010446,
+  "usd_at_exit": 649427.33,
+  "by_coin": {
+   "btc": 11.419453009999996,
+   "ltc": 4329.400651450001
+  }
+ },
+ "VENDOR_REPEAT": {
+  "txs": 64,
+  "coin_total": 100.23525214,
+  "usd_at_exit": 123706.58,
+  "by_coin": {
+   "btc": 3.2352521400000014,
+   "ltc": 97.0
+  }
+ },
+ "FIXED_MERCHANT": {
+  "txs": 54,
+  "coin_total": 537.93989178,
+  "usd_at_exit": 60991.11,
+  "by_coin": {
+   "btc": 0.14842581,
+   "ltc": 537.7914659700001
+  }
+ },
+ "VENDOR_ONCE": {
+  "txs": 29,
+  "coin_total": 62.55382143,
+  "usd_at_exit": 38751.34,
+  "by_coin": {
+   "btc": 1.1076181300000005,
+   "ltc": 61.44620329999999
+  }
+ },
+ "SELF_SWEEP": {
+  "txs": 8,
+  "coin_total": 2.6208522,
+  "usd_at_exit": 23529.4,
+  "by_coin": {
+   "btc": 1.01186309,
+   "ltc": 1.60898911
+  }
+ }
+}

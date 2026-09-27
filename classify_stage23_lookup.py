@@ -54,7 +54,10 @@ def _get_json(url, timeout=90, retries=2):
 
 def fetch_addr_history(coin, address):
     """Return {info, txs} — txs is full paginated history (slim)."""
-    for base in FALLBACK_APIS[coin]:
+    bases = list(FALLBACK_APIS[coin])
+    if coin == "ltc" and not LTC_PRIMARY_OK:
+        bases = bases[1:]  # drop the hanging esplora source entirely
+    for base in bases:
         try:
             info = _get_json(f"{base}/address/{address}", timeout=30)
             txs, seen, cursor = {}, set(), None
@@ -86,6 +89,21 @@ def fetch_addr_history(coin, address):
 
 
 BC_API = "https://api.blockcypher.com/v1/ltc/main"
+
+# Set False when the esplora LTC source fails the startup health probe —
+# avoids burning ~3 min of timeouts per address before falling back.
+LTC_PRIMARY_OK = True
+
+
+def _probe_ltc_primary():
+    global LTC_PRIMARY_OK
+    try:
+        _get_json(f"{FALLBACK_APIS['ltc'][1]}/blocks/tip/height", timeout=8,
+                  retries=1)
+        LTC_PRIMARY_OK = True
+    except Exception:
+        LTC_PRIMARY_OK = False
+    print(f"  ltc primary (litecoinspace) healthy: {LTC_PRIMARY_OK}", flush=True)
 
 
 def fetch_addr_history_blockcypher(address):
@@ -153,6 +171,7 @@ def main():
         if not os.path.exists(p):
             todo[coin_of[a]].append(a)
     print(f"to fetch: btc={len(todo['btc'])} ltc={len(todo['ltc'])}", flush=True)
+    _probe_ltc_primary()
 
     stats = {"ok": 0, "fail": 0}
     def work(coin, addr):
@@ -184,7 +203,7 @@ def main():
             print(f"  FAIL {addr}: {e}", flush=True)
             return False
 
-    for coin, workers in (("btc", 24), ("ltc", 3)):
+    for coin, workers in (("ltc", 3), ("btc", 24)):  # ltc first: fast via blockcypher
         if not todo[coin]:
             continue
         t0 = time.time()
