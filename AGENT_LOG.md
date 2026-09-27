@@ -68,6 +68,24 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
       VENDOR_ONCE 29/$38,751 · SELF_SWEEP 8/$23,529. Grand total out
       $5,113,642 at exit-day rates.
 - [x] Stage 5: report.html + commit/push
+- [x] Stage 6: merchant wallet-depth analysis (merchant_txs.csv, 335 payments
+      2022-04..2025-10, $1.175M). Chain proven: legacy xpub accounts fund the
+      merchant DIRECTLY for 96 payments/$129,839 (1,076 distinct funding
+      addresses, external index depth up to 6,119), and INDIRECTLY via the
+      native-segwit self layer (bc1q/ltc1q SELF_FORWARD destinations) for 220
+      payments/$968,929 (297 distinct segwit funders). 19 unresolved (17
+      funded by addresses in no layer we control — likely a separate wallet;
+      1 mixed-custodial funder; 1 fetch error). Scripts:
+      classify_stage6_merchant.py + classify_stage6b_chain.py; outputs in
+      results/merchant/; api tx cache results/merchant/cache_tx/ (gitignored).
+
+- 2026-09-27 **D12 — Merchant chain evidence**: the "foreign" segwit funding
+  layer from stage 6 is OUR OWN native-segwit wallet: 269 of 318 funding
+  addresses are SELF_FORWARD destinations the xpubs swept to (fan_in=1.0).
+  Payment path: legacy xpub → segwit self wallet → merchant. This also
+  retro-validates the SELF_FORWARD classification — those hops were self.
+  Follow-up: identify the segwit seed/xpub to close the loop (user request
+      pending).
 
 ## Handoff notes for the next agent
 
