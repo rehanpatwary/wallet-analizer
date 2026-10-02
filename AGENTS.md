@@ -106,3 +106,16 @@ sweep), `ltc_*.py` (LTC source failovers), `tx_classifier.py`.
   (the mnemonic was committed in early versions). Never send funds to any
   address of this wallet again; treat the seed as public.
 - `.env` is gitignored. Never print the mnemonic to logs or chat output.
+
+## Agent access policy
+
+Only **Kimi CLI** and **Kimi apps** may read, modify, or remember this repo.
+
+- **Claude Code**, **Codex**, **OpenCode**, and any other coding agent are
+  explicitly denied access at the config level (see `~/.claude/settings.json`,
+  `~/.codex/config.toml`, `~/.config/opencode/plugins/kimi-workspace-blocker.js`).
+- Session/history sharing is partitioned: Kimi agents write to the
+  `kimi-private` Honcho workspace and the `kimi-wallet-analyzer` Hindsight
+  bank; all other agents are blocked from those stores. Kimi agents can read
+  from the shared `agent-memory` workspace, but no other agent can read
+  Kimi's sessions.
