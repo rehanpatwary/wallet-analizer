@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merchant Funding Chain — wallet-analizer</title>
+<style>
+:root { --bg:#0d1117; --panel:#161b22; --line:#30363d; --fg:#e6edf3;
+        --dim:#8b949e; --self:#3fb950; --acc:#58a6ff; --warn:#f0883e; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif; }
+header { padding:28px 32px 12px; }
+h1 { margin:0 0 4px; font-size:22px; }
+h2 { margin:26px 0 10px; font-size:16px; color:var(--acc); }
+.sub { color:var(--dim); }
+main { padding:0 32px 48px; max-width:1200px; }
+table { width:100%; border-collapse:collapse; background:var(--panel);
+        border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+th,td { padding:7px 12px; text-align:left; border-bottom:1px solid var(--line); }
+th { color:var(--dim); font-size:12px; text-transform:uppercase; }
+td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+td.addr { font-family:ui-monospace,monospace; font-size:12px; }
+code { background:#21262d; padding:1px 6px; border-radius:5px; font-size:12px; }
+.flow { display:flex; align-items:stretch; gap:0; margin:20px 0 6px; }
+.col { flex:1; background:var(--panel); border:1px solid var(--line);
+       border-radius:10px; padding:12px 14px; }
+.col.mid { border-color:var(--self); }
+.col h3 { margin:0 0 8px; font-size:13px; color:var(--dim); }
+.col .big { font-size:19px; font-weight:650; }
+.col .sm { color:var(--dim); font-size:12px; }
+.edge { width:150px; display:flex; flex-direction:column; justify-content:center;
+        align-items:center; gap:4px; padding:0 6px; text-align:center; }
+.edge .line { height:2px; width:100%; background:var(--acc); position:relative; }
+.edge .line:after { content:"▶"; position:absolute; right:-4px; top:-8px;
+                     color:var(--acc); font-size:11px; }
+.edge.g .line { background:var(--self); }
+.edge.g .line:after { color:var(--self); }
+.edge .lb { font-size:12px; color:var(--fg); }
+.edge .us { font-size:12px; color:var(--dim); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.chip { background:#21262d; border:1px solid var(--line); border-radius:20px;
+        padding:2px 10px; font-size:11px; color:var(--dim); }
+.lg { margin-right:14px; font-size:12px; color:var(--dim); }
+.sw { display:inline-block; width:10px; height:10px; border-radius:2px;
+      margin-right:5px; }
+.note { background:var(--panel); border:1px solid var(--line);
+        border-left:3px solid var(--warn); border-radius:8px;
+        padding:10px 16px; color:var(--dim); font-size:13px; }
+@media (max-width:900px) { .flow { flex-direction:column; } .edge { width:auto; height:56px; } }
+</style></head><body>
+<header>
+  <h1>Merchant Funding Chain</h1>
+  <div class="sub">335 merchant payments · $1,180,446 ·
+  Apr 2022 – Oct 2025 · proven from on-chain vin funding (not heuristics)</div>
+</header>
+<main>
+
+<div class="flow">
+  <div class="col">
+    <h3>LEGACY XPUB ACCOUNTS (5 of 8 used)</h3>
+    <div class="big">$1,098,768</div>
+    <div class="sm">reaching merchant via both paths (direct $129,839 + via segwit $968,929)</div>
+    <div class="chips">
+      <span class="chip">1,076 distinct funding addresses</span>
+      <span class="chip">external idx ≤ 6,119</span>
+    </div>
+  </div>
+  <div class="edge">
+    <div class="lb">direct · 96 payments</div>
+    <div class="us">$129,839</div>
+    <div class="line"></div>
+  </div>
+  <div class="col mid">
+    <h3>NATIVE-SEGWIT SELF WALLET (bc1q / ltc1q)</h3>
+    <div class="big">$968,929</div>
+    <div class="sm">220 payments · 297 distinct segwit funders —
+    every one a SELF_FORWARD destination the xpubs swept to (fan-in = 1.0)</div>
+    <div class="chips">
+      <span class="chip">241 BTC funders</span><span class="chip">56 LTC funders</span>
+    </div>
+  </div>
+  <div class="edge g">
+    <div class="lb">sweep in · spend out</div>
+    <div class="us">$968,929</div>
+    <div class="line"></div>
+  </div>
+  <div class="col">
+    <h3>MERCHANT DEPOSIT ADDRESSES (11)</h3>
+    <div class="big">$1,180,446</div>
+    <div class="sm">335 payments · 10 legacy + 1 other styles ·
+    unresolved third-party-funded: $81,678 (19 txs)</div>
+  </div>
+</div>
+
+<h2>Monthly payment volume by funding path</h2>
+<div class="sub"><span class="lg"><span class="sw" style="background:#58a6ff"></span>direct from xpubs</span> <span class="lg"><span class="sw" style="background:#3fb950"></span>via segwit self-layer</span> <span class="lg"><span class="sw" style="background:#8b949e"></span>unresolved</span> </div>
+<svg viewBox="0 0 980 254" width="100%">
+      <rect x="46" y="210.8" width="22" height="19.2" fill="#58a6ff"><title>2022-04 direct: $6,042</title></rect><rect x="46" y="210.8" width="22" height="0.0" fill="#3fb950"><title>2022-04 segwit: $0</title></rect><rect x="46" y="210.8" width="22" height="0.0" fill="#8b949e"><title>2022-04 unresolved: $0</title></rect><rect x="74" y="201.9" width="22" height="28.1" fill="#58a6ff"><title>2022-05 direct: $8,873</title></rect><rect x="74" y="201.9" width="22" height="0.0" fill="#3fb950"><title>2022-05 segwit: $0</title></rect><rect x="74" y="201.9" width="22" height="0.0" fill="#8b949e"><title>2022-05 unresolved: $0</title></rect><rect x="102" y="198.3" width="22" height="31.7" fill="#58a6ff"><title>2022-06 direct: $9,997</title></rect><rect x="102" y="198.3" width="22" height="0.0" fill="#3fb950"><title>2022-06 segwit: $0</title></rect><rect x="102" y="198.3" width="22" height="0.0" fill="#8b949e"><title>2022-06 unresolved: $0</title></rect><rect x="130" y="206.9" width="22" height="23.1" fill="#58a6ff"><title>2022-07 direct: $7,297</title></rect><rect x="130" y="206.9" width="22" height="0.0" fill="#3fb950"><title>2022-07 segwit: $0</title></rect><rect x="130" y="206.9" width="22" height="0.0" fill="#8b949e"><title>2022-07 unresolved: $0</title></rect><rect x="158" y="180.0" width="22" height="50.0" fill="#58a6ff"><title>2022-08 direct: $15,757</title></rect><rect x="158" y="180.0" width="22" height="0.0" fill="#3fb950"><title>2022-08 segwit: $0</title></rect><rect x="158" y="180.0" width="22" height="0.0" fill="#8b949e"><title>2022-08 unresolved: $0</title></rect><rect x="186" y="173.8" width="22" height="56.2" fill="#58a6ff"><title>2022-09 direct: $17,735</title></rect><rect x="186" y="173.8" width="22" height="0.0" fill="#3fb950"><title>2022-09 segwit: $0</title></rect><rect x="186" y="173.8" width="22" height="0.0" fill="#8b949e"><title>2022-09 unresolved: $0</title></rect><rect x="214" y="173.8" width="22" height="56.2" fill="#58a6ff"><title>2022-10 direct: $17,720</title></rect><rect x="214" y="173.8" width="22" height="0.0" fill="#3fb950"><title>2022-10 segwit: $0</title></rect><rect x="214" y="173.8" width="22" height="0.0" fill="#8b949e"><title>2022-10 unresolved: $0</title></rect><rect x="242" y="223.4" width="22" height="6.6" fill="#58a6ff"><title>2022-11 direct: $2,086</title></rect><rect x="242" y="193.5" width="22" height="29.9" fill="#3fb950"><title>2022-11 segwit: $9,436</title></rect><rect x="242" y="193.5" width="22" height="0.0" fill="#8b949e"><title>2022-11 unresolved: $0</title></rect><rect x="270" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2022-12 direct: $0</title></rect><rect x="270" y="185.4" width="22" height="44.6" fill="#3fb950"><title>2022-12 segwit: $14,059</title></rect><rect x="270" y="185.4" width="22" height="0.0" fill="#8b949e"><title>2022-12 unresolved: $0</title></rect><rect x="298" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-01 direct: $0</title></rect><rect x="298" y="159.9" width="22" height="70.1" fill="#3fb950"><title>2023-01 segwit: $22,110</title></rect><rect x="298" y="158.1" width="22" height="1.8" fill="#8b949e"><title>2023-01 unresolved: $569</title></rect><rect x="326" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-02 direct: $0</title></rect><rect x="326" y="88.3" width="22" height="141.7" fill="#3fb950"><title>2023-02 segwit: $44,697</title></rect><rect x="326" y="88.3" width="22" height="0.0" fill="#8b949e"><title>2023-02 unresolved: $0</title></rect><rect x="354" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-03 direct: $0</title></rect><rect x="354" y="77.3" width="22" height="152.7" fill="#3fb950"><title>2023-03 segwit: $48,175</title></rect><rect x="354" y="77.3" width="22" height="0.0" fill="#8b949e"><title>2023-03 unresolved: $0</title></rect><rect x="382" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-04 direct: $0</title></rect><rect x="382" y="145.3" width="22" height="84.7" fill="#3fb950"><title>2023-04 segwit: $26,711</title></rect><rect x="382" y="145.3" width="22" height="0.0" fill="#8b949e"><title>2023-04 unresolved: $0</title></rect><rect x="410" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-05 direct: $0</title></rect><rect x="410" y="180.7" width="22" height="49.3" fill="#3fb950"><title>2023-05 segwit: $15,542</title></rect><rect x="410" y="163.9" width="22" height="16.8" fill="#8b949e"><title>2023-05 unresolved: $5,308</title></rect><rect x="438" y="213.6" width="22" height="16.4" fill="#58a6ff"><title>2023-06 direct: $5,168</title></rect><rect x="438" y="180.3" width="22" height="33.4" fill="#3fb950"><title>2023-06 segwit: $10,522</title></rect><rect x="438" y="180.3" width="22" height="0.0" fill="#8b949e"><title>2023-06 unresolved: $0</title></rect><rect x="466" y="212.4" width="22" height="17.6" fill="#58a6ff"><title>2023-07 direct: $5,537</title></rect><rect x="466" y="163.6" width="22" height="48.9" fill="#3fb950"><title>2023-07 segwit: $15,420</title></rect><rect x="466" y="147.1" width="22" height="16.5" fill="#8b949e"><title>2023-07 unresolved: $5,189</title></rect><rect x="494" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-08 direct: $0</title></rect><rect x="494" y="130.7" width="22" height="99.3" fill="#3fb950"><title>2023-08 segwit: $31,325</title></rect><rect x="494" y="130.7" width="22" height="0.0" fill="#8b949e"><title>2023-08 unresolved: $0</title></rect><rect x="522" y="213.2" width="22" height="16.8" fill="#58a6ff"><title>2023-09 direct: $5,311</title></rect><rect x="522" y="130.0" width="22" height="83.2" fill="#3fb950"><title>2023-09 segwit: $26,231</title></rect><rect x="522" y="130.0" width="22" height="0.0" fill="#8b949e"><title>2023-09 unresolved: $0</title></rect><rect x="550" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-10 direct: $0</title></rect><rect x="550" y="111.7" width="22" height="118.3" fill="#3fb950"><title>2023-10 segwit: $37,319</title></rect><rect x="550" y="111.7" width="22" height="0.0" fill="#8b949e"><title>2023-10 unresolved: $0</title></rect><rect x="578" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2023-11 direct: $0</title></rect><rect x="578" y="146.2" width="22" height="83.8" fill="#3fb950"><title>2023-11 segwit: $26,424</title></rect><rect x="578" y="130.0" width="22" height="16.2" fill="#8b949e"><title>2023-11 unresolved: $5,119</title></rect><rect x="606" y="196.6" width="22" height="33.4" fill="#58a6ff"><title>2023-12 direct: $10,526</title></rect><rect x="606" y="112.5" width="22" height="84.1" fill="#3fb950"><title>2023-12 segwit: $26,527</title></rect><rect x="606" y="72.2" width="22" height="40.3" fill="#8b949e"><title>2023-12 unresolved: $12,705</title></rect><rect x="634" y="210.2" width="22" height="19.8" fill="#58a6ff"><title>2024-01 direct: $6,260</title></rect><rect x="634" y="125.1" width="22" height="85.1" fill="#3fb950"><title>2024-01 segwit: $26,837</title></rect><rect x="634" y="125.1" width="22" height="0.0" fill="#8b949e"><title>2024-01 unresolved: $0</title></rect><rect x="662" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-02 direct: $0</title></rect><rect x="662" y="149.0" width="22" height="81.0" fill="#3fb950"><title>2024-02 segwit: $25,558</title></rect><rect x="662" y="133.2" width="22" height="15.7" fill="#8b949e"><title>2024-02 unresolved: $4,964</title></rect><rect x="690" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-03 direct: $0</title></rect><rect x="690" y="148.1" width="22" height="81.9" fill="#3fb950"><title>2024-03 segwit: $25,817</title></rect><rect x="690" y="115.7" width="22" height="32.4" fill="#8b949e"><title>2024-03 unresolved: $10,227</title></rect><rect x="718" y="212.9" width="22" height="17.1" fill="#58a6ff"><title>2024-04 direct: $5,395</title></rect><rect x="718" y="120.3" width="22" height="92.6" fill="#3fb950"><title>2024-04 segwit: $29,210</title></rect><rect x="718" y="120.3" width="22" height="0.0" fill="#8b949e"><title>2024-04 unresolved: $0</title></rect><rect x="746" y="227.0" width="22" height="3.0" fill="#58a6ff"><title>2024-05 direct: $931</title></rect><rect x="746" y="152.9" width="22" height="74.1" fill="#3fb950"><title>2024-05 segwit: $23,377</title></rect><rect x="746" y="134.2" width="22" height="18.8" fill="#8b949e"><title>2024-05 unresolved: $5,920</title></rect><rect x="774" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-06 direct: $0</title></rect><rect x="774" y="147.9" width="22" height="82.1" fill="#3fb950"><title>2024-06 segwit: $25,901</title></rect><rect x="774" y="131.2" width="22" height="16.7" fill="#8b949e"><title>2024-06 unresolved: $5,275</title></rect><rect x="802" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-07 direct: $0</title></rect><rect x="802" y="133.4" width="22" height="96.6" fill="#3fb950"><title>2024-07 segwit: $30,453</title></rect><rect x="802" y="101.0" width="22" height="32.4" fill="#8b949e"><title>2024-07 unresolved: $10,222</title></rect><rect x="830" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-08 direct: $0</title></rect><rect x="830" y="128.6" width="22" height="101.4" fill="#3fb950"><title>2024-08 segwit: $31,971</title></rect><rect x="830" y="94.1" width="22" height="34.6" fill="#8b949e"><title>2024-08 unresolved: $10,897</title></rect><rect x="858" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-09 direct: $0</title></rect><rect x="858" y="128.9" width="22" height="101.1" fill="#3fb950"><title>2024-09 segwit: $31,874</title></rect><rect x="858" y="128.9" width="22" height="0.0" fill="#8b949e"><title>2024-09 unresolved: $0</title></rect><rect x="886" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-10 direct: $0</title></rect><rect x="886" y="40.0" width="22" height="190.0" fill="#3fb950"><title>2024-10 segwit: $59,924</title></rect><rect x="886" y="40.0" width="22" height="0.0" fill="#8b949e"><title>2024-10 unresolved: $0</title></rect><rect x="914" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-11 direct: $0</title></rect><rect x="914" y="91.0" width="22" height="139.0" fill="#3fb950"><title>2024-11 segwit: $43,837</title></rect><rect x="914" y="91.0" width="22" height="0.0" fill="#8b949e"><title>2024-11 unresolved: $0</title></rect><rect x="942" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2024-12 direct: $0</title></rect><rect x="942" y="113.5" width="22" height="116.5" fill="#3fb950"><title>2024-12 segwit: $36,732</title></rect><rect x="942" y="113.5" width="22" height="0.0" fill="#8b949e"><title>2024-12 unresolved: $0</title></rect><rect x="970" y="213.5" width="22" height="16.5" fill="#58a6ff"><title>2025-01 direct: $5,204</title></rect><rect x="970" y="113.9" width="22" height="99.6" fill="#3fb950"><title>2025-01 segwit: $31,414</title></rect><rect x="970" y="113.9" width="22" height="0.0" fill="#8b949e"><title>2025-01 unresolved: $0</title></rect><rect x="998" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-02 direct: $0</title></rect><rect x="998" y="163.1" width="22" height="66.9" fill="#3fb950"><title>2025-02 segwit: $21,100</title></rect><rect x="998" y="163.1" width="22" height="0.0" fill="#8b949e"><title>2025-02 unresolved: $0</title></rect><rect x="1026" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-03 direct: $0</title></rect><rect x="1026" y="147.6" width="22" height="82.4" fill="#3fb950"><title>2025-03 segwit: $25,987</title></rect><rect x="1026" y="147.6" width="22" height="0.0" fill="#8b949e"><title>2025-03 unresolved: $0</title></rect><rect x="1054" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-04 direct: $0</title></rect><rect x="1054" y="147.1" width="22" height="82.9" fill="#3fb950"><title>2025-04 segwit: $26,132</title></rect><rect x="1054" y="147.1" width="22" height="0.0" fill="#8b949e"><title>2025-04 unresolved: $0</title></rect><rect x="1082" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-05 direct: $0</title></rect><rect x="1082" y="164.0" width="22" height="66.0" fill="#3fb950"><title>2025-05 segwit: $20,811</title></rect><rect x="1082" y="147.3" width="22" height="16.8" fill="#8b949e"><title>2025-05 unresolved: $5,283</title></rect><rect x="1110" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-06 direct: $0</title></rect><rect x="1110" y="162.6" width="22" height="67.4" fill="#3fb950"><title>2025-06 segwit: $21,267</title></rect><rect x="1110" y="162.6" width="22" height="0.0" fill="#8b949e"><title>2025-06 unresolved: $0</title></rect><rect x="1138" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-07 direct: $0</title></rect><rect x="1138" y="146.2" width="22" height="83.8" fill="#3fb950"><title>2025-07 segwit: $26,441</title></rect><rect x="1138" y="146.2" width="22" height="0.0" fill="#8b949e"><title>2025-07 unresolved: $0</title></rect><rect x="1166" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-08 direct: $0</title></rect><rect x="1166" y="159.1" width="22" height="70.9" fill="#3fb950"><title>2025-08 segwit: $22,350</title></rect><rect x="1166" y="159.1" width="22" height="0.0" fill="#8b949e"><title>2025-08 unresolved: $0</title></rect><rect x="1194" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-09 direct: $0</title></rect><rect x="1194" y="161.7" width="22" height="68.3" fill="#3fb950"><title>2025-09 segwit: $21,552</title></rect><rect x="1194" y="161.7" width="22" height="0.0" fill="#8b949e"><title>2025-09 unresolved: $0</title></rect><rect x="1222" y="230.0" width="22" height="0.0" fill="#58a6ff"><title>2025-10 direct: $0</title></rect><rect x="1222" y="211.3" width="22" height="18.7" fill="#3fb950"><title>2025-10 segwit: $5,886</title></rect><rect x="1222" y="211.3" width="22" height="0.0" fill="#8b949e"><title>2025-10 unresolved: $0</title></rect><text x="46" y="246" font-size="9" fill="#8b949e">2022-04</text><text x="130" y="246" font-size="9" fill="#8b949e">2022-07</text><text x="214" y="246" font-size="9" fill="#8b949e">2022-10</text><text x="298" y="246" font-size="9" fill="#8b949e">2023-01</text><text x="382" y="246" font-size="9" fill="#8b949e">2023-04</text><text x="466" y="246" font-size="9" fill="#8b949e">2023-07</text><text x="550" y="246" font-size="9" fill="#8b949e">2023-10</text><text x="634" y="246" font-size="9" fill="#8b949e">2024-01</text><text x="718" y="246" font-size="9" fill="#8b949e">2024-04</text><text x="802" y="246" font-size="9" fill="#8b949e">2024-07</text><text x="886" y="246" font-size="9" fill="#8b949e">2024-10</text><text x="970" y="246" font-size="9" fill="#8b949e">2025-01</text><text x="1054" y="246" font-size="9" fill="#8b949e">2025-04</text><text x="1138" y="246" font-size="9" fill="#8b949e">2025-07</text><text x="1222" y="246" font-size="9" fill="#8b949e">2025-10</text>
+      <line x1="42" y1="230" x2="974" y2="230" stroke="#30363d"/></svg>
+
+<h2>Per-account depth used to fund merchant payments (direct path)</h2>
+<table><tr><th>Account</th><th class="num">Merchant txs</th>
+<th class="num">Funding addresses</th><th class="num">USD (direct)</th>
+<th class="num">External index depth</th></tr>
+<tr>
+      <td><code>btc-2022</code></td>
+      <td class="num">85</td>
+      <td class="num">525</td>
+      <td class="num">$85,507</td>
+      <td class="num">ext idx 6–2773</td></tr><tr>
+      <td><code>btc-2023</code></td>
+      <td class="num">4</td>
+      <td class="num">211</td>
+      <td class="num">$16,016</td>
+      <td class="num">ext idx 17–6119</td></tr><tr>
+      <td><code>ltc-2023</code></td>
+      <td class="num">3</td>
+      <td class="num">3</td>
+      <td class="num">$15,814</td>
+      <td class="num">ext idx 81–81</td></tr><tr>
+      <td><code>ltc-2023-24</code></td>
+      <td class="num">3</td>
+      <td class="num">157</td>
+      <td class="num">$7,298</td>
+      <td class="num">ext idx 17–4697</td></tr><tr>
+      <td><code>btc-2024-25</code></td>
+      <td class="num">1</td>
+      <td class="num">180</td>
+      <td class="num">$5,204</td>
+      <td class="num">ext idx 114–4569</td></tr></table>
+
+<h2>Merchant deposit addresses</h2>
+<table><tr><th>Address</th><th class="num">Payments</th><th class="num">USD</th>
+<th class="num">Coin</th><th>First → last</th><th>Ledger class</th></tr>
+<tr>
+      <td class="addr" title="1NfQVes1hEPmSBvLYzZnU9u8wofuQ9AAtk">1NfQVes1hEPmSBvLYzZnU9u8wofuQ9…</td>
+      <td class="num">47</td>
+      <td class="num">$249,827</td>
+      <td class="num">3.4180</td>
+      <td>2024-08-19 → 2025-04-07</td>
+      <td><code>VENDOR_ONCE</code></td></tr><tr>
+      <td class="addr" title="14qEw7NjVqgJpgPDm5rJhVb2pc8UEjhry2">14qEw7NjVqgJpgPDm5rJhVb2pc8UEj…</td>
+      <td class="num">58</td>
+      <td class="num">$198,101</td>
+      <td class="num">8.9873</td>
+      <td>2022-11-15 → 2023-06-16</td>
+      <td><code>VENDOR_ONCE</code></td></tr><tr>
+      <td class="addr" title="1FrLZvJi6AcSwo4YhYgM5J9KgtEomBCNUf">1FrLZvJi6AcSwo4YhYgM5J9KgtEomB…</td>
+      <td class="num">38</td>
+      <td class="num">$191,891</td>
+      <td class="num">6.4568</td>
+      <td>2023-07-07 → 2023-12-19</td>
+      <td><code>VENDOR_REPEAT</code></td></tr><tr>
+      <td class="addr" title="1BdddYe4PtdgxDGwGgJ8SYuCXRRab3QK3x">1BdddYe4PtdgxDGwGgJ8SYuCXRRab3…</td>
+      <td class="num">32</td>
+      <td class="num">$140,301</td>
+      <td class="num">2.5087</td>
+      <td>2024-01-09 → 2024-08-15</td>
+      <td><code>not in ledger</code></td></tr><tr>
+      <td class="addr" title="LaVUmL6MUVmzmr66Qpqj2gFNdWz1z3nyfo">LaVUmL6MUVmzmr66Qpqj2gFNdWz1z3…</td>
+      <td class="num">34</td>
+      <td class="num">$112,012</td>
+      <td class="num">1,481.6109</td>
+      <td>2024-01-14 → 2024-07-05</td>
+      <td><code>VENDOR_REPEAT</code></td></tr><tr>
+      <td class="addr" title="1BDTAiVBnobq5EpwF5TUQgg4zhaW3rSjLP">1BDTAiVBnobq5EpwF5TUQgg4zhaW3r…</td>
+      <td class="num">19</td>
+      <td class="num">$102,625</td>
+      <td class="num">0.9658</td>
+      <td>2025-05-16 → 2025-10-02</td>
+      <td><code>not in ledger</code></td></tr><tr>
+      <td class="addr" title="1AoHrv3z67JfWbUGeALoYd3byafuQVcmRs">1AoHrv3z67JfWbUGeALoYd3byafuQV…</td>
+      <td class="num">89</td>
+      <td class="num">$89,703</td>
+      <td class="num">4.2469</td>
+      <td>2022-04-03 → 2022-11-12</td>
+      <td><code>MIXED_CUSTODIAL</code></td></tr><tr>
+      <td class="addr" title="LdeKS6T92oWKwHHJrvBsfhWmuQKEVZAUrs">LdeKS6T92oWKwHHJrvBsfhWmuQKEVZ…</td>
+      <td class="num">7</td>
+      <td class="num">$38,235</td>
+      <td class="num">461.9560</td>
+      <td>2024-08-24 → 2024-12-12</td>
+      <td><code>not in ledger</code></td></tr><tr>
+      <td class="addr" title="1PjmGWKnJZLAEDp67Zu2SWrBDaWXPc5RHV">1PjmGWKnJZLAEDp67Zu2SWrBDaWXPc…</td>
+      <td class="num">5</td>
+      <td class="num">$26,161</td>
+      <td class="num">0.3010</td>
+      <td>2025-04-13 → 2025-05-07</td>
+      <td><code>not in ledger</code></td></tr><tr>
+      <td class="addr" title="LQVX7tduj89w7gCBLyE9wsSSiGP43UShq1">LQVX7tduj89w7gCBLyE9wsSSiGP43U…</td>
+      <td class="num">4</td>
+      <td class="num">$21,030</td>
+      <td class="num">314.9997</td>
+      <td>2023-12-21 → 2024-01-06</td>
+      <td><code>FIXED_MERCHANT</code></td></tr><tr>
+      <td class="addr" title="LTqHR4dEpdZgeJv7b7pDY8Un4X3EKd9BDo">LTqHR4dEpdZgeJv7b7pDY8Un4X3EKd…</td>
+      <td class="num">2</td>
+      <td class="num">$10,560</td>
+      <td class="num">103.6456</td>
+      <td>2025-07-17 → 2025-07-30</td>
+      <td><code>not in ledger</code></td></tr></table>
+
+<p class="note"><strong>Unresolved ($81,678):</strong>
+19 payments are funded by addresses outside every
+wallet layer we control — likely a separate wallet of yours (native-segwit,
+1–4 inputs per payment). Identifying that seed/xpub would close the last gap.
+Also note: this chain retro-validates the stage-4 SELF_FORWARD label —
+the segwit layer that receives $4.2M of sweeps is the same wallet that pays
+this merchant.</p>
+</main></body></html>

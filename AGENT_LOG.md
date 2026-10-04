@@ -78,6 +78,10 @@ value at arrival vs at exit for profit/loss. Forwarding lookups 1–2 hops.
       1 mixed-custodial funder; 1 fetch error). Scripts:
       classify_stage6_merchant.py + classify_stage6b_chain.py; outputs in
       results/merchant/; api tx cache results/merchant/cache_tx/ (gitignored).
+  results/merchant/merchant_chain.html (pure HTML/SVG flow diagram:
+  legacy xpubs -> segwit self layer -> merchant, monthly stacked timeline
+  by funding path, per-account depth table). Generator:
+  classify_stage7_merchant_report.py.
 
 - 2026-09-27 **D12 — Merchant chain evidence**: the "foreign" segwit funding
   layer from stage 6 is OUR OWN native-segwit wallet: 269 of 318 funding
